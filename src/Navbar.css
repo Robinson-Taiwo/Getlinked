@@ -1,0 +1,44 @@
+.navbar-container {
+    @apply flex flex-row justify-between items-center w-[100vw] px-[3rem] relative 
+}
+
+.nav-logo {
+    @apply mb-[1.44rem] mt-[1.88rem] w-[4.5rem] h-[1.125rem]
+}
+
+.nav-menu {
+    @apply mb-[1.31rem] mt-[2.25rem]
+}
+
+.nav-line {
+    background: rgba(255, 255, 255, 0.18);
+    @apply h-[0.005rem] w-[100%]
+}
+
+.circle {
+    background-image: url(../src/assets/icons/cancel_circle.svg);
+    width: 1.4375rem;
+    height: 1.4375rem;
+    @apply flex items-center justify-center absolute right-[3rem]
+}
+
+.menu {
+    @apply h-[700vh] top-0 w-[100vw] absolute bg-darkp opacity-100 left-0 flex-col text-white pl-[2.94rem]
+}
+
+.ll{
+    @apply hidden
+}
+
+.menu-item-container {
+    @apply mt-[6rem] flex flex-col gap-[1.81rem]
+}
+
+.menu-item {
+    @apply text-[1.125rem] font-medium tracking-[-0.0625rem]
+}
+
+.menu-register {
+    border-radius: 0.25rem;
+    @apply bg-primary h-[3.125rem] w-[10.75rem]
+}
