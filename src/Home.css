@@ -101,7 +101,7 @@
     height: 22.64969rem;
     background-blend-mode: luminosity;
 
-    background-image: url(../src/assets/images/man-wearing-smart-glasses-touching-virtual-screen\ 1.png);
+    background-image: url(../src/assets/images/manGlass.png);
     @apply w-[100vw] bg-darkp bg-center bg-cover bg-no-repeat sphone:w-[100%]
 }
 
