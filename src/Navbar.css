@@ -1,5 +1,5 @@
 .navbar-container {
-    @apply flex flex-row justify-between items-center w-[100vw] px-[3rem] relative 
+    @apply flex flex-row justify-between items-center w-[100vw] px-[3rem] relative
 }
 
 .nav-logo {
@@ -23,7 +23,7 @@
 }
 
 .menu {
-    @apply h-[700vh] top-0 w-[100vw] absolute bg-darkp opacity-100 left-0 flex-col text-white pl-[2.94rem]
+    @apply h-[100vh] top-0 w-[100vw] fixed bg-darkp opacity-100 left-0 flex-col text-white pl-[2.94rem]
 }
 
 .ll{

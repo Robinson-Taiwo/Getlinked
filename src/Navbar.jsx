@@ -45,7 +45,6 @@ const Navbar = () => {
       </div>
 
       <div className="nav-line">
-
       </div>
     </div>
 
