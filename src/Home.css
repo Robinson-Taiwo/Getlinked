@@ -100,7 +100,7 @@
 .second-section {
     height: 22.64969rem;
     background-blend-mode: luminosity;
-    background-image: url('/assets/images/manGlass.png'); /* Absolute path */
+    background-image: url(../src/assets/images/smart.png); /* Absolute path */
     @apply w-[100vw] bg-darkp bg-center bg-cover bg-no-repeat sphone:w-[100%]
 }
 
