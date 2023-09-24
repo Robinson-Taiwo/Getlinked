@@ -16,7 +16,7 @@
 }
 
 .igniting {
-    @apply text-white italic font-bold flex flex-col w-fit
+    @apply text-white italic font-bold flex flex-col w-fit sphone:text-[0.8rem]
 }
 
 .getlinked {
@@ -64,7 +64,7 @@
 }
 
 .flexo {
-    @apply flex gap-[11.94rem]  left-[3rem] ml-[4.5rem] pl-[2rem]
+    @apply flex gap-[11.94rem]  left-[3rem] ml-[1.5rem] pl-[2rem]
 }
 
 .register-button {

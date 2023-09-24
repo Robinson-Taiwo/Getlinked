@@ -5,6 +5,7 @@ export default {
   theme: {
     extend: {
       screens: {
+        'sphone': { 'max': '320px' },
         'phone': '320px',
         'tablet': '640px',
         'desktop': '1024px',
