@@ -13,7 +13,7 @@ import star2 from "../src/assets/icons/star2.svg"
 import arrow from "../src/assets/icons/arrow.svg"
 
 const Home = () => {
-    const backgroundImageUrl = '../src/assets/images/manGlass.png';
+    const backgroundImageUrl = '/assets/images/manGlass.png';
 
     // ../src/assets/images/man-wearing-smart-glasses-touching-virtual-screen\ 1.png
     return (
@@ -73,10 +73,10 @@ const Home = () => {
                 </section>
 
 
-                <section className="second-section "  style={{
-       backgroundImage: `url(${backgroundImageUrl})`,
-        
-      }}>
+                <section className="second-section " style={{
+                    backgroundImage: `url(${backgroundImageUrl})`,
+
+                }}>
                     <div className="mobile-tech">
                     </div>
 
