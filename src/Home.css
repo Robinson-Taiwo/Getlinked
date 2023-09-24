@@ -109,7 +109,7 @@
     width: 21.12919rem;
     height: 20.30556rem;
     background-image: url(../src/assets/images/mobile-tech.png);
-    @apply bg-center bg-no-repeat bg-cover ml-[1rem] sphone:w-[95vw]
+    @apply bg-center bg-no-repeat bg-cover ml-[0rem] sphone:w-[95vw]
 }
 
 .third-section{
