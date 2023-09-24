@@ -72,15 +72,18 @@ const Home = () => {
 
                 </section>
 
+                <div className="sec">
+                    <div className="second-section">
 
-                <section className="second-section " style={{
-                    backgroundImage: `url(${backgroundImageUrl})`,
+                        <div className="mobile-tech">
 
-                }}>
-                    <div className="mobile-tech">
+                        </div>
+
                     </div>
 
-                </section>
+
+                </div>
+
 
                 <div className="nav-line"></div>
 
