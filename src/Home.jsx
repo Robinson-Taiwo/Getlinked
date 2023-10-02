@@ -27,7 +27,9 @@ const Home = () => {
     const [second, setSecond] = useState(false)
     const [third, setThird] = useState(false)
     const [fourth, setFourth] = useState(false)
-    const [fifth, setFifth] = useState(false)
+    const [fifth, setFifth] = useState(false); const [sixth, setSixth] = useState(false)
+
+
 
 
     const backgroundImageUrl = '/public/smart.png';
@@ -258,12 +260,18 @@ const Home = () => {
                                 <p className="questions-texts">
                                     Can I work on a project I started before the hackathon?
                                 </p>
-
-                                <p className="plus-icon">
+                                {console.log(first)}
+                                <p onClick={() => setfirst(!first)} className={first ? "plus-rot" : "plus-icon"}>
                                     +
                                 </p>
 
                             </div>
+
+                            <div className={first ? "answers" : "hidden"}>
+                                We got answers to the questions that you might
+                                want to ask about getlinked Hackathon 1.0
+                            </div>
+
                             <div className="h-pline"></div>
                         </div>
 
@@ -275,10 +283,14 @@ const Home = () => {
                                     What happens if I need help during the hackathon?
                                 </p>
 
-                                <p className="plus-icon">
+                                <p onClick={() => setSecond(!second)} className={second ? "plus-rot" : "plus-icon"}>
                                     +
                                 </p>
 
+                            </div>
+                            <div className={second ? "answers" : "hidden"}>
+                                We got answers to the questions that you might
+                                want to ask about getlinked Hackathon 1.0
                             </div>
                             <div className="h-pline"></div>
                         </div>
@@ -291,10 +303,14 @@ const Home = () => {
                                     What happens if I don't have an idea for a project?
                                 </p>
 
-                                <p className="plus-icon">
+                                <p onClick={() => setThird(!third)} className={third ? "plus-rot" : "plus-icon"}>
                                     +
                                 </p>
 
+                            </div>
+                            <div className={third ? "answers" : "hidden"}>
+                                We got answers to the questions that you might
+                                want to ask about getlinked Hackathon 1.0
                             </div>
                             <div className="h-pline"></div>
                         </div>
@@ -307,11 +323,16 @@ const Home = () => {
                                     Can I join a team or do I have to come with one?
                                 </p>
 
-                                <p className="plus-icon">
+                                <p onClick={() => setFourth(!fourth)} className={fourth ? "plus-rot" : "plus-icon"}>
                                     +
                                 </p>
 
                             </div>
+                            <div className={fourth ? "answers" : "hidden"}>
+                                We got answers to the questions that you might
+                                want to ask about getlinked Hackathon 1.0
+                            </div>
+
                             <div className="h-pline"></div>
                         </div>
 
@@ -323,10 +344,14 @@ const Home = () => {
                                     What happens after the hackathon ends
                                 </p>
 
-                                <p className="plus-icon">
+                                <p onClick={() => setFifth(!fifth)} className={fifth ? "plus-rot" : "plus-icon"}>
                                     +
                                 </p>
 
+                            </div>
+                            <div className={fifth ? "answers" : "hidden"}>
+                                We got answers to the questions that you might
+                                want to ask about getlinked Hackathon 1.0
                             </div>
                             <div className="h-pline"></div>
                         </div>
@@ -339,10 +364,14 @@ const Home = () => {
                                     Can I work on a project I started before the hackathon?
                                 </p>
 
-                                <p className="plus-icon">
+                                <p onClick={() => setSixth(!sixth)} className={sixth ? "plus-rot" : "plus-icon"}>
                                     +
                                 </p>
 
+                            </div>
+                            <div className={sixth ? "answers" : "hidden"}>
+                                We got answers to the questions that you might
+                                want to ask about getlinked Hackathon 1.0
                             </div>
                             <div className="h-pline"></div>
                         </div>

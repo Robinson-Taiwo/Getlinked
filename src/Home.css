@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
 }
 
 
@@ -146,8 +148,8 @@
 }
 
 .third-texts{
-    width: 20.0625rem;
-   @apply h-[100%] text-center mt-[0.56rem] text-[0.8125rem] leading-[1.718rem] text-white mb-[6.02rem] px-[1rem]
+    /* width: 20.0625rem; */
+   @apply h-[100%] text-center mt-[0.56rem] text-[0.8125rem] leading-[1.718rem] text-white mb-[6.02rem] px-[1rem] w-[100%]
 }
 
 .fourth-section{
@@ -159,7 +161,7 @@
     
 height: 27.1875rem;
 background-image: url(../src/assets/images/purple-lens-mobile.png);
-@apply relative top-[-6.62rem]  w-[100%] items-center flex justify-center flex-col
+@apply relative top-[-6.62rem]  w-[100%] items-center flex justify-center flex-col bg-center bg-no-repeat bg-cover
 }
 
 .lady{
@@ -290,6 +292,12 @@ height: 0.0625rem;
    @apply text-normal text-[1.25rem] leading-[1.719rem]
 }
 
+.plus-rot{
+    transform: rotate(45deg);
+    transition: all 0.5 ease-in-out;
+    @apply text-normal text-[1.25rem] leading-[1.719rem]
+ }
+
 .ask-questions{
     @apply flex flex-col items-center justify-center gap-[1.1rem] 
 }
@@ -310,3 +318,8 @@ height: 0.0625rem;
     width: 20.4375rem;
 height: 20.4375rem;
 }
+
+.answers{
+    @apply text-white text-[0.75rem] leading-[1.125rem] w-[90%] mt-[0.5rem] block
+}
+
