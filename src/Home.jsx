@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import "./Home.css"
+import { useState } from 'react';
 import Navbar from './Navbar';
 import curve from "../src/assets/icons/curve.svg"
 import chain from "../src/assets/icons/chain.svg"
@@ -13,14 +13,26 @@ import star2 from "../src/assets/icons/star2.svg"
 import arrow from "../src/assets/icons/arrow.svg"
 import lady from "../src/assets/icons/lady2.svg"
 import chart from "../src/assets/icons/chart2.svg"
-
+import mark from "../src/assets/icons/question.svg"
+import tman from "../src/assets/icons/think2.svg"
 import pup from "../src/assets/icons/star_purple.svg"
+import "./Home.css"
 
 
 const Home = () => {
+
+    // setting useStates for the see more functionality in the frequently asked question section
+
+    const [first, setfirst] = useState(false)
+    const [second, setSecond] = useState(false)
+    const [third, setThird] = useState(false)
+    const [fourth, setFourth] = useState(false)
+    const [fifth, setFifth] = useState(false)
+
+
     const backgroundImageUrl = '/public/smart.png';
 
-    // ../src/assets/images/man-wearing-smart-glasses-touching-virtual-screen\ 1.png
+
     return (
         <div className='Home'>
 
@@ -236,6 +248,123 @@ const Home = () => {
                         We got answers to the questions that you might
                         want to ask about getlinked Hackathon 1.0
                     </p>
+
+                    <div className="ask-questions">
+
+                        <div className="que">
+
+                            <div className="quet">
+
+                                <p className="questions-texts">
+                                    Can I work on a project I started before the hackathon?
+                                </p>
+
+                                <p className="plus-icon">
+                                    +
+                                </p>
+
+                            </div>
+                            <div className="h-pline"></div>
+                        </div>
+
+                        <div className="que">
+
+                            <div className="quet">
+
+                                <p className="questions-texts">
+                                    What happens if I need help during the hackathon?
+                                </p>
+
+                                <p className="plus-icon">
+                                    +
+                                </p>
+
+                            </div>
+                            <div className="h-pline"></div>
+                        </div>
+
+                        <div className="que">
+
+                            <div className="quet">
+
+                                <p className="questions-texts">
+                                    What happens if I don't have an idea for a project?
+                                </p>
+
+                                <p className="plus-icon">
+                                    +
+                                </p>
+
+                            </div>
+                            <div className="h-pline"></div>
+                        </div>
+
+                        <div className="que">
+
+                            <div className="quet">
+
+                                <p className="questions-texts">
+                                    Can I join a team or do I have to come with one?
+                                </p>
+
+                                <p className="plus-icon">
+                                    +
+                                </p>
+
+                            </div>
+                            <div className="h-pline"></div>
+                        </div>
+
+                        <div className="que">
+
+                            <div className="quet">
+
+                                <p className="questions-texts">
+                                    What happens after the hackathon ends
+                                </p>
+
+                                <p className="plus-icon">
+                                    +
+                                </p>
+
+                            </div>
+                            <div className="h-pline"></div>
+                        </div>
+
+                        <div className="que">
+
+                            <div className="quet">
+
+                                <p className="questions-texts">
+                                    Can I work on a project I started before the hackathon?
+                                </p>
+
+                                <p className="plus-icon">
+                                    +
+                                </p>
+
+                            </div>
+                            <div className="h-pline"></div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    {/* thinking man icon */}
+
+                    <div className="question-marks flex flex-row ">
+
+                        <img className='small-mark' src={mark} alt="" />
+                        <img className='big-mark' src={mark} alt="" />
+                        <img className='small-mark' src={mark} alt="" />
+
+
+                    </div>
+
+                    <img src={tman} alt="" className="think2" />
 
 
                 </div>

@@ -254,7 +254,7 @@ background-image: url(../src/assets/images/purple-lens-mobile.png);
 }
 
 .sixth-section{
-    @apply bg-darkp w-[100vw] relative h-[50vw] flex justify-center items-center flex-col
+    @apply bg-darkp w-[100vw] relative  flex justify-center items-center flex-col
 }
 
 .limoz{
@@ -267,3 +267,46 @@ background-image: url(../src/assets/images/purple-lens-mobile.png);
    @apply  text-center text-[0.75rem] w-[17.312rem] text-white leading-[1.719rem] mt-[0.37rem] mb-[2.86rem]
 }
 
+.h-pline{
+    width: 18.50944rem;
+height: 0.0625rem;
+@apply bg-normal
+}
+
+.que{
+    width: 18.50944rem;
+    @apply flex flex-col
+}
+
+.quet{
+@apply flex flex-row justify-between
+}
+
+.questions-texts{
+    @apply text-white text-[0.75rem] leading-[1.125rem] w-[90%]
+}
+
+.plus-icon{
+   @apply text-normal text-[1.25rem] leading-[1.719rem]
+}
+
+.ask-questions{
+    @apply flex flex-col items-center justify-center gap-[1.1rem]
+}
+
+.small-mark{
+    @apply h-[2rem] mt-[1.25rem] 
+}
+
+.big-mark{
+    @apply h-[3rem] mr-[1.75rem] ml-[0.88rem]
+}
+
+.question-marks{
+    @apply mt-[2.12rem] relative left-[-2.5rem] top-[1.8rem]
+}
+
+.think2{
+    width: 20.4375rem;
+height: 20.4375rem;
+}
