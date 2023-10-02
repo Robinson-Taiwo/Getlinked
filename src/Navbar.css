@@ -12,7 +12,7 @@
 
 .nav-line {
     background: rgba(255, 255, 255, 0.18);
-    @apply h-[0.005rem] w-[100%]
+    @apply h-[0.005rem] w-[100%] 
 }
 
 .circle {
@@ -23,9 +23,10 @@
 }
 
 .menu {
-    @apply h-[100vh] top-0 w-[100vw] fixed bg-darkp opacity-100 left-0 flex-col text-white pl-[2.94rem]
-}
-
+    @apply min-h-screen top-0 w-[100vw] fixed bg-darkp opacity-100 left-0 flex-col text-white pl-[2.94rem];
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds viewport */
+    z-index: 1000; /* Set a higher z-index value */
+  }
 .ll{
     @apply hidden
 }

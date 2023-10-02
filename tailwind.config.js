@@ -16,6 +16,7 @@ export default {
         darkp: '#150E28',
         light: '#903AFF',
         normal: '#D434FE',
+        span: '#FF26B9',
       },
       // Define gradients using backgroundImage property
       backgroundImage: {
