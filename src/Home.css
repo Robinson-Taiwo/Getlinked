@@ -268,13 +268,13 @@ background-image: url(../src/assets/images/purple-lens-mobile.png);
 }
 
 .h-pline{
-    width: 18.50944rem;
+    width: 16.50944rem;
 height: 0.0625rem;
 @apply bg-normal
 }
 
 .que{
-    width: 18.50944rem;
+    width: 16.50944rem;
     @apply flex flex-col
 }
 
@@ -291,7 +291,7 @@ height: 0.0625rem;
 }
 
 .ask-questions{
-    @apply flex flex-col items-center justify-center gap-[1.1rem]
+    @apply flex flex-col items-center justify-center gap-[1.1rem] 
 }
 
 .small-mark{
