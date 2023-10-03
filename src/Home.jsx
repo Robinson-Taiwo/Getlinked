@@ -84,15 +84,10 @@ const Home = () => {
 
                 <div className="nav-line"></div>
                 <ThirdSection />
-
                 <FourthSection />
-
                 <div className="h-line"></div>
-
                 <FifthSection />
-
                 <SixthSection />
-
             </section>
         </div>
     );
