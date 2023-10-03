@@ -317,9 +317,66 @@ height: 0.0625rem;
 .think2{
     width: 20.4375rem;
 height: 20.4375rem;
+@apply mb-[3.06rem]
 }
 
 .answers{
     @apply text-white text-[0.75rem] leading-[1.125rem] w-[90%] mt-[0.5rem] block
 }
 
+
+.seventh-line{
+    @apply pt-[5rem] pr-[1.88rem] pl-[2.86rem] bg-darkp flex justify-center items-center flex-col
+}
+
+.oline{
+    background: rgba(255, 255, 255, 0.18);
+    @apply h-[0.005rem] w-[100%] 
+}
+
+.timeline{
+    @apply font-bold text-[1.25rem] leading-[133%] text-white
+}
+
+.timeline-desc{
+    @apply font-normal leading-[172.4%] text-[0.875rem] text-center text-white w-[18.25rem] mt-[1.31rem] mb-[3.5rem]
+}
+
+.sub-timeline{
+    @apply flex flex-row gap-[0.56rem] mb-[1.69rem]
+}
+
+.line-c{
+@apply flex flex-col items-center gap-[0.44rem]
+}
+
+.time-line{
+    width: 0.125rem;
+    height: 4.8125rem;
+    @apply bg-light
+}
+
+.time-circle{
+    width: 1.2075rem;
+height: 1.2075rem;
+background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
+
+    @apply rounded-[1.65625rem] text-[0.75rem] text-white font-bold flex items-center justify-center
+}
+
+.sub-timeline-text{
+    @apply flex flex-col justify-between
+}
+
+.sub-timeline-text h2{
+    @apply text-[0.75rem] font-bold text-normal
+}
+
+.sub-timeline-text p{
+    @apply text-[0.75rem] text-white
+ leading-[159.9%]
+}
+
+.sub-timeline-text h3{
+    @apply text-[0.75rem] font-bold text-normal
+}

@@ -267,6 +267,220 @@ const Home = () => {
                     </div>
                     <img src={tman} alt="" className="think2" loading="lazy" />
                 </div>
+
+                <div className="oline"></div>
+
+                <section className="seventh-line">
+
+                    <h1 className="timeline">
+                        Timeline
+                    </h1>
+
+                    <h4 className="timeline-desc">
+                        Here is the breakdown of the time we
+                        anticipate using for the upcoming event.
+                    </h4>
+
+
+                    <div className="sub-timeline">
+
+                        <div className="line-c">
+
+                            <div className="time-line">
+
+                            </div>
+
+                            <div className="time-circle">
+                                1
+                            </div>
+
+                        </div>
+
+                        <div className="sub-timeline-text">
+
+                            <h2>
+                                Hackathon Announcement
+                            </h2>
+
+                            <p>
+                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                            </p>
+
+                            <h3>
+                                November 18, 2023
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                    <div className="sub-timeline">
+
+                        <div className="line-c">
+
+                            <div className="time-line">
+
+                            </div>
+
+                            <div className="time-circle">
+                                2
+                            </div>
+
+                        </div>
+
+                        <div className="sub-timeline-text">
+
+                            <h2>
+                                Hackathon Announcement
+                            </h2>
+
+                            <p>
+                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                            </p>
+
+                            <h3>
+                                November 18, 2023
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                    <div className="sub-timeline">
+
+                        <div className="line-c">
+
+                            <div className="time-line">
+
+                            </div>
+
+                            <div className="time-circle">
+                                3
+                            </div>
+
+                        </div>
+
+                        <div className="sub-timeline-text">
+
+                            <h2>
+                                Hackathon Announcement
+                            </h2>
+
+                            <p>
+                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                            </p>
+
+                            <h3>
+                                November 18, 2023
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div className="sub-timeline">
+
+                        <div className="line-c">
+
+                            <div className="time-line">
+
+                            </div>
+
+                            <div className="time-circle">
+                                4
+                            </div>
+
+                        </div>
+
+                        <div className="sub-timeline-text">
+
+                            <h2>
+                                Hackathon Announcement
+                            </h2>
+
+                            <p>
+                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                            </p>
+
+                            <h3>
+                                November 18, 2023
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div className="sub-timeline">
+
+                        <div className="line-c">
+
+                            <div className="time-line">
+
+                            </div>
+
+                            <div className="time-circle">
+                                5
+                            </div>
+
+                        </div>
+
+                        <div className="sub-timeline-text">
+
+                            <h2>
+                                Hackathon Announcement
+                            </h2>
+
+                            <p>
+                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                            </p>
+
+                            <h3>
+                                November 18, 2023
+                            </h3>
+
+                        </div>
+
+
+                        
+
+                    </div>
+
+                    <div className="sub-timeline">
+
+                        <div className="line-c">
+
+                            <div className="time-line">
+
+                            </div>
+
+                            <div className="time-circle">
+                                6
+                            </div>
+
+                        </div>
+
+                        <div className="sub-timeline-text">
+
+                            <h2>
+                                Hackathon Announcement
+                            </h2>
+
+                            <p>
+                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                            </p>
+
+                            <h3>
+                                November 18, 2023
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
             </section>
         </div>
     );
