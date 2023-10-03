@@ -260,7 +260,7 @@ const Home = () => {
                                 <p className="questions-texts">
                                     Can I work on a project I started before the hackathon?
                                 </p>
-                                {console.log(first)}
+                                {/* {console.log(first)} */}
                                 <p onClick={() => setfirst(!first)} className={first ? "plus-rot" : "plus-icon"}>
                                     +
                                 </p>
