@@ -514,8 +514,8 @@ const Home = () => {
 <div className="md2-text">
     <p>2nd </p>
 <p>Runner</p>
-<p className='md2l' >N 300,000
-</p>
+<h6 className='md2l' >N 300,000
+</h6>
 </div>
 
 
@@ -527,7 +527,13 @@ const Home = () => {
 <img src={gold} alt="" className="medals" />
 
 <div className="md1">
-    
+<div className="md2-text">
+    <p >1st </p>
+<p>Runner</p>
+<h6 className='md1l' >N 400,000
+</h6>
+</div>
+
 </div>
 
 
@@ -537,6 +543,13 @@ const Home = () => {
 <img src={bronze} alt="" className="medals2" />
 
 <div className="md2">
+<div className="md2-text">
+    <p>3rd </p>
+<p>Runner</p>
+<h6
+ className='md2l' >N 150,000
+</h6>
+</div>
 
 </div>
 

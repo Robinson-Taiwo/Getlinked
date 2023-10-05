@@ -385,7 +385,7 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
     background: url(../src/assets/images/rewardbg.png), lightgray 0px -0.083px / 100% 109.967% no-repeat;
     background-blend-mode: color-burn;
 
-    @apply  w-[100vw] bg-cover bg-no-repeat bg-center bg-darkp flex-col flex items-center pt-[4.5rem]
+    @apply  w-[100vw] bg-cover bg-no-repeat bg-center bg-darkp flex-col flex items-center pt-[4.5rem] pb-[5.58rem]
 }
 
 .eight-header{
@@ -428,7 +428,7 @@ flex-shrink: 0;
 height: 7.85444rem;
 border: 1px solid #D434FE;
 background: rgba(212, 52, 254, 0.12);
-    @apply rounded-[0.5rem] relative top-[-2rem] z-10 pt-[3rem] text-white flex flex-col items-center text-center
+    @apply rounded-[0.5rem] relative top-[-2.57rem] z-10 pt-[2.9rem] text-white flex flex-col items-center text-center
 }
 
 .md1{
@@ -446,9 +446,22 @@ background: rgba(144, 58, 255, 0.12);
 }
 
 .md2l{
-@apply text-normal
+@apply text-normal mt-[0.5rem]
 }
+
+.md1l{
+    @apply text-light mt-[0.5rem]
+    }
+    
 
 .trophs{
     @apply flex items-center justify-center flex-col
+}
+
+.md2-text p{
+    @apply text-[0.75rem] font-bold 
+}
+
+.md2-text {
+    @apply flex flex-col 
 }
