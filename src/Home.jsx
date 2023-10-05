@@ -15,7 +15,11 @@ import lady from "../src/assets/icons/lady2.svg"
 import chart from "../src/assets/icons/chart2.svg"
 import mark from "../src/assets/icons/question.svg"
 import tman from "../src/assets/icons/think2.svg"
+import trophy from "../src/assets/icons/trophy.svg"
 import pup from "../src/assets/icons/star_purple.svg"
+import bronze from "../src/assets/icons/bronze_medal.svg"
+import gold from "../src/assets/icons/gold_medal.svg"
+import silver from "../src/assets/icons/silver_medal.svg"
 import "./Home.css"
 
 
@@ -33,7 +37,10 @@ const Home = () => {
 
     return (
         <div className='Home'>
-            <Navbar />
+            <div className="navvy">
+                <Navbar />
+
+            </div>
             <section className="Home-first-section">
                 <section className='first-section'>
                     <div className="igniting">
@@ -331,11 +338,13 @@ const Home = () => {
                         <div className="sub-timeline-text">
 
                             <h2>
-                                Hackathon Announcement
+                                Teams Registration begins
                             </h2>
 
                             <p>
-                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                                Interested teams can now show their interest
+                                in the getlinked tech hackathon 1.0 2023 by
+                                proceeding to register
                             </p>
 
                             <h3>
@@ -363,11 +372,12 @@ const Home = () => {
                         <div className="sub-timeline-text">
 
                             <h2>
-                                Hackathon Announcement
+                                Teams Registration ends
                             </h2>
 
                             <p>
-                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                                Interested Participants are no longer Allowed
+                                to register
                             </p>
 
                             <h3>
@@ -396,11 +406,12 @@ const Home = () => {
                         <div className="sub-timeline-text">
 
                             <h2>
-                                Hackathon Announcement
+                                Announcement of the accepted teams
+                                and ideas
                             </h2>
 
                             <p>
-                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                                The getlinked tech hackathon 1.0 is                             formally announced to the general public and teams begin to get ready to register
                             </p>
 
                             <h3>
@@ -443,7 +454,7 @@ const Home = () => {
                         </div>
 
 
-                        
+
 
                     </div>
 
@@ -480,6 +491,64 @@ const Home = () => {
                     </div>
 
                 </section>
+
+                <div className="eight-line">
+
+                    <h1 className="eight-header">
+                        Prizes and <span className="header-purple"> Rewards</span>
+
+                    </h1>
+
+
+                    <img src={trophy} alt="" className="trophy-icon" />
+
+
+<div className="rewards-coner">
+
+<div className="trophs2">
+
+<img src={silver} alt="" className="medals2" />
+
+<div className="md2">
+
+<div className="md2-text">
+    <p>2nd </p>
+<p>Runner</p>
+<p className='md2l' >N 300,000
+</p>
+</div>
+
+
+</div>
+
+</div>
+
+<div className="trophs">
+<img src={gold} alt="" className="medals" />
+
+<div className="md1">
+    
+</div>
+
+
+</div>
+
+<div className="trophs2">
+<img src={bronze} alt="" className="medals2" />
+
+<div className="md2">
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+                </div>
 
             </section>
         </div>
