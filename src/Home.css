@@ -487,7 +487,7 @@ background: rgba(144, 58, 255, 0.12);
 }
 
 .tenth-section{
-    @apply pt-[4.44rem] flex flex-col items-center bg-darkp justify-center 
+    @apply pt-[4.44rem] flex flex-col items-center bg-darkp justify-center  pb-[4rem]
 }
 
 .milo{
@@ -501,5 +501,9 @@ background: rgba(144, 58, 255, 0.12);
 .tenth-section h6{
     color: rgba(255, 255, 255, 0.75);
 
-    @apply  text-[0.75rem] leading-[1.178rem]
+    @apply  text-[0.75rem] leading-[1.178rem] mb-[1.75rem] 
+}
+
+.ppat{
+    @apply text-[0.75rem] leading-[188.4%] text-center w-[18.06rem] text-white
 }

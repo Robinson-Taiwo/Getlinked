@@ -589,10 +589,16 @@ const Home = () => {
 
                     <h1 className="tenth-head">
                         Privacy Policy and <span className='milo' >Terms</span>
-                        
+
                     </h1>
 
                     <h6>Last updated on September 12, 2023</h6>
+
+                    <p className="ppat">
+                        Below are our privacy & policy, which outline a
+                        lot of goodies. it’s our aim to always take of our
+                        participant
+                    </p>
 
 
                 </div>
