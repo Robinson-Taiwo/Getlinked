@@ -17,6 +17,7 @@ import mark from "../src/assets/icons/question.svg"
 import tman from "../src/assets/icons/think2.svg"
 import trophy from "../src/assets/icons/trophy.svg"
 import pup from "../src/assets/icons/star_purple.svg"
+import partners from "../src/assets/icons/partners.png"
 import bronze from "../src/assets/icons/bronze_medal.svg"
 import gold from "../src/assets/icons/gold_medal.svg"
 import silver from "../src/assets/icons/silver_medal.svg"
@@ -503,63 +504,96 @@ const Home = () => {
                     <img src={trophy} alt="" className="trophy-icon" />
 
 
-<div className="rewards-coner">
+                    <div className="rewards-coner">
 
-<div className="trophs2">
+                        <div className="trophs2">
 
-<img src={silver} alt="" className="medals2" />
+                            <img src={silver} alt="" className="medals2" />
 
-<div className="md2">
+                            <div className="md2">
 
-<div className="md2-text">
-    <p>2nd </p>
-<p>Runner</p>
-<h6 className='md2l' >N 300,000
-</h6>
-</div>
-
-
-</div>
-
-</div>
-
-<div className="trophs">
-<img src={gold} alt="" className="medals" />
-
-<div className="md1">
-<div className="md2-text">
-    <p >1st </p>
-<p>Runner</p>
-<h6 className='md1l' >N 400,000
-</h6>
-</div>
-
-</div>
+                                <div className="md2-text">
+                                    <p>2nd </p>
+                                    <p>Runner</p>
+                                    <h6 className='md2l' >N 300,000
+                                    </h6>
+                                </div>
 
 
-</div>
+                            </div>
 
-<div className="trophs2">
-<img src={bronze} alt="" className="medals2" />
+                        </div>
 
-<div className="md2">
-<div className="md2-text">
-    <p>3rd </p>
-<p>Runner</p>
-<h6
- className='md2l' >N 150,000
-</h6>
-</div>
+                        <div className="trophs">
+                            <img src={gold} alt="" className="medals" />
 
-</div>
+                            <div className="md1">
+                                <div className="md2-text">
+                                    <p >1st </p>
+                                    <p>Runner</p>
+                                    <h6 className='md1l' >N 400,000
+                                    </h6>
+                                </div>
 
-
-</div>
+                            </div>
 
 
+                        </div>
+
+                        <div className="trophs2">
+                            <img src={bronze} alt="" className="medals2" />
+
+                            <div className="md2">
+                                <div className="md2-text">
+                                    <p>3rd </p>
+                                    <p>Runner</p>
+                                    <h6
+                                        className='md2l' >N 150,000
+                                    </h6>
+                                </div>
+
+                            </div>
 
 
-</div>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+                <section className="ninth-section">
+
+                    <h1 className="pas">
+                        Partners and Sponsors
+                    </h1>
+
+                    <p className="past">
+                        Getlinked Hackathon 1.0 is honored to have the
+                        following major companies as its partners and
+                        sponsors
+                    </p>
+
+                    <div className="partners">
+
+                        <img src={partners} alt="" />
+                    </div>
+
+                </section>
+
+
+                <div className="tenth-section">
+
+                    <h1 className="tenth-head">
+                        Privacy Policy and <span className='milo' >Terms</span>
+                        
+                    </h1>
+
+                    <h6>Last updated on September 12, 2023</h6>
+
 
                 </div>
 

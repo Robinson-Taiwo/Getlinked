@@ -7,7 +7,6 @@
 
 
 .Home {
-    /* overflow-x: hidden; */
     @apply h-[100vh] w-[100vw]
 }
 
@@ -148,7 +147,6 @@
 }
 
 .third-texts{
-    /* width: 20.0625rem; */
    @apply h-[100%] text-center mt-[0.56rem] text-[0.8125rem] leading-[1.718rem] text-white mb-[6.02rem] px-[1rem] w-[100%]
 }
 
@@ -464,4 +462,44 @@ background: rgba(144, 58, 255, 0.12);
 
 .md2-text {
     @apply flex flex-col 
+}
+
+
+
+
+.ninth-section{
+    @apply bg-darkp w-[100vw] flex flex-col justify-center items-center  pt-[2.56rem] pr-[1.69rem] pl-[1.88rem] 
+}
+
+.pas{
+ @apply text-white text-[1.25rem] font-bold leading-[1.718rem] mb-[0.31rem] 
+}
+
+.past{
+    @apply text-white leading-[1.28rem] text-[0.75rem] text-center w-[17.87rem] mb-[2.56rem] 
+}
+
+.partners{
+    border-radius: 0.3125rem;
+    border: 1px solid #D434FE;
+    background: rgba(255, 255, 255, 0.01);
+    @apply px-[2.95rem] py-[2.39rem] h-[9.29rem] w-[100%] mb-[6.53rem]
+}
+
+.tenth-section{
+    @apply pt-[4.44rem] flex flex-col items-center bg-darkp justify-center 
+}
+
+.milo{
+    @apply text-normal
+}
+
+.tenth-head{
+    @apply text-white text-[1.25rem] font-bold  w-[11.7rem]  text-center 
+}
+
+.tenth-section h6{
+    color: rgba(255, 255, 255, 0.75);
+
+    @apply  text-[0.75rem] leading-[1.178rem]
 }
