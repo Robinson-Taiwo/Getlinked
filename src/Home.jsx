@@ -11,6 +11,15 @@ import fire from "../src/assets/icons/fire.svg"
 import bulb from "../src/assets/icons/bulb.svg"
 import star from "../src/assets/icons/star1.svg"
 import star2 from "../src/assets/icons/star2.svg"
+
+
+import pupstar from "../src/assets/icons/footer_small_purple.svg"
+import transStar from "../src/assets/icons/trans-star.svg"
+import smallStar from "../src/assets/icons/footer-small-star.svg"
+import sw from "../src/assets/icons/sw.svg"
+import px from "../src/assets/icons/px.svg"
+
+
 import arrow from "../src/assets/icons/arrow.svg"
 import check from "../src/assets/icons/check.svg"
 import shield from "../src/assets/icons/sheild.svg"
@@ -591,6 +600,8 @@ const Home = () => {
 
                 <div className="tenth-section">
 
+                    <img src={transStar} className='small-stars' alt="" />
+
                     <h1 className="tenth-head">
                         Privacy Policy and <span className='milo' >Terms</span>
 
@@ -666,7 +677,7 @@ const Home = () => {
 
 
                 <div>
-                    <Footer/>
+                    <Footer />
                 </div>
 
             </section>
