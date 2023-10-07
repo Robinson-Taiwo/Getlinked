@@ -244,8 +244,8 @@ background-image: url(../src/assets/images/purple-lens-mobile.png);
 .chart-more{
     width: 6.02188rem;
     height: 1.95913rem;
-    @apply bg-primary rounded-[0.25rem] text-[0.75rem] text-white mb-[3.67rem]
-}
+    @apply bg-primary rounded-[0.25rem] text-[0.75rem] text-white mb-[3.67rem] flex items-center justify-center 
+} 
 
 .chart-star{
      width: 0.625rem;
@@ -487,7 +487,7 @@ background: rgba(144, 58, 255, 0.12);
 }
 
 .tenth-section{
-    @apply pt-[4.44rem] flex flex-col items-center bg-darkp justify-center  pb-[4rem]
+    @apply pt-[4.44rem] flex flex-col items-center bg-darkp justify-center  pb-[5.19rem] pr-[3.06rem] pl-[2.88rem] 
 }
 
 .milo{
@@ -506,4 +506,51 @@ background: rgba(144, 58, 255, 0.12);
 
 .ppat{
     @apply text-[0.75rem] leading-[188.4%] text-center w-[18.06rem] text-white
+}
+
+.ppat-inner{
+    border-radius: 0.3125rem;
+border: 1px solid #D434FE;
+background: rgba(217, 217, 217, 0.03);
+@apply w-[100%] mt-[1.88rem] pr-[0.75rem] pl-[0.94rem] pt-[2.81rem] flex flex-col justify-center 
+}
+
+.ppat-inner-one{
+    @apply text-white text-center text-[0.75rem] leading-[216.4%]
+}
+
+.ppat-inner h3{
+    @apply ml-[0.44rem] font-bold text-[0.812rem] text-normal mt-[1.331rem]
+}
+
+.ppat-inner h4{
+    @apply ml-[0.44rem] font-bold text-[0.75rem] text-white leading-[216.4%] mb-[1.31rem]
+}
+
+.standard-lisence{
+    @apply flex flex-row gap-[0.88rem]  pr-[0.06rem] items-start
+}
+
+.standard-lisence p{
+    @apply text-white text-[0.75rem] leading-[175.9%]
+}
+
+.standard-lisence img{
+    @apply mt-[0.38rem]
+}
+
+.readMore-container{
+    @apply mt-[1.5rem] 
+}
+
+.shield{
+  @apply  mt-[3rem]  w-[15.56rem] h-[19.437rem]
+}
+
+.keyboy{
+    @apply absolute top-[9rem] left-[-1.3rem]
+}
+
+.shield-container{
+    @apply relative h-[29.5rem]
 }

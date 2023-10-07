@@ -6,11 +6,14 @@ import { useState } from 'react';
 import Navbar from './Navbar';
 import curve from "../src/assets/icons/curve.svg"
 import chain from "../src/assets/icons/chain.svg"
+import boy from "../src/assets/icons/keyboy.svg"
 import fire from "../src/assets/icons/fire.svg"
 import bulb from "../src/assets/icons/bulb.svg"
 import star from "../src/assets/icons/star1.svg"
 import star2 from "../src/assets/icons/star2.svg"
 import arrow from "../src/assets/icons/arrow.svg"
+import check from "../src/assets/icons/check.svg"
+import shield from "../src/assets/icons/sheild.svg"
 import lady from "../src/assets/icons/lady2.svg"
 import chart from "../src/assets/icons/chart2.svg"
 import mark from "../src/assets/icons/question.svg"
@@ -22,6 +25,7 @@ import bronze from "../src/assets/icons/bronze_medal.svg"
 import gold from "../src/assets/icons/gold_medal.svg"
 import silver from "../src/assets/icons/silver_medal.svg"
 import "./Home.css"
+import Footer from './Footer';
 
 
 const Home = () => {
@@ -601,6 +605,68 @@ const Home = () => {
                     </p>
 
 
+                    <div className="ppat-inner">
+
+                        <p className="ppat-inner-one">
+
+                            At getlinked tech Hackathon 1.0, we
+                            value your privacy and are committed
+                            to protecting your personal information.
+                            This Privacy Policy outlines how we collect,
+                            use, disclose, and safeguard your data
+                            when you participate in our tech hackathon
+                            event. By participating in our event, you
+                            consent to the practices described in this
+                            policy.
+                        </p>
+
+                        <h3>
+                            Licensing Policy
+                        </h3>
+                        <h4>
+                            Here are terms of our Standard License:
+                        </h4>
+
+                        <div className='standard-lisence'>
+                            <img src={check} alt="" />
+
+                            <p>The Standard License grants you a
+                                non-exclusive right to navigate and
+                                register for our event</p>
+                        </div>
+
+
+                        <div className='standard-lisence mt-[1.5rem]'>
+                            <img src={check} alt="" />
+
+                            <p>You are licensed to use the item
+                                available at any free source sites, for
+                                your project developement</p>
+                        </div>
+
+
+                        <div className='readMore-container w-[100%]  flex items-center justify-center ' >
+                            <div className="chart-more ">
+                                Read More
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div className='shield-container' >
+
+                        <img src={shield} alt="" className="shield" />
+
+                        <img src={boy} alt="" className="keyboy" />
+                    </div>
+
+
+                </div>
+
+
+                <div>
+                    <Footer/>
                 </div>
 
             </section>

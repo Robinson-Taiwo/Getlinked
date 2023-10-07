@@ -1,0 +1,16 @@
+.footer{
+    @apply bg-[#100B20] pl-[3.45rem] pt-[3.19rem] pr-[5.06rem]
+}
+
+.footer-logo{
+    @apply w-[5.94rem] h-[1.56rem] mb-[0.75rem]
+}
+
+.footer-text{
+    @apply text-white leading-[172.4%] text-[0.75rem]  mb-[2.44rem] 
+}
+
+.patition{
+    width: 0.125rem;
+height: 1.0625rem;
+}
