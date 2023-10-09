@@ -11,6 +11,8 @@ import fire from "../src/assets/icons/fire.svg"
 import bulb from "../src/assets/icons/bulb.svg"
 import star from "../src/assets/icons/star1.svg"
 import star2 from "../src/assets/icons/star2.svg"
+import bgleft from "../src/assets/images/purple-lens-mobile.png"
+import bgright from "../src/assets/images/purpleRight.png"
 
 
 import pupstar from "../src/assets/icons/footer_small_purple.svg"
@@ -126,7 +128,10 @@ const Home = () => {
                     <div className="nav-line"></div>
                 </div>
                 <div className="fourth-section">
-                    <div className="first-left-purple">
+                    <div className="first-left-purple ">
+
+                        <img src={bgleft} alt="" className="bgleftll" />
+
                         <img className='starfl' src={star} alt="" loading="lazy" />
                         <img src={lady} alt="" className="lady" />
                     </div>
@@ -153,6 +158,10 @@ const Home = () => {
                 <div className="fifth-section bg-darkp">
                     <img className='limo' src={pup} alt="" loading="lazy" />
                     <img src={chart} alt="" className="chart-icon" loading="lazy" />
+
+                    <img src={bgleft} alt="" className="bgleftnj" />
+
+
                     <div className="chart-texts">
                         <div className="chart-head">
                             Judging Criteria<span className='text-normal'>Key attributes </span>
@@ -169,8 +178,12 @@ const Home = () => {
                         <p className="chart-text">
                             <span className='spanText'>Technical Complexity:</span> Evaluate the technical sophistication of the solution. Judges would consider the complexity of the code, the use of advanced technologies or algorithms, and the scalability of the solution.
                         </p>
-                        <p className="chart-text">
+                        <p className="chart-text relative">
                             <span className='spanText'>Adherence to Hackathon Rules:</span>  Judges will Ensure that the team adhered to the rules and guidelines of the hackathon, including deadlines, use of specific technologies or APIs, and any other competition-specific requirements.
+
+
+                            <img src={bgright} alt="" className="bgleftnjl" />
+
                         </p>
                         <button className="chart-more">
                             Read More
@@ -513,11 +526,14 @@ const Home = () => {
 
                     </h1>
 
+                    <img src={bgleft} alt="" className="bgleftn" />
 
                     <img src={trophy} alt="" className="trophy-icon" />
 
 
-                    <div className="rewards-coner">
+                    <div className="rewards-coner relative">
+
+                        <img src={bgright} alt="" className="bgright" />
 
                         <div className="trophs2">
 
@@ -584,6 +600,8 @@ const Home = () => {
                         Partners and Sponsors
                     </h1>
 
+                    <img src={bgleft} alt="" className="bgleftn" />
+
                     <p className="past">
                         Getlinked Hackathon 1.0 is honored to have the
                         following major companies as its partners and
@@ -591,12 +609,20 @@ const Home = () => {
                     </p>
 
                     <div className="partners">
+                        <img src={bgright} alt="" className="bgrightps" />
+
+                        <img className='psx absolute' src={px} alt="" />
 
                         <img src={partners} alt="" />
+
+<img src={star} className='starpartl' alt="" />
+
                     </div>
+
 
                 </section>
 
+                <div className="oline"></div>
 
                 <div className="tenth-section">
 
@@ -609,11 +635,15 @@ const Home = () => {
 
                     <h6>Last updated on September 12, 2023</h6>
 
-                    <p className="ppat">
+                    <p className="ppat relative">
                         Below are our privacy & policy, which outline a
                         lot of goodies. it’s our aim to always take of our
                         participant
+
+                        <img className='px absolute top-[3.4rem] left-[15rem]' src={px} alt="" />
                     </p>
+
+
 
 
                     <div className="ppat-inner">
@@ -638,21 +668,27 @@ const Home = () => {
                             Here are terms of our Standard License:
                         </h4>
 
-                        <div className='standard-lisence'>
+                        <div className='standard-lisence relative'>
                             <img src={check} alt="" />
 
                             <p>The Standard License grants you a
                                 non-exclusive right to navigate and
                                 register for our event</p>
+
+
                         </div>
 
 
-                        <div className='standard-lisence mt-[1.5rem]'>
+                        <img src={bgleft} className='bgleft' alt="" />
+
+                        <div className='standard-lisence mt-[1.5rem] relative'>
                             <img src={check} alt="" />
 
                             <p>You are licensed to use the item
                                 available at any free source sites, for
                                 your project developement</p>
+
+                            <img src={px} alt="mimi" className='mimi' />
                         </div>
 
 

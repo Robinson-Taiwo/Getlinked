@@ -157,15 +157,16 @@
 
 .first-left-purple{
     
-height: 29.1875rem;
-background-image: url(../src/assets/images/purple-lens-mobile.png);
-@apply relative top-[-6.62rem]  w-[100%] items-center flex justify-center flex-col bg-center bg-no-repeat bg-cover
+height: 23.1875rem;
+z-index: 5;
+/* background-image: url(../src/assets/images/purple-lens-mobile.png); */
+@apply relative top-[-0.62rem]  w-[100%] items-center flex justify-center flex-col bg-center bg-no-repeat bg-cover
 }
 
 .lady{
     width: 18.375rem;
     height: 23.875rem;
-@apply relative top-[6.62rem] 
+@apply relative top-[0rem] 
 }
 
 .fourth-head{
@@ -176,7 +177,7 @@ background-image: url(../src/assets/images/purple-lens-mobile.png);
 
 .first-right-purple{
  
-    @apply w-[100%]  relative flex flex-col  items-center  bg-center bg-cover bg-no-repeat p-[2.81rem] bottom-[2rem]
+    @apply w-[100%]  relative flex flex-col  items-center  bg-center bg-cover bg-no-repeat p-[0rem] bottom-[2rem]
 }
 
 .rulesg{
@@ -184,7 +185,7 @@ background-image: url(../src/assets/images/purple-lens-mobile.png);
 }
 
 .rulesg-text{
-    @apply text-[0.8125rem] text-center leading-[1.79rem] h-[15.5rem] text-white
+    @apply text-[0.8125rem] text-center leading-[1.79rem] h-[15.5rem] text-white w-[18rem]
 }
 
 .starfl{
@@ -193,6 +194,25 @@ background-image: url(../src/assets/images/purple-lens-mobile.png);
         height: 0.75rem;
         flex-shrink: 0;
  @apply relative top-[18.5rem] right-[9rem] 
+
+}
+
+
+.psx{
+    
+    width: 0.625rem;
+    height: 0.75rem;
+    flex-shrink: 0;
+@apply relative top-[12rem] left-[3rem] 
+
+}
+
+.starpartl{
+    
+    width: 0.625rem;
+    height: 0.75rem;
+    flex-shrink: 0;
+@apply absolute top-[19.2rem] right-[4rem] 
 
 }
 
@@ -210,6 +230,7 @@ background-image: url(../src/assets/images/purple-lens-mobile.png);
 }
 
 .fifth-section{
+    z-index: 5;
     @apply flex items-center   relative px-[1.81rem] flex-col justify-center 
 }
 
@@ -382,8 +403,8 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
 .eight-line{
     background: url(../src/assets/images/rewardbg.png), lightgray 0px -0.083px / 100% 109.967% no-repeat;
     background-blend-mode: color-burn;
-
-    @apply  w-[100vw] bg-cover bg-no-repeat bg-center bg-darkp flex-col flex items-center pt-[4.5rem] pb-[5.58rem]
+z-index: 5;
+    @apply  w-[100vw] bg-cover bg-no-repeat bg-center bg-darkp flex-col flex items-center pt-[4.5rem] pb-[5.58rem] relative
 }
 
 .eight-header{
@@ -418,7 +439,8 @@ flex-shrink: 0;
 }
 
 .rewards-coner{
-    @apply flex flex-row 
+    z-index: 5;
+    @apply flex flex-row relative
 }
 
 .md2{
@@ -426,7 +448,7 @@ flex-shrink: 0;
 height: 7.85444rem;
 border: 1px solid #D434FE;
 background: rgba(212, 52, 254, 0.12);
-    @apply rounded-[0.5rem] relative top-[-2.57rem] z-10 pt-[2.9rem] text-white flex flex-col items-center text-center
+    @apply rounded-[0.5rem] relative top-[-2.57rem] z-10 pt-[2.9rem] text-white flex flex-col items-center text-center 
 }
 
 .md1{
@@ -468,7 +490,8 @@ background: rgba(144, 58, 255, 0.12);
 
 
 .ninth-section{
-    @apply bg-darkp w-[100vw] flex flex-col justify-center items-center  pt-[2.56rem] pr-[1.69rem] pl-[1.88rem] 
+    z-index: 5;
+    @apply bg-darkp w-[100vw] flex flex-col justify-center items-center  pt-[2.56rem] pr-[1.69rem] pl-[1.88rem]  relative
 }
 
 .pas{
@@ -487,7 +510,8 @@ background: rgba(144, 58, 255, 0.12);
 }
 
 .tenth-section{
-    @apply pt-[4.44rem] flex flex-col items-center bg-darkp   pb-[5.19rem] pr-[3.06rem] pl-[2.88rem] 
+    z-index: -100;
+    @apply pt-[4.44rem] flex flex-col items-center bg-darkp   pb-[5.19rem] pr-[3.06rem] pl-[2.88rem] relative 
 }
 
 .milo{
@@ -505,7 +529,7 @@ background: rgba(144, 58, 255, 0.12);
 }
 
 .ppat{
-    @apply text-[0.75rem] leading-[188.4%] text-center w-[18.06rem] text-white
+    @apply text-[0.75rem] leading-[188.4%] text-center w-[17.0625rem] text-white 
 }
 
 .ppat-inner{
@@ -572,5 +596,107 @@ background: rgba(217, 217, 217, 0.03);
 
 
 .small-stars{
-    @apply absolute w-[0.5rem] h-[0.5rem] 
+    @apply absolute w-[0.5rem] h-[0.5rem] left-[17rem] top-[3rem]
+}
+
+
+.mimi{
+    @apply absolute top-[-2rem] left-[-3rem]
+}
+
+
+/* background purple overlay for left side of the website */
+
+.bgleft{
+    z-index: -100;
+
+width: 17.8125rem;
+height: 22.875rem;
+background-blend-mode: hard-light;
+@apply absolute left-[-3rem] top-[33rem]
+}
+
+.bgleftn{
+    z-index: -100;
+
+width: 17.8125rem;
+height: 22.875rem;
+background-blend-mode: hard-light;
+@apply absolute left-[-3rem] top-[-5rem]
+}
+
+.bgleftnp{
+    z-index: -100;
+width: 17.8125rem;
+height: 22.875rem;
+background-blend-mode: hard-light;
+@apply absolute left-[5.6rem] top-[14rem]
+}
+
+.bgleftnp{
+    z-index: -100;
+width: 17.8125rem;
+height: 22.875rem;
+background-blend-mode: hard-light;
+@apply absolute left-[5.6rem] top-[14rem]
+}
+
+
+.bgleftnj{
+    z-index: -100;
+width: 17.8125rem;
+height: 22.875rem;
+background-blend-mode: hard-light;
+@apply absolute left-[0rem] top-[7rem]
+}
+
+.bgleftnjl{
+    z-index: -100;
+width: 17.8125rem;
+height: 22.875rem;
+background-blend-mode: hard-light;
+@apply absolute right-[-1.8rem] top-[-9rem]
+}
+
+.bgleftll{
+    z-index: -100;
+width: 17.8125rem;
+height: 22.875rem;
+background-blend-mode: hard-light;
+@apply absolute left-[0rem] top-[-3rem]
+}
+
+.bgleftr{
+    z-index: -100;
+width: 17.8125rem;
+height: 22.875rem;
+background-blend-mode: hard-light;
+@apply absolute left-[0rem] top-[0rem]
+}
+/* background purple overlay for right side of the website */
+
+
+.bgright{
+    z-index: -100;
+width: 17.8125rem;
+height: 22.875rem;
+
+@apply absolute left-[3.4rem] sphone:left-[1.75rem] top-[-3rem]
+}
+
+.bgrightps{
+    z-index: -100;
+width: 17.8125rem;
+height: 22.875rem;
+background-blend-mode: hard-light;
+@apply absolute sphone:left-[2.1rem] left-[5.6rem] top-[14rem]
+}
+
+
+.bgrightreward{
+    z-index: -100;
+width: 17.8125rem;
+height: 22.875rem;
+
+@apply absolute left-[0.6rem] top-[-3rem]
 }
