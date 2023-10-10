@@ -36,6 +36,22 @@ const Contact = () => {
 
                 <input type="text" placeholder="Team's Name" className='small-input' />
 
+                <input type="text" placeholder="Topic" className='small-input' />
+
+                <input type="text" placeholder="Email" className='small-input' />
+
+                <textarea className='message' name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+
+                <div className="button-submit">
+                    <button className="submit">
+                        submit
+                    </button>
+                </div>
+
+
+<div className="shareon">
+Share on
+</div>
 
             </div>
 
