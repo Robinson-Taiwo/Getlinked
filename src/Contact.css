@@ -1,6 +1,6 @@
 .Contacts {
     z-index: 5;
-    @apply pb-[2.41rem] bg-darkp px-[3.06rem] pt-[2.94rem] relative
+    @apply pb-[2.41rem] bg-darkp px-[3.06rem] pt-[2.94rem] relative sphone:px-[2rem]
 }
 
 .contactBack {
@@ -22,7 +22,7 @@
     height: 2.9375rem;
     border: 1px solid #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    @apply rounded-[0.25rem] pl-[1.5rem] pt-[0.81rem] pb-[0.88rem] text-white mb-[1.56rem]
+    @apply rounded-[0.25rem] pl-[1.5rem] pt-[0.81rem] pb-[0.88rem] text-white mb-[1.56rem] sphone:w-[100%]
 }
 
 .message {
@@ -32,7 +32,7 @@
 
     border: 1px solid #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    @apply rounded-[0.25rem] pl-[1.5rem] pt-[1.69rem] mb-[1.94rem] text-white
+    @apply rounded-[0.25rem] pl-[1.5rem] pt-[1.69rem] mb-[1.94rem] text-white  sphone:w-[100%]
 }
 
 .message::placeholder {
@@ -63,15 +63,15 @@
 }
 
 .button-submit {
-    @apply h-[100%] flex justify-center items-center w-[18.625rem] mb-[2.56rem]
+    @apply h-[100%] flex justify-center items-center w-[18.625rem] mb-[2.56rem] sphone:w-[100%]
 }
 
 .shareon {
-    @apply text-normal text-[0.75rem] w-[18.625rem] flex justify-center items-center
+    @apply text-normal text-[0.75rem] w-[18.625rem] flex justify-center items-center sphone:w-[100%]
 }
 
 .contact-icons {
-    @apply w-[18.625rem] flex flex-row justify-center items-center gap-[0.82rem]
+    @apply w-[18.625rem] flex flex-row justify-center items-center gap-[0.82rem] sphone:w-[100%]
 }
 
 .contact-icon {
