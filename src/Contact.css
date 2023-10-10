@@ -1,6 +1,6 @@
 .Contacts {
     z-index: 5;
-    @apply pb-[5em] bg-darkp px-[3.06rem] pt-[2.94rem] relative
+    @apply pb-[2.41rem] bg-darkp px-[3.06rem] pt-[2.94rem] relative
 }
 
 .contactBack {
@@ -39,7 +39,7 @@
     @apply text-white
 }
 
-.message:focus{
+.message:focus {
     outline: none;
 }
 
@@ -60,13 +60,21 @@
     width: 10.75rem;
     height: 3.3125rem;
     @apply bg-primary flex justify-center items-center text-white self-center rounded-[0.25rem]
-
 }
 
-.button-submit{
-    @apply h-[100%] flex justify-center items-center w-[18.625rem] mb-[2.56rem] 
+.button-submit {
+    @apply h-[100%] flex justify-center items-center w-[18.625rem] mb-[2.56rem]
 }
 
-.shareon{
-    @apply text-normal text-[0.75rem] w-[18.625rem] flex justify-center items-center 
+.shareon {
+    @apply text-normal text-[0.75rem] w-[18.625rem] flex justify-center items-center
+}
+
+.contact-icons {
+    @apply w-[18.625rem] flex flex-row justify-center items-center gap-[0.82rem]
+}
+
+.contact-icon {
+    width: 0.81931rem;
+    height: 0.73306rem;
 }

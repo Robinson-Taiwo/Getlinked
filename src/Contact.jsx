@@ -4,6 +4,11 @@ import React from 'react'
 import back from "../src/assets/icons/contactBack.svg"
 import bgleft from "../src/assets/images/purple-lens-mobile.png"
 import bgright from "../src/assets/images/purpleRight.png"
+
+import instagram from "../src/assets/icons/mdi_instagram.svg"
+import x from "../src/assets/icons/x.svg"
+import facebook from "../src/assets/icons/facebook.svg"
+import linkedin from "../src/assets/icons/linkedin.svg"
 import "./Contact.css"
 import { Link } from 'react-router-dom'
 
@@ -49,8 +54,20 @@ const Contact = () => {
                 </div>
 
 
-<div className="shareon">
-Share on
+                <div className="shareon">
+                    Share on
+                </div>
+
+<div className="contact-icons">
+
+<img src={instagram} alt="" className="contact-icon" />
+
+<img src={x} alt="" className="contact-icon" />
+
+<img src={facebook} alt="" className="contact-icon" />
+
+<img src={linkedin} alt="" className="contact-icon" />
+
 </div>
 
             </div>
