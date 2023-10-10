@@ -407,8 +407,34 @@ z-index: 5;
     @apply  w-[100vw] bg-cover bg-no-repeat bg-center bg-darkp flex-col flex items-center pt-[4.5rem] pb-[5.58rem] relative
 }
 
+.highlight{
+    @apply text-white text-center text-[0.75rem] leading-[170.9%] w-[17.3rem] mb-[2.5rem]
+}
+
+.prizepup{
+    @apply absolute left-[3rem] top-[2rem]
+}
+
+.rewepup{
+    @apply absolute left-[16rem] top-[6rem]
+}
+
+.prizew{
+    @apply absolute top-[30rem] left-[3rem]
+}
+
+.prizew2{
+    @apply absolute top-[30rem] left-[20rem]
+}
+
+
+
+.prizetrans{
+    @apply absolute top-[17rem] left-[13rem]
+}
+
 .eight-header{
-    @apply text-white font-bold text-[1.25rem] w-[6.8125rem] text-center mb-[2.5rem] 
+    @apply text-white font-bold text-[1.25rem] w-[6.8125rem] text-center 
 }
 
 .header-purple{
@@ -573,6 +599,29 @@ background: rgba(217, 217, 217, 0.03);
   @apply  mt-[3rem]  w-[15.56rem] h-[19.437rem] 
 }
 
+.shieldpup{
+    @apply top-[8rem] absolute left-[-2rem]
+}
+
+
+.shieldw{
+    @apply absolute left-[12rem] top-[9rem]
+}
+
+.boyw{
+    width: 0.625rem;
+    height: 0.75rem;
+    @apply absolute top-[26rem] left-[1rem]
+}
+
+
+.boyts{
+    width: 0.625rem;
+    height: 0.75rem;
+    @apply absolute top-[27rem] left-[14.3rem]
+}
+
+
 .keyboy{
     @apply absolute top-[9rem] left-[-1.3rem]
 }
@@ -594,6 +643,10 @@ background: rgba(217, 217, 217, 0.03);
     flex-shrink: 0;
 } */
 
+
+.pxl{
+    @apply absolute top-[3.4rem] left-[14rem]
+}
 
 .small-stars{
     @apply absolute w-[0.5rem] h-[0.5rem] left-[17rem] top-[3rem]
@@ -622,7 +675,7 @@ background-blend-mode: hard-light;
 width: 17.8125rem;
 height: 22.875rem;
 background-blend-mode: hard-light;
-@apply absolute left-[-3rem] top-[-5rem]
+@apply absolute left-[-3rem] top-[5rem]
 }
 
 .bgleftnp{

@@ -521,14 +521,29 @@ const Home = () => {
 
                 <div className="eight-line">
 
+
+                    <img src={px} alt="" className="prizepup star" />
+
+                    <img src={px} alt="" className="rewepup star" />
+
                     <h1 className="eight-header">
                         Prizes and <span className="header-purple"> Rewards</span>
 
                     </h1>
 
+                    <p className="highlight">
+                        Highlight of the prizes or rewards for winners
+                        and for participants.
+
+                    </p>
+
                     <img src={bgleft} alt="" className="bgleftn" />
 
                     <img src={trophy} alt="" className="trophy-icon" />
+
+                    <img src={star} alt="" className="prizew star" />
+
+                    <img src={star} alt="" className="prizew2 star" />
 
 
                     <div className="rewards-coner relative">
@@ -587,7 +602,7 @@ const Home = () => {
                         </div>
 
 
-
+                        <img src={transStar} alt="" className="prizetrans star" />
 
                     </div>
 
@@ -615,7 +630,7 @@ const Home = () => {
 
                         <img src={partners} alt="" />
 
-<img src={star} className='starpartl' alt="" />
+                        <img src={star} className='starpartl' alt="" />
 
                     </div>
 
@@ -640,7 +655,7 @@ const Home = () => {
                         lot of goodies. it’s our aim to always take of our
                         participant
 
-                        <img className='px absolute top-[3.4rem] left-[15rem]' src={px} alt="" />
+                        <img className='pxl' src={px} alt="" />
                     </p>
 
 
@@ -703,9 +718,19 @@ const Home = () => {
 
                     <div className='shield-container' >
 
+                        <img src={px} alt="" className="shieldpup" />
+
+                        <img src={sw} alt="" className="shieldw" />
+
                         <img src={shield} alt="" className="shield" />
 
                         <img src={boy} alt="" className="keyboy" />
+
+                        <img src={star} alt="" className="boyw" />
+
+                        <img src={transStar} alt="" className="boyts" />
+
+
                     </div>
 
 

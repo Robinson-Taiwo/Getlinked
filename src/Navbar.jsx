@@ -5,6 +5,7 @@ import menu from "../src/assets/icons/menu.svg"
 import cancle from "../src/assets/icons/cancle.svg"
 import circle from "../src/assets/icons/cancel_circle.svg"
 import "./Navbar.css"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -34,7 +35,7 @@ const Navbar = () => {
             <div className="menu-item">Timeline</div>
             <div className="menu-item">Overview</div>
             <div className="menu-item">FAQs</div>
-            <div className="menu-item">Contacts</div>
+            <Link  to="/contact" className="menu-item">Contacts</Link>
             <button className="menu-register">
               Register
             </button>
