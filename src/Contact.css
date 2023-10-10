@@ -63,7 +63,7 @@
 }
 
 .button-submit {
-    @apply h-[100%] flex justify-center items-center w-[18.625rem] mb-[2.56rem] sphone:w-[100%]
+    @apply h-[100%] flex justify-center items-center w-[18.625rem] mb-[2.56rem] sphone:w-[100%] relative 
 }
 
 .shareon {
@@ -77,4 +77,30 @@
 .contact-icon {
     width: 0.81931rem;
     height: 0.73306rem;
+}
+
+.contactfstar{
+    @apply absolute top-[3.7rem] left-[11rem] 
+}
+
+.contactsstar{
+    @apply absolute left-[20rem] sphone:left-[17rem] top-[9rem] 
+}
+
+.contactwstar{
+    width: 0.75rem;
+height: 0.875rem;
+    @apply absolute left-[22rem] sphone:left-[19rem] top-[39rem]
+}
+
+.contactlaststar{
+    width: 0.75rem;
+height: 0.875rem;
+flex-shrink: 0;
+    @apply absolute top-[1rem] left-[-1rem]
+}
+
+button:disabled{
+    cursor: not-allowed !important;
+   
 }
