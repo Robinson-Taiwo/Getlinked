@@ -75,9 +75,12 @@ const Registration = () => {
                             <label htmlFor="TeamsName">Category</label>
                             <select value="sele" className='register-select'>
                                 <option value="">Select an option</option>
-                                <option value="NIN">NIN</option>
-                                <option value="voter's card">VOTERS CARD</option>
-                                <option value="DRIVER'S LISENCE">DRIVER LISENCE</option>
+                                <option value="NIN">web devlopment</option>
+                                <option value="voter's card">app development</option>
+                                <option value="DRIVER'S LISENCE">blockchain</option>
+
+                                <option value="DRIVER'S LISENCE">virtualreality</option>
+
                             </select>
 
                         </div>
@@ -85,10 +88,10 @@ const Registration = () => {
                         <div className="register-inputLabel">
                             <label htmlFor="TeamsName">Group's Size</label>
                             <select value="sele" className='register-group'>
-                                <option value="">Select an option</option>
-                                <option value="NIN">NIN</option>
-                                <option value="voter's card">VOTERS CARD</option>
-                                <option value="DRIVER'S LISENCE">DRIVER LISENCE</option>
+                                <option value="">Select </option>
+                                <option value="NIN">1 - 5</option>
+                                <option value="voter's card">5 - 10</option>
+                                <option value="DRIVER'S LISENCE">10 - 15</option>
                             </select>
 
                         </div>
