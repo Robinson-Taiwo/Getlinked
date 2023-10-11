@@ -35,10 +35,15 @@ const Navbar = () => {
             <div className="menu-item">Timeline</div>
             <div className="menu-item">Overview</div>
             <div className="menu-item">FAQs</div>
-            <Link  to="/contact" className="menu-item">Contacts</Link>
-            <button className="menu-register">
-              Register
-            </button>
+            <Link to="/contact" className="menu-item">Contacts</Link>
+
+            <Link to="/Registration" >
+
+              <button className="menu-register">
+                Register
+              </button>
+            </Link>
+
           </div>
 
         </aside>

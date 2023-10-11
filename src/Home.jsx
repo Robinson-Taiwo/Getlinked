@@ -1,8 +1,9 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-useless-escape */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import curve from "../src/assets/icons/curve.svg"
 import chain from "../src/assets/icons/chain.svg"
@@ -37,6 +38,7 @@ import gold from "../src/assets/icons/gold_medal.svg"
 import silver from "../src/assets/icons/silver_medal.svg"
 import "./Home.css"
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -50,6 +52,32 @@ const Home = () => {
     const [fifth, setFifth] = useState(false); const [sixth, setSixth] = useState(false)
 
     const backgroundImageUrl = '/public/smart.png';
+
+    // defining the time functionality counting down from three days
+
+
+    const threeDaysInSeconds = 345600;
+    const [timeLeft, setTimeLeft] = useState(threeDaysInSeconds);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setTimeLeft(timeLeft => timeLeft - 1);
+        }, 1000);
+
+        return () => clearInterval(intervalId);
+    }, []);
+
+    useEffect(() => {
+        if (timeLeft === 0) {
+            clearInterval(intervalId);
+        }
+    }, [timeLeft]);
+
+    const days = Math.floor(timeLeft / 86400);
+    const hours = Math.floor((timeLeft % 86400) / 3600);
+    const minutes = Math.floor((timeLeft % 3600) / 60);
+    const secondsRemaining = timeLeft % 60;
+
 
     return (
         <div className='Home'>
@@ -81,20 +109,20 @@ const Home = () => {
                         2023 stand a chance to win a Big prize
                     </div>
                     <div className='li '>
-                        <div className=" register-button">
+                        <Link to="/Registration" className=" register-button">
                             Register
-                        </div>
+                        </Link>
                         <img className='starl' src={star2} alt="" loading="lazy" />
                     </div>
                     <div className="countdown">
                         <div className="time">
-                            00 <span className='time-text'>H</span>
+                            {hours} <span className='time-text'>H</span>
                         </div>
                         <div className="time">
-                            00 <span className='time-text'>M</span>
+                            {minutes} <span className='time-text'>M</span>
                         </div>
                         <div className="time">
-                            00 <span className='time-text'>S</span>
+                            {secondsRemaining} <span className='time-text'>S</span>
                         </div>
                     </div>
                 </section>
