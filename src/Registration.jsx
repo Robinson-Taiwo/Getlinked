@@ -79,7 +79,7 @@ const Registration = () => {
                                 <option value="voter's card">app development</option>
                                 <option value="DRIVER'S LISENCE">blockchain</option>
 
-                                <option value="DRIVER'S LISENCE">virtualreality</option>
+                                <option value="DRIVER'S LISENCE">virtual reality</option>
 
                             </select>
 
