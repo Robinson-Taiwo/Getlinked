@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from "../src/assets/icons/getlinked.svg"
 import menu from "../src/assets/icons/menu.svg"
 import cancle from "../src/assets/icons/cancle.svg"
@@ -12,6 +12,24 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   // defining toggle menu function
   const setMenu = () => { setShowMenu(!showMenu) }
+  useEffect(() => {
+    if (showMenu) {
+      // Add the class to the body when the modal is open
+      document.body.classList.add('overlay-open');
+    } else {
+      // Remove the class when the modal is closed
+      document.body.classList.remove('overlay-open');
+    }
+
+    // Clean up the effect
+    return () => {
+      document.body.classList.remove('overlay-open');
+    };
+  }, [showMenu]);
+
+
+
+
   return (
 
     <div className='navbar'>

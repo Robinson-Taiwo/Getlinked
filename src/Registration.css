@@ -139,3 +139,56 @@ option {
 height: 3.3125rem; 
 @apply flex items-center justify-center bg-primary rounded-[0.25rem]
 }
+
+
+.modal{
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 100;
+    background: rgba(21, 14, 40, 0.93);
+
+    @apply fixed h-[100%] w-[100%]  top-[0rem] flex items-center justify-center 
+}
+
+.modal-box{
+    width: 19.8125rem;
+height: 29.1875rem;border-radius: 0.3125rem;
+border: 1px solid #D434FE;
+background: rgba(255, 255, 255, 0.01);
+@apply flex flex-col items-center justify-center 
+}
+
+.modal-box button{
+    width: 15.75rem;
+height: 3.3125rem;
+@apply bg-primary rounded-[0.25rem] font-semibold
+}
+
+.modal-box h1{
+@apply text-white font-bold w-[11.25rem] text-center mb-[1.81rem] 
+}
+
+.modal-box p{
+@apply text-[0.75rem] font-medium w-[12.625rem] text-center mb-[1.44rem]
+}
+
+.modal-images{
+    @apply flex flex-row items-center  w-[16.17rem] mb-[1.62rem]
+}
+
+.sb{
+    @apply relative left-[-7.5rem]
+}
+
+.close-modal{
+    @apply self-end
+}
+
+.modal-cancel{
+    @apply  w-[100%] flex justify-end
+}
+
+.overlay-open {
+    overflow: hidden;
+  }
