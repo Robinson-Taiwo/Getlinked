@@ -7,6 +7,7 @@
 
 
 .Home {
+    overflow-x: hidden;
     @apply h-[100vh] w-[100vw]
 }
 
