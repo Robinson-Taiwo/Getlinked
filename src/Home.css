@@ -23,7 +23,7 @@
     @apply w-[7.19rem] self-end mt-[0.29rem]
 }
 
-.igniting {
+.igniting { 
     @apply text-white italic font-bold flex flex-col w-fit sphone:text-[0.8rem]
 }
 
@@ -443,7 +443,7 @@ z-index: 5;
 
 .navvy{
     z-index: 100;
-    @apply fixed  bg-darkp opacity-100 bg-opacity-100
+    @apply relative bg-darkp opacity-100 bg-opacity-100
 }
 
 .trophy-icon{

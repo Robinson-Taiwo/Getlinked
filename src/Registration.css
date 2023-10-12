@@ -162,7 +162,7 @@ background: rgba(255, 255, 255, 0.01);
 .modal-box button{
     width: 15.75rem;
 height: 3.3125rem;
-@apply bg-primary rounded-[0.25rem] font-semibold
+@apply bg-primary rounded-[0.25rem] font-semibold cursor-pointer
 }
 
 .modal-box h1{
