@@ -1,9 +1,9 @@
 .navbar-container {
-    @apply flex flex-row justify-between items-center w-[100vw] px-[3rem] relative
+    @apply flex flex-row justify-between items-center w-[100vw] px-[3rem] relative desktop:px-[8rem]
 }
 
 .nav-logo {
-    @apply mb-[1.44rem] mt-[1.88rem] w-[4.5rem] h-[1.125rem]
+    @apply mb-[1.44rem] mt-[1.88rem] w-[4.5rem] h-[1.125rem] desktop:w-[10.69rem] desktop:h-[2.6rem]
 }
 
 .nav-menu {
@@ -19,27 +19,35 @@
     background-image: url(../src/assets/icons/cancel_circle.svg);
     width: 1.4375rem;
     height: 1.4375rem;
-    @apply flex items-center justify-center absolute right-[3rem]
+    @apply flex items-center desktop:hidden justify-center absolute right-[3rem]
 }
 
 .menu {
-    @apply min-h-screen top-0 w-[100vw] fixed bg-darkp opacity-100 left-0 flex-col text-white pl-[2.94rem];
+    @apply min-h-screen top-0 w-[100vw] fixed bg-darkp opacity-100 left-0 flex-col text-white pl-[2.94rem] desktop:flex-row ;
     overflow-y: auto; /* Enable vertical scrolling when content exceeds viewport */
     z-index: 1000; /* Set a higher z-index value */
   }
 .ll{
-    @apply hidden
+    @apply hidden desktop:flex
+}
+
+.liok{
+    @apply desktop:hidden 
 }
 
 .menu-item-container {
-    @apply mt-[6rem] flex flex-col gap-[1.81rem]
+    @apply mt-[6rem] flex flex-col gap-[1.81rem] desktop:flex-row desktop:mt-[0rem] desktop:items-center desktop:justify-center desktop:text-white desktop:gap-[7.56rem]
 }
 
 .menu-item {
-    @apply text-[1.125rem] font-medium tracking-[-0.0625rem]
+    @apply text-[1.125rem] font-medium tracking-[-0.0625rem] desktop:text-[1rem] desktop:font-normal 
 }
 
 .menu-register {
     border-radius: 0.25rem;
     @apply bg-primary h-[3.125rem] w-[10.75rem]
+}
+
+.menu-item-two{
+@apply flex desktop:flex-row desktop:gap-[3.5rem] gap-[1.81rem] flex-col
 }

@@ -38,11 +38,15 @@ const Navbar = () => {
         {/* navbar logo */}
         <img className="nav-logo" src={logo} alt="" />
 
-        {/* menu toggling */}
-        <div onClick={setMenu}>
-          {!showMenu ? (<img className="nav-menu" src={menu} alt="" />) : (<div className='nav-menu circle'>
-            <img className='x' src={cancle} alt="" /></div>)}
+        <div className="liok">
+
+          {/* menu toggling */}
+          <div onClick={setMenu}>
+            {!showMenu ? (<img className="nav-menu" src={menu} alt="" />) : (<div className='nav-menu circle'>
+              <img className='x' src={cancle} alt="" /></div>)}
+          </div>
         </div>
+
 
         <aside className={!showMenu ? "ll" : "menu"}>
           <div>
@@ -50,13 +54,18 @@ const Navbar = () => {
               <img className='x' src={cancle} alt="" /></div>
           </div>
           <div className="menu-item-container">
-            <div className="menu-item">Timeline</div>
-            <div className="menu-item">Overview</div>
-            <div className="menu-item">FAQs</div>
-            <Link to="/contact" className="menu-item">Contacts</Link>
+
+            <div className="menu-item-two">
+
+
+              <div className="menu-item">Timeline</div>
+              <div className="menu-item">Overview</div>
+              <div className="menu-item">FAQs</div>
+              <Link to="/contact" className="menu-item">Contacts</Link>
+            </div>
+
 
             <Link to="/Registration" >
-
               <button className="menu-register">
                 Register
               </button>

@@ -36,6 +36,14 @@ import partners from "../src/assets/icons/partners.png"
 import bronze from "../src/assets/icons/bronze_medal.svg"
 import gold from "../src/assets/icons/gold_medal.svg"
 import silver from "../src/assets/icons/silver_medal.svg"
+
+import smart from "../src/assets/images/occulus.png"
+
+import mido from "../src/assets/images/midp.png"
+import midop from "../src/assets/images/midr.png"
+
+import mobileTech from "../src/assets/images/mobit.png"
+
 import "./Home.css"
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
@@ -86,52 +94,88 @@ const Home = () => {
 
             </div>
             <section className="Home-first-section">
-                <section className='first-section'>
+
+                <div className="igniting-div">
+
+                    <img src={mido} alt="" className="bgleft-top" />
+
+                    <img src={midop} alt="" className="bgright-top" />
+
+
                     <div className="igniting">
                         <h1>Igniting a Revolution in HR Innovation</h1>
                         <img className="curve" src={curve} alt="" loading="lazy" />
                     </div>
-                    <div className="get-linked">
-                        <div className='flexo '>
-                            <img className='star' src={star} alt="" loading="lazy" />
-                            <img className='star2' src={star2} alt="" loading="lazy" />
+                </div>
+
+                <div className="home-first-flex">
+
+
+                    <section className='first-section'>
+
+                        <div className="get-linked">
+                            <div className='flexo '>
+                                <img className='star' src={star} alt="" loading="lazy" />
+                                <img className='star2' src={star2} alt="" loading="lazy" />
+                            </div>
+                            <img className='bulb-mobile' src={bulb} alt="" loading="lazy" />
+                            <h1 className="getlinked">getlinked Tech</h1>
+                            <div className="hackathon-text">
+                                Hackathon <span className="purple-text">1.0</span>
+                                <span><img className='mobile-chain' src={chain} alt="" loading="lazy" /></span>
+                                <span><img className='mobile-chain' src={fire} alt="" loading="lazy" /></span>
+                            </div>
                         </div>
-                        <img className='bulb-mobile' src={bulb} alt="" loading="lazy" />
-                        <h1 className="getlinked">getlinked Tech</h1>
-                        <div className="hackathon-text">
-                            Hackathon <span className="purple-text">1.0</span>
-                            <span><img className='mobile-chain' src={chain} alt="" loading="lazy" /></span>
-                            <span><img className='mobile-chain' src={fire} alt="" loading="lazy" /></span>
+                        <div className="intro-texts">
+                            Participate in getlinked tech Hackathon
+                            2023 stand a chance to win a Big prize
                         </div>
-                    </div>
-                    <div className="intro-texts">
-                        Participate in getlinked tech Hackathon
-                        2023 stand a chance to win a Big prize
-                    </div>
-                    <div className='li '>
-                        <Link to="/Registration" className=" register-button">
-                            Register
-                        </Link>
-                        <img className='starl' src={star2} alt="" loading="lazy" />
-                    </div>
-                    <div className="countdown">
-                        <div className="time">
-                            {hours} <span className='time-text'>H</span>
+                        <div className='li '>
+                            <Link to="/Registration" className=" register-button">
+                                Register
+                            </Link>
+                            <img className='starl' src={star2} alt="" loading="lazy" />
                         </div>
-                        <div className="time">
-                            {minutes} <span className='time-text'>M</span>
+                        <div className="countdown">
+                            <div className="time">
+                                {hours} <span className='time-text'>H</span>
+                            </div>
+                            <div className="time">
+                                {minutes} <span className='time-text'>M</span>
+                            </div>
+                            <div className="time">
+                                {secondsRemaining} <span className='time-text'>S</span>
+                            </div>
                         </div>
-                        <div className="time">
-                            {secondsRemaining} <span className='time-text'>S</span>
+                    </section>
+                    <div className="sec">
+                        <div className="second-sectionlo">
+
+                            <img src={smart} alt="" className="second-section" />
+
+
+
+                            <img src={mobileTech} alt="" className="mobile-tech" />
+
+
+
                         </div>
-                    </div>
-                </section>
-                <div className="sec">
-                    <div className="second-section">
-                        <div className="mobile-tech"></div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
                 <div className="nav-line"></div>
+
+
+
+
                 <div className="third-section">
                     <div className="bulb-big-div">
                         <div className="bulb-big">
@@ -139,26 +183,53 @@ const Home = () => {
                                 The Big Idea!
                             </p>
                         </div>
+                        <img src={arrow} title='curved arrow icon' alt=" curved arrow icon" className="arrow-mobile" />
                     </div>
-                    <img src={arrow} title='curved arrow icon' alt=" curved arrow icon" className="arrow-mobile mt-[0.63rem] mb-[1.38rem] w-[1.216rem] h-[1.426] " />
-                    <div className="third-intro mb-[0.56rem]">
-                        Introduction to getlinked
-                        <span className="putple-intro text-normal"> tech Hackathon 1.0</span>
+
+
+
+                    <div className=' kloi'>
+
+
+
+                        <div className='third-into-div' >
+
+                            <div className="third-intro mb-[0.56rem]">
+                                Introduction to getlinked
+                                <span className="putple-intro text-normal"> tech Hackathon 1.0</span>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div className="third-texts">
+                            Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as
+                            day: to shape the future. Whether you're
+                            a coding genius, a design maverick, or a
+                            concept wizard, you'll have the chance to transform your ideas into reality. Solving
+                            real-world problems, pushing the boundaries
+                            of technology, and creating solutions that can change the world, that's what we're all about!
+                        </div>
                     </div>
-                    <p className="third-texts">
-                        Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as
-                        day: to shape the future. Whether you're
-                        a coding genius, a design maverick, or a
-                        concept wizard, you'll have the chance to transform your ideas into reality. Solving
-                        real-world problems, pushing the boundaries
-                        of technology, and creating solutions that can change the world, that's what we're all about!
-                    </p>
-                    <div className="nav-line"></div>
+
+
+
                 </div>
+
+
+                <div>
+
+                    <div className="oline"></div>
+                </div>
+                <div className=' opacity-0' > .</div>
+
+
                 <div className="fourth-section">
+                    <img src={bgleft} alt="" className="bgleftll" />
                     <div className="first-left-purple ">
 
-                        <img src={bgleft} alt="" className="bgleftll" />
 
                         <img className='starfl' src={star} alt="" loading="lazy" />
                         <img src={lady} alt="" className="lady" />
@@ -182,7 +253,10 @@ const Home = () => {
                         <img className='starfl liop' src={star} alt="" loading="lazy" />
                     </div>
                 </div>
-                <div className="h-line"></div>
+                <div className="oline "></div>
+
+                <p className='w-text ' >w</p>
+
                 <div className="fifth-section bg-darkp">
                     <img className='limo' src={pup} alt="" loading="lazy" />
                     <img src={chart} alt="" className="chart-icon" loading="lazy" />
@@ -191,26 +265,30 @@ const Home = () => {
 
 
                     <div className="chart-texts">
-                        <div className="chart-head">
-                            Judging Criteria<span className='text-normal'>Key attributes </span>
+
+
+                        <div className="chart-texts-head">
+                            <div className="chart-head desktop:w-[16.68rem] ">
+                                Judging Criteria<span className='text-normal '>Key attributes </span>
+                            </div>
+
                         </div>
-                        <p className="chart-text">
+
+                        <p className="chart-text desktop:w-[33.3rem] ">
                             <span className='spanText'>Innovation and Creativity: </span>  Evaluate the uniqueness and creativity of the solution. Consider whether it addresses a real-world problem in a novel way or introduces innovative features.
                         </p>
-                        <p className="chart-text">
-                            <span className='spanText'>Functionality:</span> Assess how well the solution works. Does it perform its intended functions effectively and without major issues? Judges would consider the completeness and robustness of the solution.
+                        <p className="chart-text desktop:w-[31.8rem]">
+                            <span className='spanText '>Functionality:</span> Assess how well the solution works. Does it perform its intended functions effectively and without major issues? Judges would consider the completeness and robustness of the solution.
                         </p>
-                        <p className="chart-text">
+                        <p className="chart-text  desktop:w-[32.7rem]">
                             <span className=' spanText'>Impact and Relevance:</span>   Determine the potential impact of the solution in the real world. Does it address a significant problem, and is it relevant to the target audience? Judges would assess the potential social, economic, or environmental benefits.
                         </p>
-                        <p className="chart-text">
+                        <p className="chart-text desktop:w-[34.8rem]">
                             <span className='spanText'>Technical Complexity:</span> Evaluate the technical sophistication of the solution. Judges would consider the complexity of the code, the use of advanced technologies or algorithms, and the scalability of the solution.
                         </p>
-                        <p className="chart-text relative">
+                        <p className="chart-text desktop:w-[35.3rem] relative">
                             <span className='spanText'>Adherence to Hackathon Rules:</span>  Judges will Ensure that the team adhered to the rules and guidelines of the hackathon, including deadlines, use of specific technologies or APIs, and any other competition-specific requirements.
 
-
-                            <img src={bgright} alt="" className="bgleftnjl" />
 
                         </p>
                         <button className="chart-more">
@@ -218,18 +296,36 @@ const Home = () => {
                         </button>
                         <img className='chart-star' src={star} alt="" loading="lazy" />
                     </div>
-                    <div className="h-line"></div>
+                    <img src={bgright} alt="" className="bgleftnjl" />
+
                 </div>
+                <div className="oline"></div>
+                <p className='w-text ' >w</p>
+
+
+
+
+
                 <div className="sixth-section">
-                    <img className='limoz' src={pup} alt="" loading="lazy" />
-                    <h1 className="chart-head w-[9.88rem] h-[3.375rem] ">
-                        Frequently Ask <span className='text-normal'>Question</span>
-                    </h1>
-                    <p className="ask-desc ">
-                        We got answers to the questions that you might
-                        want to ask about getlinked Hackathon 1.0
-                    </p>
-                    <div className="ask-questions ">
+
+
+
+                    <div className="sixth-section-first">
+
+                        <img className='limoz' src={pup} alt="" loading="lazy" />
+
+                        <h1 className="chart-head w-[9.88rem] h-[3.375rem]  ">
+                            Frequently Ask <span className='text-normal'>Question</span>
+                        </h1>
+
+                        <p className="ask-desc  ">
+                            We got answers to the questions that you might
+                            want to ask about getlinked Hackathon 1.0
+                        </p>
+
+
+                        <div className="ask-questions ">
+                        </div>
                         <div className="que">
                             <div className="quet">
                                 <p className="questions-texts">
@@ -322,12 +418,19 @@ const Home = () => {
                         </div>
                     </div>
                     {/* thinking man icon */}
-                    <div className="question-marks flex flex-row ">
-                        <img className='small-mark' src={mark} alt="" />
-                        <img className='big-mark' src={mark} alt="" />
-                        <img className='small-mark' src={mark} alt="" />
+
+
+                    <div className="sixth-section-second">
+
+                        <div className="question-marks flex flex-row ">
+                            <img className='small-mark' src={mark} alt="" />
+                            <img className='big-mark' src={mark} alt="" />
+                            <img className='small-mark' src={mark} alt="" />
+                        </div>
+                        <img src={tman} alt="" className="think2" loading="lazy" />
+
                     </div>
-                    <img src={tman} alt="" className="think2" loading="lazy" />
+
                 </div>
 
                 <div className="oline"></div>
@@ -343,207 +446,338 @@ const Home = () => {
                         anticipate using for the upcoming event.
                     </h4>
 
+                    <div className="timelineb">
 
-                    <div className="sub-timeline">
+                        <div className="sub-timeline">
 
-                        <div className="line-c">
+                            <div className="line-c">
 
-                            <div className="time-line">
+                                <div className="time-line">
+
+                                </div>
+
+                                <div className="time-circle">
+                                    1
+                                </div>
 
                             </div>
 
-                            <div className="time-circle">
-                                1
+                            <div className="sub-timeline-text">
+
+
+                                <div className="stti">
+
+
+
+                                    <h2>
+                                        Hackathon Announcement
+                                    </h2>
+
+                                    <p>
+                                        The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                                    </p>
+                                </div>
+
+
+                                <div className="line-cl">
+
+                                    <div className="time-line">
+
+                                    </div>
+
+                                    <div className="time-circle">
+                                        1
+                                    </div>
+
+                                </div>
+
+
+                                <h3>
+                                    November 18, 2023
+                                </h3>
+
                             </div>
 
                         </div>
 
-                        <div className="sub-timeline-text">
+                        <div className="sub-timeline">
 
-                            <h2>
-                                Hackathon Announcement
-                            </h2>
 
-                            <p>
-                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
-                            </p>
 
-                            <h3>
-                                November 18, 2023
-                            </h3>
+
+                            <div className="line-c">
+
+                                <div className="time-line">
+
+                                </div>
+
+                                <div className="time-circle">
+                                    2
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div className="sub-timeline-text desktop:flex-row-reverse">
+
+                                <div className="stti">
+
+                                    <h2>
+                                        Teams Registration begins
+                                    </h2>
+
+                                    <p>
+                                        Interested teams can now show their interest
+                                        in the getlinked tech hackathon 1.0 2023 by
+                                        proceeding to register
+                                    </p>
+
+                                </div>
+
+
+                                <div className="line-cl">
+
+                                    <div className="time-line">
+
+                                    </div>
+
+                                    <div className="time-circle">
+                                        2
+                                    </div>
+
+                                </div>
+
+
+                                <h3>
+                                    November 18, 2023
+                                </h3>
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+
+                        <div className="sub-timeline">
+
+                            <div className="line-c">
+
+                                <div className="time-line">
+
+                                </div>
+
+                                <div className="time-circle">
+                                    3
+                                </div>
+
+                            </div>
+
+                            <div className="sub-timeline-text">
+
+                                <div className="stti">
+
+
+                                    <h2>
+                                        Teams Registration ends
+                                    </h2>
+
+                                    <p>
+                                        Interested Participants are no longer Allowed
+                                        to register
+                                    </p>
+                                </div>
+
+
+                                <div className="line-cl">
+
+                                    <div className="time-line">
+
+                                    </div>
+
+                                    <div className="time-circle">
+                                        3
+                                    </div>
+
+                                </div>
+
+
+                                <h3>
+                                    November 18, 2023
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div className="sub-timeline">
+
+                            <div className="line-c">
+
+                                <div className="time-line">
+
+                                </div>
+
+                                <div className="time-circle">
+                                    4
+                                </div>
+
+                            </div>
+
+                            <div className="sub-timeline-text desktop:flex-row-reverse " >
+
+
+                                <div className="stti">
+
+
+                                    <h2>
+                                        Announcement of the accepted teams
+                                        and ideas
+                                    </h2>
+
+                                    <p>
+                                        The getlinked tech hackathon 1.0 is                             formally announced to the general public and teams begin to get ready to register
+                                    </p>
+                                </div>
+
+
+
+
+                                <div className="line-cl">
+
+                                    <div className="time-line">
+
+                                    </div>
+
+                                    <div className="time-circle">
+                                        4
+                                    </div>
+
+                                </div>
+
+
+                                <h3>
+                                    November 18, 2023
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div className="sub-timeline">
+
+                            <div className="line-c">
+
+                                <div className="time-line">
+
+                                </div>
+
+                                <div className="time-circle">
+                                    5
+                                </div>
+
+                            </div>
+
+                            <div className="sub-timeline-text">
+
+
+
+                                <div className="stti">
+
+
+
+                                    <h2>
+                                        Hackathon Announcement
+                                    </h2>
+
+                                    <p>
+                                        The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                                    </p>
+                                </div>
+
+                                <div className="line-cl">
+
+                                    <div className="time-line">
+
+                                    </div>
+
+                                    <div className="time-circle">
+                                        5
+                                    </div>
+
+                                </div>
+
+
+                                <h3>
+                                    November 18, 2023
+                                </h3>
+
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div className="sub-timeline">
+
+                            <div className="line-c">
+
+                                <div className="time-line">
+
+                                </div>
+
+                                <div className="time-circle">
+                                    6
+                                </div>
+
+                            </div>
+
+                            <div className="sub-timeline-text desktop:flex-row-reverse">
+
+
+                                <div className="stti">
+
+
+                                    <h2>
+                                        Hackathon Announcement
+                                    </h2>
+
+                                    <p>
+                                        The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
+                                    </p>
+                                </div>
+
+                                <div className="line-cl">
+
+                                    <div className="time-line">
+
+                                    </div>
+
+                                    <div className="time-circle">
+                                        6
+                                    </div>
+
+                                </div>
+
+
+
+                                <h3>
+                                    November 18, 2023
+                                </h3>
+
+                            </div>
 
                         </div>
 
                     </div>
 
-                    <div className="sub-timeline">
-
-                        <div className="line-c">
-
-                            <div className="time-line">
-
-                            </div>
-
-                            <div className="time-circle">
-                                2
-                            </div>
-
-                        </div>
-
-                        <div className="sub-timeline-text">
-
-                            <h2>
-                                Teams Registration begins
-                            </h2>
-
-                            <p>
-                                Interested teams can now show their interest
-                                in the getlinked tech hackathon 1.0 2023 by
-                                proceeding to register
-                            </p>
-
-                            <h3>
-                                November 18, 2023
-                            </h3>
-
-                        </div>
-
-                    </div>
-
-                    <div className="sub-timeline">
-
-                        <div className="line-c">
-
-                            <div className="time-line">
-
-                            </div>
-
-                            <div className="time-circle">
-                                3
-                            </div>
-
-                        </div>
-
-                        <div className="sub-timeline-text">
-
-                            <h2>
-                                Teams Registration ends
-                            </h2>
-
-                            <p>
-                                Interested Participants are no longer Allowed
-                                to register
-                            </p>
-
-                            <h3>
-                                November 18, 2023
-                            </h3>
-
-                        </div>
-
-                    </div>
-
-
-                    <div className="sub-timeline">
-
-                        <div className="line-c">
-
-                            <div className="time-line">
-
-                            </div>
-
-                            <div className="time-circle">
-                                4
-                            </div>
-
-                        </div>
-
-                        <div className="sub-timeline-text">
-
-                            <h2>
-                                Announcement of the accepted teams
-                                and ideas
-                            </h2>
-
-                            <p>
-                                The getlinked tech hackathon 1.0 is                             formally announced to the general public and teams begin to get ready to register
-                            </p>
-
-                            <h3>
-                                November 18, 2023
-                            </h3>
-
-                        </div>
-
-                    </div>
-
-
-                    <div className="sub-timeline">
-
-                        <div className="line-c">
-
-                            <div className="time-line">
-
-                            </div>
-
-                            <div className="time-circle">
-                                5
-                            </div>
-
-                        </div>
-
-                        <div className="sub-timeline-text">
-
-                            <h2>
-                                Hackathon Announcement
-                            </h2>
-
-                            <p>
-                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
-                            </p>
-
-                            <h3>
-                                November 18, 2023
-                            </h3>
-
-                        </div>
-
-
-
-
-                    </div>
-
-                    <div className="sub-timeline">
-
-                        <div className="line-c">
-
-                            <div className="time-line">
-
-                            </div>
-
-                            <div className="time-circle">
-                                6
-                            </div>
-
-                        </div>
-
-                        <div className="sub-timeline-text">
-
-                            <h2>
-                                Hackathon Announcement
-                            </h2>
-
-                            <p>
-                                The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
-                            </p>
-
-                            <h3>
-                                November 18, 2023
-                            </h3>
-
-                        </div>
-
-                    </div>
 
                 </section>
 

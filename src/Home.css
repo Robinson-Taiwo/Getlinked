@@ -12,24 +12,55 @@
 }
 
 .Home-first-section {
-    background-image: url(../src/assets/images/purple-lens-mobile.png);
-    @apply h-[27.625rem] w-[100vw] bg-cover bg-center bg-no-repeat
+    /* background-image: url(../src/assets/images/purple-lens-mobile.png); */
+    @apply h-[27.625rem] w-[100vw] bg-cover bg-center bg-no-repeat  pt-[2rem] relative
 }
 
 .first-section {
-    @apply pr-[2.06rem] pl-[2.44rem] pt-[1.94rem] flex flex-col items-center
+    @apply pr-[2.06rem] pl-[2.44rem] pt-[1.94rem] flex flex-col items-center desktop:ml-[8rem] desktop:pr-[0rem] desktop:mr-[0rem] desktop:items-start  desktop:pl-[0rem]
 }
+
+.igniting-div{
+    @apply w-[100%] flex justify-center items-center desktop:justify-end pr-[3.44rem] desktop:mb-[1.68rem]
+}
+
+
+.home-first-flex{
+    @apply desktop:flex-row flex  flex-col desktop:w-[100%]  relative
+}
+
 
 .curve {
-    @apply w-[7.19rem] self-end mt-[0.29rem]
+    @apply w-[7.19rem] self-end mt-[0.29rem] desktop:w-[15.81rem]
 }
 
+
+.bgleft-top{
+ z-index: -00;
+width: 17.8125rem;
+height: 22.875rem;
+
+
+background-blend-mode: hard-light;
+@apply absolute left-[0rem] top-[01rem] desktop:w-[67.875rem] desktop:h-[52.875rem] desktop:top-[-5rem] desktop:left-[5rem]
+}
+
+.bgright-top{
+    z-index: 10;
+   width: 17.8125rem;
+   height: 22.875rem;
+   opacity: 0.7;
+   
+   background-blend-mode: hard-light;
+   @apply absolute left-[0rem] top-[01rem] desktop:w-[67.875rem] desktop:h-[52.875rem] desktop:top-[-5rem] desktop:left-[50rem] 
+   }
+
 .igniting { 
-    @apply text-white italic font-bold flex flex-col w-fit sphone:text-[0.8rem]
+    @apply text-white italic font-bold flex flex-col w-fit sphone:text-[0.8rem] desktop:text-[2.25rem]
 }
 
 .getlinked {
-    @apply text-[2rem] font-bold text-white flex flex-col justify-center items-center
+    @apply text-[2rem] font-bold text-white flex flex-col justify-center desktop:text-[5rem] items-center desktop:items-start desktop:w-[37.3rem]
 }
 
 .get-linked {
@@ -41,34 +72,36 @@
 }
 
 .hackathon-text {
-    @apply text-white text-[2rem] font-bold flex items-center
+    @apply text-white text-[2rem] font-bold flex items-center desktop:text-[5rem]
 }
 
 .mobile-chain {
-    @apply h-[2.1rem] w-[2.1rem]
+    @apply h-[2.1rem] w-[2.1rem] desktop:w-[5.357rem] desktop:h-[5.357rem]
 }
 
 .intro-texts {
     line-height: 166%;
-    @apply text-white mt-[0.56rem] text-[0.8125rem] text-center w-[16.25rem]
+    @apply text-white mt-[0.56rem] text-[0.8125rem] text-center desktop:text-[1.25rem] w-[16.25rem] desktop:w-[32.46rem] desktop:text-left
 }
 
 .bulb-mobile {
     width: 1.125rem;
     height: 1.625rem;
-    @apply ml-[13.5rem] mb-[-1rem]
+    @apply ml-[13.5rem] mb-[-1rem] desktop:h-[4.56rem] desktop:w-[3.312rem] desktop:ml-[30rem] desktop:mb-[-2.5rem]
 }
 
 .star {
     width: 0.625rem;
     height: 0.75rem;
     flex-shrink: 0;
+    @apply desktop:h-[4.56rem] desktop:w-[3.312rem]
 }
 
 .star2 {
     width: 0.375rem;
     height: 0.5rem;
     flex-shrink: 0;
+    @apply desktop:h-[4.56rem] desktop:w-[3.312rem]
 }
 
 .flexo {
@@ -78,12 +111,12 @@
 .register-button {
     width: 9.5rem;
     height: 2.92731rem;
-    @apply bg-primary text-white rounded-[0.25rem] flex items-center justify-center text-[0.875rem]
+    @apply bg-primary text-white rounded-[0.25rem] flex items-center justify-center text-[0.875rem] desktop:w-[10.75rem] desktop:h-[3.312rem]
 }
 
 .li {
     height: 2.92731rem;
-    @apply mt-[1.5rem] mb-[0.89rem] pl-[3rem]
+    @apply mt-[1.5rem] mb-[0.89rem] pl-[3rem] desktop:pl-[0rem]
 }
 
 .starl {
@@ -93,11 +126,11 @@
 }
 
 .countdown {
-    @apply flex flex-row justify-between text-[3rem] text-white w-[13.375rem] h-[4rem] mb-[1.93rem]
+    @apply flex flex-row justify-between text-[3rem] text-white w-[13.375rem] h-[4rem] desktop:h-[5.31rem] mb-[1.93rem] desktop:mt-[4.81rem]  desktop:w-[17.81rem]
 }
 
 .time {
-    @apply flex gap-[0rem]
+    @apply flex gap-[0rem]   desktop:text-[4rem]     
 }
 
 .time-text {
@@ -107,24 +140,31 @@
 
 .second-section {
     height: 22.64969rem;
-    background-blend-mode: luminosity;
-    background-image: url(../src/assets/images/smart.png);
-    @apply w-[100vw] bg-darkp bg-center bg-cover bg-no-repeat sphone:w-[100%]
+    /* background-blend-mode: luminosity; */
+    /* background-image: url(../src/assets/images/smart.png); */
+  mix-blend-mode: luminosity;
+    @apply w-[100%] desktop:h-[44.3rem] desktop:w-[55.44rem] bg-darkp bg-center bg-cover bg-no-repeat sphone:w-[100%]
+}
+
+.sec{
+    @apply relative desktop:absolute right-[0rem]
 }
 
 .mobile-tech {
  
+    /* width: 41.6875rem;
+height: 40.0625rem; */
     background-image: url(../src/assets/images/mobile-tech.png);
-    @apply bg-center bg-no-repeat bg-cover ml-[0rem] sphone:w-[95vw] h-[100%] w-[100%]
+    @apply bg-center bg-no-repeat bg-cover ml-[0rem] sphone:w-[95vw] h-[100%] w-[100%] absolute top-[0rem] desktop:top-[1rem] desktop:w-[41.68rem] desktop:h-[40.0625rem] desktop:left-[4rem]
 }
 
 .third-section{
-    @apply bg-darkp pt-[1.81rem] flex flex-col items-center justify-center
+    @apply bg-darkp pt-[1.81rem] flex flex-col items-center desktop:h-[38.6rem] justify-center desktop:flex-row desktop:justify-between desktop:pl-[15rem] desktop:pr-[10.4rem]
 }
 
 .bulb-big-div{
    
-  
+  @apply relative
 
 }
 
@@ -132,7 +172,15 @@
     width: 16.50025rem;
     height: 16.0625rem;
     background-image: url(../src/assets/images/deal.png);
-    @apply  bg-center bg-cover bg-no-repeat justify-center flex items-center
+    @apply  bg-center bg-cover desktop:w-[30.625rem]  desktop:h-[29.812rem] bg-no-repeat justify-center flex items-center
+}
+
+.arrow-mobile{
+    @apply mt-[0.63rem] mb-[1.38rem] w-[1.216rem] h-[1.426] desktop:w-[3.6rem] desktop:h-[3.6rem]  desktop:left-[29rem] desktop:absolute  desktop:top-[25rem]
+}
+
+.kloi{
+    @apply desktop:h-[50%] desktop:flex desktop:items-center justify-center items-center desktop:flex-col desktop:relative desktop:justify-center desktop:top-[4rem]
 }
 
 .big-idea-text{
@@ -144,49 +192,54 @@
 }
 
 .third-intro{
-    @apply leading-[138%] font-bold w-[15.5625rem] h-[3.375rem] text-[1.25rem] text-white text-center 
+    @apply leading-[138%] font-bold w-[15.5625rem] h-[3.375rem] text-[1.25rem] text-white text-center desktop:text-[2rem] desktop:w-[24.9rem] desktop:h-[5.37rem] desktop:text-start items-center justify-center
+}
+
+.third-into-div{
+    @apply w-[100%] flex desktop:justify-start justify-center
 }
 
 .third-texts{
-   @apply h-[100%] text-center mt-[0.56rem] text-[0.8125rem] leading-[1.718rem] text-white mb-[6.02rem] px-[1rem] w-[100%]
+   @apply h-[100%] text-center mt-[0.56rem] text-[0.8125rem] leading-[1.718rem] text-white mb-[6.02rem] px-[1rem] w-[100%] desktop:text-[0.875rem]  desktop:w-[29.28rem] desktop:h-[100%] desktop:text-start desktop:px-[0rem] 
 }
 
 .fourth-section{
-    @apply bg-darkp flex justify-center items-center flex-col w-[100%] 
+    @apply bg-darkp flex justify-center items-center flex-col w-[100%] desktop:flex-row-reverse desktop:h-fit 
 }
 
 
 .first-left-purple{
     
 height: 23.1875rem;
-z-index: 5;
-/* background-image: url(../src/assets/images/purple-lens-mobile.png); */
-@apply relative top-[-0.62rem]  w-[100%] items-center flex justify-center flex-col bg-center bg-no-repeat bg-cover
+
+@apply relative top-[-0.62rem] desktop:top-[0rem]  w-[100%] items-center flex justify-center flex-col bg-center desktop:h-[100%] bg-no-repeat bg-cover
 }
 
 .lady{
     width: 18.375rem;
     height: 23.875rem;
-@apply relative top-[0rem] 
+@apply relative desktop:static top-[0rem] desktop:h-[41.5rem] desktop:w-[41.5rem]
 }
 
 .fourth-head{
   @apply  text-[1.25rem] text-white w-[6rem]  mb-[2rem]
 }
 
-
+.w-text{
+    opacity: 0;
+}
 
 .first-right-purple{
  
-    @apply w-[100%]  relative flex flex-col  items-center  bg-center bg-cover bg-no-repeat p-[0rem] bottom-[2rem]
+    @apply w-[100%]  relative flex flex-col  items-center  bg-center bg-cover bg-no-repeat p-[0rem] bottom-[2rem] desktop:bottom-[0rem]
 }
 
 .rulesg{
-    @apply text-[1.25rem] font-bold text-white leading-[133%] w-[6.5rem] text-center mb-[0.56rem]
+    @apply text-[1.25rem] font-bold text-white leading-[133%] w-[6.5rem] text-center mb-[0.56rem] desktop:text-[2rem] desktop:w-[10.625rem]
 }
 
 .rulesg-text{
-    @apply text-[0.8125rem] text-center leading-[1.79rem] h-[15.5rem] text-white w-[18rem]
+    @apply text-[0.8125rem] text-center leading-[1.79rem] h-[15.5rem] desktop:text-[0.875rem] text-white w-[18rem] desktop:w-[33.43rem] desktop:text-start
 }
 
 .starfl{
@@ -194,7 +247,7 @@ z-index: 5;
         width: 0.625rem;
         height: 0.75rem;
         flex-shrink: 0;
- @apply relative top-[18.5rem] right-[9rem] 
+ @apply relative desktop:absolute top-[18.5rem] right-[9rem] 
 
 }
 
@@ -222,7 +275,7 @@ z-index: 5;
     width: 0.625rem;
     height: 0.75rem;
     flex-shrink: 0;
-@apply relative top-[4.5rem] left-[8.5rem] 
+@apply relative desktop:absolute top-[4.5rem] left-[8.5rem] 
 
 }
 
@@ -232,7 +285,7 @@ z-index: 5;
 
 .fifth-section{
     z-index: 5;
-    @apply flex items-center   relative px-[1.81rem] flex-col justify-center 
+    @apply flex items-center   relative px-[1.81rem] flex-col justify-center desktop:z-0 desktop:flex-row desktop:justify-around
 }
 
 .limo{
@@ -244,19 +297,23 @@ z-index: 5;
 .chart-icon{
     width: 20.75rem;
     height: 17.1875rem;
-    @apply mt-[4.63rem]
+    @apply mt-[4.63rem] desktop:w-[44.37rem] desktop:h-[36.7rem]
+}
+
+.chart-texts-head{
+    @apply w-[100%] flex items-center justify-center 
 }
 
 .chart-head{
-    @apply text-[1.25rem] font-bold leading-[1.6625rem] text-white w-[10.4375rem] text-center h-[3.375rem] flex flex-col 
+    @apply text-[1.25rem] font-bold leading-[1.6625rem] text-white w-[10.4375rem] text-center h-[3.375rem] flex flex-col desktop:text-[2rem] desktop:w-[16.68rem] desktop:text-start desktop:leading-[2rem]
 }
 
 .chart-text{
-    @apply text-center text-[0.75rem] leading-[173.5%] text-white 
+    @apply text-center text-[0.75rem] leading-[173.5%] text-white desktop:text-start 
 }
 
 .chart-texts{
-    @apply w-[100%] flex flex-col justify-center items-center gap-[1.25rem]
+    @apply w-[100%] flex flex-col justify-center items-center gap-[1.25rem] desktop:justify-end desktop:w-[35.7rem] desktop:items-start
 }
 
 .spanText{
@@ -276,7 +333,15 @@ z-index: 5;
 }
 
 .sixth-section{
-    @apply bg-darkp w-[100vw] relative  flex justify-center items-center flex-col
+    @apply bg-darkp w-[100vw] relative  flex justify-center desktop:justify-evenly items-center flex-col desktop:flex-row 
+}
+
+.sixth-section-second{
+    @apply relative flex flex-col items-center justify-center 
+}
+
+.sixth-section-first{
+    @apply relative flex justify-center items-center flex-col desktop:items-start w-[100%] desktop:w-fit
 }
 
 .limoz{
@@ -286,18 +351,18 @@ z-index: 5;
 }
 
 .ask-desc{
-   @apply  text-center text-[0.75rem] w-[17.312rem] text-white leading-[1.719rem] mt-[0.37rem] mb-[2.86rem]
+   @apply  text-center text-[0.75rem] w-[17.312rem] text-white leading-[1.719rem] mt-[0.37rem] mb-[2.86rem] desktop:text-[0.875rem]  desktop:w-[21.4rem] desktop:text-start desktop:mt-[1rem]
 }
 
 .h-pline{
-    width: 16.50944rem;
+    /* width: 16.50944rem; */
 height: 0.0625rem;
-@apply bg-normal
+@apply bg-normal w-[100%] desktop:w-[26.6rem]
 }
 
 .que{
-    width: 16.50944rem;
-    @apply flex flex-col
+    /* width: 16.50944rem; */
+    @apply flex flex-col desktop:w-[26.6rem] desktop:mt-[1.56rem] mt-[0.83rem] w-[85%]
 }
 
 .quet{
@@ -305,21 +370,21 @@ height: 0.0625rem;
 }
 
 .questions-texts{
-    @apply text-white text-[0.75rem] leading-[1.125rem] w-[90%]
+    @apply text-white text-[0.75rem] leading-[1.125rem] w-[90%] desktop:text-[0.875rem]
 }
 
 .plus-icon{
-   @apply text-normal text-[1.25rem] leading-[1.719rem]
+   @apply text-normal text-[1.25rem] leading-[1.719rem] cursor-pointer
 }
 
 .plus-rot{
     transform: rotate(45deg);
     transition: all 0.5 ease-in-out;
-    @apply text-normal text-[1.25rem] leading-[1.719rem]
+    @apply text-normal text-[1.25rem] leading-[1.719rem] cursor-pointer
  }
 
 .ask-questions{
-    @apply flex flex-col items-center justify-center gap-[1.1rem] 
+    @apply flex flex-col items-start justify-center gap-[1.1rem] desktop:gap-[1.56rem]
 }
 
 .small-mark{
@@ -337,7 +402,7 @@ height: 0.0625rem;
 .think2{
     width: 20.4375rem;
 height: 20.4375rem;
-@apply mb-[3.06rem]
+@apply mb-[3.06rem] desktop:w-[46.3125rem] desktop:h-[46.3125rem]
 }
 
 .answers{
@@ -346,6 +411,8 @@ height: 20.4375rem;
 
 
 .seventh-line{
+    outline: 4px solid red;
+
     @apply pt-[5rem] pr-[1.88rem] pl-[2.56rem] bg-darkp flex justify-center items-center flex-col pb-[5.14rem]
 }
 
@@ -363,17 +430,38 @@ height: 20.4375rem;
 }
 
 .sub-timeline{
-    @apply flex flex-row gap-[0.56rem] mb-[1.69rem]
+    outline: 4px solid red;
+
+    @apply flex flex-row gap-[0.56rem] mb-[1.69rem] desktop:items-center desktop:justify-center
+}
+
+.stti{
+    @apply desktop:w-[27.25rem]
+}
+
+
+.stti p{
+    @apply desktop:mt-[0.75rem] desktop:w-[27.2rem]
 }
 
 .line-c{
-@apply flex flex-col items-center gap-[0.44rem]
+@apply flex flex-col items-center gap-[0.44rem] desktop:hidden
 }
+
+.line-cl{
+    
+    @apply flex flex-col items-center gap-[0.44rem] hidden desktop:flex
+    }
 
 .time-line{
     width: 0.125rem;
     height: 4.8125rem;
     @apply bg-light
+}
+
+.timelineb{
+    outline: 4px solid red;
+    @apply flex flex-col justify-center items-center
 }
 
 .time-circle{
@@ -385,10 +473,13 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
 }
 
 .sub-timeline-text{
-    @apply flex flex-col justify-between
+    /* outline: 4px solid green; */
+    @apply flex flex-col desktop:flex-row justify-between desktop:gap-[5.38rem] desktop:w-[27.25rem] 
 }
 
 .sub-timeline-text h2{
+    outline: 4px solid green;
+
     @apply text-[0.75rem] font-bold text-normal
 }
 
@@ -709,7 +800,7 @@ background-blend-mode: hard-light;
 width: 17.8125rem;
 height: 22.875rem;
 background-blend-mode: hard-light;
-@apply absolute right-[-1.8rem] top-[-9rem]
+@apply absolute right-[-1.8rem] top-[-9rem] desktop:right-[0rem] desktop:top-[18rem]
 }
 
 .bgleftll{
