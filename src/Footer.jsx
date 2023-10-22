@@ -18,67 +18,83 @@ const Footer = () => {
     return (
         <div className='footer'>
 
-            <img src={logo} className='footer-logo' alt="" />
+            <div className="footer-first-div">
+                <div className="footer-first-section-col">
 
-            <img src={star} className='star footer-star1' alt="" />
+                    <div className="footer-first-header">
 
-            <p className="footer-text">
-                Getlinked Tech Hackathon is a technology
-                innovation program established by a group
-                of organizations with the aim of showcasing
-                young and talented individuals in the field
-                of technology
-            </p>
+                        <img src={logo} className='footer-logo' alt="" />
 
-            <div className="demacate">
-                Terms of Use <span className='patition'></span>  Privacy Policy
-            </div>
+                        <img src={star} className='star footer-star1' alt="" />
+
+                        <p className="footer-text">
+                            Getlinked Tech Hackathon is a technology
+                            innovation program established by a group
+                            of organizations with the aim of showcasing
+                            young and talented individuals in the field
+                            of technology
+                        </p>
+                    </div>
 
 
-            <div className="footer-col">
-
-                <h2>Useful Links</h2>
-
-                <p>Overview</p>
-                <p>Timeline</p>
-
-                <img className='trans-star' src={transStar} alt="" />
-                <p>FAQs</p>
-                <p>Register</p>
-
-                <div>
-                    <h6 className='footer-socials' >follow us</h6>
-
-                    <img src={instagram} alt="" />
-                    <img src={x} alt="" />
-                    <img src={facebook} alt="" />
-                    <img src={linkedin} alt="" />
-
+                    <div className="demacate">
+                        Terms of Use <span className='patition'></span>  Privacy Policy
+                    </div>
 
                 </div>
-            </div>
 
-            <div className="footer-contacts">
 
-                <h1>Contact Us</h1>
 
-                <div>
-                    <img src={call} alt="" />
 
-                    <p>+234  6707653444</p>
+                <div className="footer-col">
+
+                    <h2>Useful Links</h2>
+
+                    <p>Overview</p>
+                    <p>Timeline</p>
+
+                    <img className='trans-star' src={transStar} alt="" />
+                    <p>FAQs</p>
+                    <p>Register</p>
+
+                    <div>
+                        <h6 className='footer-socials' >follow us</h6>
+
+                        <img src={instagram} alt="" />
+                        <img src={x} alt="" />
+                        <img src={facebook} alt="" />
+                        <img src={linkedin} alt="" />
+
+
+                    </div>
                 </div>
 
-                <img src={smallStar} className='small-star' alt="" />
+                <div className="footer-contacts">
 
-                <div>
-                    <img src={location} alt="" />
+                    <h1>Contact Us</h1>
 
-                    <h2> 27,Alara Street
-                        Yaba 100012
-                        Lagos State</h2>
+                    <div>
+                        <img src={call} alt="" />
+
+                        <p>+234  6707653444</p>
+                    </div>
+
+                    <img src={smallStar} className='small-star' alt="" />
+
+                    <div>
+                        <img src={location} alt="" />
+
+                        <h2> 27,Alara Street
+                            Yaba 100012
+                            Lagos State</h2>
+                    </div>
+
                 </div>
 
+
+
             </div>
+
 
             <div className="reserved">
                 <img src={pupstar} alt="" className='pupStar' />
@@ -87,6 +103,7 @@ const Footer = () => {
                     All rights reserved. © getlinked Ltd.
                 </p>
             </div>
+
 
 
         </div>

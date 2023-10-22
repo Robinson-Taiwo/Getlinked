@@ -17,7 +17,7 @@
 }
 
 .first-section {
-    @apply pr-[2.06rem] pl-[2.44rem] pt-[1.94rem] flex flex-col items-center desktop:ml-[8rem] desktop:pr-[0rem] desktop:mr-[0rem] desktop:items-start  desktop:pl-[0rem]
+    @apply pr-[2.06rem] pl-[2.44rem] pt-[1.94rem] flex flex-col items-center wide:ml-[8rem] desktop:ml-[4rem] desktop:pr-[0rem] desktop:mr-[0rem] desktop:items-start  desktop:pl-[0rem]
 }
 
 .igniting-div{
@@ -56,11 +56,11 @@ background-blend-mode: hard-light;
    }
 
 .igniting { 
-    @apply text-white italic font-bold flex flex-col w-fit sphone:text-[0.8rem] desktop:text-[2.25rem]
+    @apply text-white italic font-bold flex flex-col w-fit sphone:text-[0.8rem] wide:text-[2.25rem] desktop:text-[1.65rem]
 }
 
 .getlinked {
-    @apply text-[2rem] font-bold text-white flex flex-col justify-center desktop:text-[5rem] items-center desktop:items-start desktop:w-[37.3rem]
+    @apply text-[2rem] font-bold text-white flex flex-col justify-center wide:text-[5rem] desktop:text-[3rem] items-center desktop:items-start desktop:w-[37.3rem]
 }
 
 .get-linked {
@@ -72,7 +72,7 @@ background-blend-mode: hard-light;
 }
 
 .hackathon-text {
-    @apply text-white text-[2rem] font-bold flex items-center desktop:text-[5rem]
+    @apply text-white text-[2rem] font-bold flex items-center wide:text-[5rem] desktop:text-[3rem]
 }
 
 .mobile-chain {
@@ -143,7 +143,7 @@ background-blend-mode: hard-light;
     /* background-blend-mode: luminosity; */
     /* background-image: url(../src/assets/images/smart.png); */
   mix-blend-mode: luminosity;
-    @apply w-[100%] desktop:h-[44.3rem] desktop:w-[55.44rem] bg-darkp bg-center bg-cover bg-no-repeat sphone:w-[100%]
+    @apply w-[100%] wide:h-[44.3rem] desktop:h-[40.3rem] desktop:w-[44.44rem] wide:w-[55.44rem] bg-darkp bg-center bg-cover bg-no-repeat sphone:w-[100%]
 }
 
 .sec{
@@ -323,7 +323,7 @@ height: 23.1875rem;
 .chart-more{
     width: 6.02188rem;
     height: 1.95913rem;
-    @apply bg-primary rounded-[0.25rem] text-[0.75rem] text-white mb-[3.67rem] flex items-center justify-center 
+    @apply bg-primary rounded-[0.25rem] text-[0.75rem] text-white mb-[3.67rem] flex items-center justify-center desktop:w-[10rem] desktop:h-[3rem]
 } 
 
 .chart-star{
@@ -411,9 +411,8 @@ height: 20.4375rem;
 
 
 .seventh-line{
-    outline: 4px solid red;
 
-    @apply pt-[5rem] pr-[1.88rem] pl-[2.56rem] bg-darkp flex justify-center items-center flex-col pb-[5.14rem]
+    @apply pt-[5rem] pr-[1.88rem] pl-[2.56rem] bg-darkp desktop:w-[100%] flex justify-center items-center flex-col pb-[5.14rem]
 }
 
 .oline{
@@ -422,21 +421,28 @@ height: 20.4375rem;
 }
 
 .timeline{
-    @apply font-bold text-[1.25rem] leading-[133%] text-white
+    @apply font-bold text-[1.25rem] leading-[133%] text-white desktop:text-[2rem]
 }
 
 .timeline-desc{
-    @apply font-normal leading-[172.4%] text-[0.875rem] text-center text-white w-[18.25rem] mt-[1.31rem] mb-[3.5rem]
+    @apply font-normal leading-[172.4%] text-[0.875rem] text-center text-white w-[18.25rem] mt-[1.31rem] mb-[3.5rem] desktop:w-[21.625rem]
 }
 
 .sub-timeline{
-    outline: 4px solid red;
 
-    @apply flex flex-row gap-[0.56rem] mb-[1.69rem] desktop:items-center desktop:justify-center
+    @apply flex flex-row gap-[0.56rem] mb-[1.69rem] desktop:items-center desktop:w-[100%] desktop:justify-center
 }
 
 .stti{
-    @apply desktop:w-[27.25rem]
+    @apply desktop:w-[27.25rem] desktop:flex desktop:justify-end desktop:flex-col
+}  
+
+.leftone{
+    @apply desktop:text-end
+}
+
+.leftonedate{
+    @apply desktop:flex desktop:justify-end desktop:items-end
 }
 
 
@@ -444,24 +450,30 @@ height: 20.4375rem;
     @apply desktop:mt-[0.75rem] desktop:w-[27.2rem]
 }
 
+
+
 .line-c{
 @apply flex flex-col items-center gap-[0.44rem] desktop:hidden
 }
 
 .line-cl{
     
-    @apply flex flex-col items-center gap-[0.44rem] hidden desktop:flex
+    @apply flex flex-col items-center gap-[0.44rem] hidden desktop:flex desktop:mr-[6.12rem] desktop:ml-[5.38rem]
     }
 
 .time-line{
     width: 0.125rem;
     height: 4.8125rem;
-    @apply bg-light
+    @apply bg-light desktop:w-[0.25rem] desktop:h-[5.5625rem]
 }
 
 .timelineb{
-    outline: 4px solid red;
-    @apply flex flex-col justify-center items-center
+    @apply flex flex-col justify-center items-center desktop:w-[100%] desktop:flex
+}
+
+
+.timelinec{
+    @apply desktop:hidden flex-col desktop:justify-center desktop:items-center desktop:w-[80%] hidden  desktop:px-[5rem]
 }
 
 .time-circle{
@@ -469,27 +481,26 @@ height: 20.4375rem;
 height: 1.2075rem;
 background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
 
-    @apply rounded-[1.65625rem] text-[0.75rem] text-white font-bold flex items-center justify-center
+    @apply rounded-[1.65625rem] text-[0.75rem] text-white font-bold flex items-center justify-center desktop:h-[3.3125rem] desktop:w-[3.3125rem] desktop:text-[1.5rem]
 }
 
 .sub-timeline-text{
     /* outline: 4px solid green; */
-    @apply flex flex-col desktop:flex-row justify-between desktop:gap-[5.38rem] desktop:w-[27.25rem] 
+    @apply flex flex-col desktop:flex-row justify-between desktop:justify-center desktop:gap-[0rem] desktop:w-[100%] 
 }
 
 .sub-timeline-text h2{
-    outline: 4px solid green;
 
-    @apply text-[0.75rem] font-bold text-normal
+    @apply text-[0.75rem] font-bold text-normal desktop:text-[1.5rem]
 }
 
 .sub-timeline-text p{
     @apply text-[0.75rem] text-white
- leading-[159.9%]
+ leading-[159.9%] desktop:text-[1rem]
 }
 
 .sub-timeline-text h3{
-    @apply text-[0.75rem] font-bold text-normal
+    @apply text-[0.75rem] font-bold text-normal desktop:items-end desktop:flex desktop:w-[27.25rem] desktop:text-[1.5rem]
 }                           
 
 .eight-line{
@@ -500,7 +511,11 @@ z-index: 5;
 }
 
 .highlight{
-    @apply text-white text-center text-[0.75rem] leading-[170.9%] w-[17.3rem] mb-[2.5rem]
+    @apply text-white text-center text-[0.75rem] leading-[170.9%] w-[17.3rem] desktop:text-[1rem] mb-[2.5rem] desktop:text-start desktop:w-[24rem]
+}
+
+.trophy-header{
+    @apply desktop:w-[100%] desktop:flex desktop:flex-col flex-col desktop:pr-[25rem] desktop:relative desktop:pl-[60%] desktop:mb-[3rem] items-center justify-center flex
 }
 
 .prizepup{
@@ -526,7 +541,7 @@ z-index: 5;
 }
 
 .eight-header{
-    @apply text-white font-bold text-[1.25rem] w-[6.8125rem] text-center 
+    @apply text-white font-bold text-[1.25rem] w-[6.8125rem] text-center desktop:text-start desktop:text-[2rem] desktop:w-[10.875rem]
 }
 
 .header-purple{
@@ -541,19 +556,24 @@ z-index: 5;
 .trophy-icon{
     width: 20.0625rem;
 height: 17.625rem;
-@apply mb-[3.19rem] 
+@apply mb-[3.19rem] desktop:w-[34.25rem] desktop:h-[30.125rem]
+}
+
+.trophy-row{
+    @apply desktop:flex desktop:flex-row  desktop:w-[100%] desktop:justify-evenly
 }
 
 .medals2, .medals{
     width: 4.74981rem;
 height: 4.77631rem;
-@apply z-20
+@apply z-20 desktop:w-[11.18rem] desktop:h-[11.25rem]
 }
 
 .medals{
     width: 7.85444rem;
 height: 7.85444rem;
-flex-shrink: 0;
+flex-shrink: 0; 
+@apply desktop:h-[18.5rem] desktop:w-[18.5rem]
 }
 
 .rewards-coner{
@@ -566,7 +586,7 @@ flex-shrink: 0;
 height: 7.85444rem;
 border: 1px solid #D434FE;
 background: rgba(212, 52, 254, 0.12);
-    @apply rounded-[0.5rem] relative top-[-2.57rem] z-10 pt-[2.9rem] text-white flex flex-col items-center text-center 
+    @apply rounded-[0.5rem] relative top-[-2.57rem] z-10 pt-[2.9rem] text-white flex flex-col items-center text-center desktop:w-[13.25rem] desktop:h-[18.5rem] desktop:top-[-5.25rem] desktop:pt-[7rem]
 }
 
 .md1{
@@ -576,7 +596,7 @@ border-radius: 0.5rem;
 border: 1px solid #903AFF;
 background: rgba(144, 58, 255, 0.12);
 ;
-    @apply rounded-[0.5rem] relative top-[-2rem] z-10 pt-[3rem] text-white flex flex-col items-center text-center
+    @apply rounded-[0.5rem] relative top-[-2rem] z-10 pt-[3rem] text-white flex flex-col items-center text-center desktop:w-[13.25rem] desktop:h-[21.678rem] desktop:top-[-5.9rem] desktop:pt-[9rem]
 }
 
 .trophs2{
@@ -597,11 +617,19 @@ background: rgba(144, 58, 255, 0.12);
 }
 
 .md2-text p{
-    @apply text-[0.75rem] font-bold 
+    @apply text-[0.75rem] font-bold desktop:text-[2.25rem]
+}
+
+.md2-text h6{
+    @apply desktop:text-[2rem]
 }
 
 .md2-text {
     @apply flex flex-col 
+}
+
+.md2-text p:nth-of-type(2) {
+    @apply desktop:text-[1.5rem]
 }
 
 
@@ -613,23 +641,27 @@ background: rgba(144, 58, 255, 0.12);
 }
 
 .pas{
- @apply text-white text-[1.25rem] font-bold leading-[1.718rem] mb-[0.31rem] 
+ @apply text-white text-[1.25rem] font-bold leading-[1.718rem] mb-[0.31rem] desktop:text-[2rem] desktop:mb-[1.38rem]
 }
 
 .past{
-    @apply text-white leading-[1.28rem] text-[0.75rem] text-center w-[17.87rem] mb-[2.56rem] 
+    @apply text-white leading-[1.28rem] text-[0.75rem] text-center w-[17.87rem] mb-[2.56rem] desktop:w-[28.25rem]
 }
 
 .partners{
     border-radius: 0.3125rem;
     border: 1px solid #D434FE;
     background: rgba(255, 255, 255, 0.01);
-    @apply px-[2.95rem] py-[2.39rem] h-[9.29rem] w-[100%] mb-[6.53rem]
+    @apply px-[2.95rem] py-[2.39rem] h-[9.29rem] w-[100%] mb-[6.53rem] desktop:w-[78.43rem] desktop:h-[35rem] desktop:flex desktop:items-center desktop:justify-center
+}
+
+.partners-image{
+    @apply desktop:w-[56.146rem] desktop:h-[17rem]
 }
 
 .tenth-section{
-    z-index: -100;
-    @apply pt-[4.44rem] flex flex-col items-center bg-darkp   pb-[5.19rem] pr-[3.06rem] pl-[2.88rem] relative 
+    z-index: 100;
+    @apply pt-[4.44rem] flex flex-col items-center bg-darkp   pb-[5.19rem] pr-[3.06rem] pl-[2.88rem] relative desktop:flex-row desktop:justify-evenly desktop:pb-[10rem]
 }
 
 .milo{
@@ -637,36 +669,44 @@ background: rgba(144, 58, 255, 0.12);
 }
 
 .tenth-head{
-    @apply text-white text-[1.25rem] font-bold  w-[11.7rem]  text-center 
+    @apply text-white text-[1.25rem] font-bold  w-[11.7rem] desktop:text-start  desktop:text-[2rem]   text-center  desktop:w-[18.75rem] desktop:mb-[1.06rem]
 }
 
 .tenth-section h6{
     color: rgba(255, 255, 255, 0.75);
 
-    @apply  text-[0.75rem] leading-[1.178rem] mb-[1.75rem] relative
+    @apply desktop:text-start text-[0.75rem] leading-[1.178rem] mb-[1.75rem] relative desktop:text-[0.876rem]
 }
 
 .ppat{
-    @apply text-[0.75rem] leading-[188.4%] text-center w-[17.0625rem] text-white 
+    @apply text-[0.75rem] leading-[188.4%] text-center w-[17.0625rem] text-white  desktop:text-start desktop:text-[0.876rem] desktop:w-[27.35rem]
 }
 
 .ppat-inner{
     border-radius: 0.3125rem;
 border: 1px solid #D434FE;
 background: rgba(217, 217, 217, 0.03);
-@apply w-[100%] mt-[1.88rem] pr-[0.75rem] pl-[0.94rem] pt-[2.81rem] flex flex-col justify-center 
+@apply w-[100%] mt-[1.88rem] pr-[0.75rem] pl-[0.94rem] pt-[2.81rem] flex flex-col justify-center desktop:w-[35.5625rem] desktop:text-start desktop:items-center
 }
 
 .ppat-inner-one{
-    @apply text-white text-center text-[0.75rem] leading-[216.4%]
+    @apply text-white text-center text-[0.75rem] leading-[216.4%] desktop:text-start desktop:w-[26.5625rem] desktop:text-[0.875rem]
 }
 
+/* .reada-more{
+    @apply desktop:
+} */
+
 .ppat-inner h3{
-    @apply ml-[0.44rem] font-bold text-[0.812rem] text-normal mt-[1.331rem]
+    @apply ml-[0.44rem] font-bold text-[0.812rem] desktop:text-[1rem] text-normal mt-[1.331rem]
 }
 
 .ppat-inner h4{
-    @apply ml-[0.44rem] font-bold text-[0.75rem] text-white leading-[216.4%] mb-[1.31rem]
+    @apply ml-[0.44rem] font-bold text-[0.75rem] text-white leading-[216.4%] mb-[1.31rem] desktop:text-[0.875rem]
+}
+
+.lisencing-policy{
+    @apply desktop:w-[100%] desktop:pl-[2.56rem]
 }
 
 .standard-lisence{
@@ -674,11 +714,15 @@ background: rgba(217, 217, 217, 0.03);
 }
 
 .standard-lisence p{
-    @apply text-white text-[0.75rem] leading-[175.9%]
+    @apply text-white text-[0.75rem] leading-[175.9%] desktop:w-[25.06rem] desktop:text-[0.875rem]
 }
 
 .standard-lisence img{
     @apply mt-[0.38rem]
+}
+
+.tenth-section-first{
+    @apply flex items-center justify-center flex-col desktop:items-start
 }
 
 .readMore-container{
@@ -688,7 +732,7 @@ background: rgba(217, 217, 217, 0.03);
 .shield{
     fill: linear-gradient(180deg, rgba(144, 58, 255, 0.14) 0%, rgba(255, 38, 185, 0.14) 100%);
 
-  @apply  mt-[3rem]  w-[15.56rem] h-[19.437rem] 
+  @apply  mt-[3rem]  w-[15.56rem] h-[19.437rem] desktop:w-[33.125rem] desktop:h-[40.5rem]
 }
 
 .shieldpup{
@@ -715,11 +759,11 @@ background: rgba(217, 217, 217, 0.03);
 
 
 .keyboy{
-    @apply absolute top-[9rem] left-[-1.3rem]
+    @apply absolute top-[9rem] left-[-1.3rem] desktop:w-[34.937rem] desktop:h-[46.8125rem] 
 }
 
 .shield-container{
-    @apply relative h-[29.5rem]
+    @apply relative h-[29.5rem] desktop:top-[-15rem]
 }
 
 

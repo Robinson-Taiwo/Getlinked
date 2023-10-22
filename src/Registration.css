@@ -1,22 +1,56 @@
 .Registration {
-    @apply pb-[4rem] text-white pt-[1.5rem]
+    overflow-x: hidden;
+    @apply pb-[4rem] text-white pt-[1.5rem] desktop:pb-[0rem]  desktop:h-[100vh] desktop:pt-[0rem]
+}
+
+.nav-reg{
+    @apply desktop:flex hidden
+}
+
+.techboy-div{
+    @apply desktop:w-[100%] desktop:flex items-center justify-center bg-red-500
+}
+
+.reg-real{
+        overflow-x: hidden;
+    @apply desktop:flex desktop:flex-row flex-col desktop:mt-[4.25rem] desktop:justify-center desktop:items-center items-center justify-between flex  wide:mr-[6.4rem] desktop:mr-[3.4rem]
 }
 
 .register-subheader {
-    @apply text-[0.937rem] text-normal font-bold mb-[1.94rem] pl-[4.19rem]
+    @apply text-[0.937rem] text-normal font-bold mb-[1.94rem] pl-[4.19rem] desktop:hidden
+}
+
+.register-subheader2 {
+    @apply text-[2rem] text-normal font-bold   desktop:flex hidden wide:mb-[2.88rem] desktop:mb-[1rem]
+}
+
+.register-content-secondly{
+    @apply wide:w-[46.25rem]  desktop:flex desktop:flex-col desktop:w-fit desktop:h-fit desktop:items-center desktop:justify-center
+}
+
+
+@media (min-width: 1024px) {
+ .register-content{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ }
 }
 
 .register-content {
-    @apply w-[100%] flex flex-col items-center justify-center
+   
+
+    @apply w-[100%] flex flex-col items-center justify-center desktop:flex-col wide:w-[46.25rem] wide:h-[46.25rem] desktop:bg-[#ffffff08] 
+    desktop:w-[40rem] desktop:h-[40rem] 
+    desktop:rounded-[0.25rem] wide:pl-[5.69rem] desktop:items-start  desktop:pl-[5%] wide:pr-[2rem]
+    desktop:justify-start desktop:pt-[2.06rem] wide:pt-[4.06rem] desktop:pb-[1rem]
 }
 
 .techboy-icon {
 
-    @apply mb-[1.44rem]
+    @apply mb-[1.44rem] wide:w-[44.8125rem] wide:h-[44.8125rem] desktop:w-[30.8125rem] desktop:h-[30.8125rem] 
 }
 
 .textandicons {
-    @apply text-white flex flex-row h-[100%] gap-[0.39rem] items-end mb-[0.44rem]
+    @apply text-white flex flex-row h-[100%] gap-[0.39rem] items-end mb-[0.44rem] desktop:h-fit
 }
 
 .registered-icons-underline {
@@ -43,7 +77,7 @@
 }
 
 .register-inputLabel {
-    @apply flex flex-col
+    @apply flex flex-col desktop:w-fit desktop:pr-[0rem]
 }
 
 .register-input {
@@ -54,7 +88,7 @@
     width: 16.4375rem;
     height: 2.4375rem;
     flex-shrink: 0;
-    @apply pl-[1.69rem] text-[0.8125rem]
+    @apply pl-[1.69rem] text-[0.8125rem] wide:h-[2.937rem] wide:w-[16.437rem] desktop:h-[2.937rem] desktop:w-[11.437rem] desktop:pl-[0.69rem] wide:pl-[1.69rem]
 }
 
 .register-input::placeholder {
@@ -74,7 +108,7 @@ label {
 }
 
 .register-form {
-    @apply flex flex-col gap-[0.94rem]
+    @apply flex flex-col gap-[0.94rem] desktop:grid desktop:grid-cols-2 desktop:gap-y-[0.81rem] wide:gap-y-[1.81rem]  desktop:gap-x-[0rem] desktop:w-[100%]
 }
 
 .register-select {
@@ -85,7 +119,7 @@ label {
     width: 9.6875rem;
     height: 2.4375rem;
     flex-shrink: 0;
-    @apply pl-[0.62rem] text-[0.8125rem]
+    @apply pl-[0.62rem] text-[0.8125rem] wide:w-[16.3rem] wide:h-[2.937rem] desktop:w-[11.3rem] desktop:h-[2.937rem]
 }
 
 option {
@@ -96,7 +130,12 @@ option {
 }
 
 .selection-register{
-    @apply flex flex-row justify-between
+    @apply desktop:flex desktop:flex-row desktop:gap-[2rem] desktop:w-[100%]  desktop:bg-red-900
+}
+
+
+.selectionj-register{
+    @apply flex flex-row justify-between w-[16.437rem] desktop:grid desktop:grid-cols-2 desktop:gap-y-[0.81rem] wide:gap-y-[1.81rem]  desktop:gap-x-[0rem] desktop:w-[100%] desktop:mt-[0.8rem]
 }
 
 .register-group {
@@ -107,9 +146,8 @@ option {
     width: 5.4375rem;
     height: 2.4375rem;
     flex-shrink: 0;
-    @apply pl-[0.62rem] text-[0.8125rem]
+    @apply pl-[0.62rem] text-[0.8125rem] wide:w-[16.3rem] wide:h-[2.937rem] desktop:w-[11.3rem] desktop:h-[2.937rem]
 }
-
 .register-group{
     outline: none;
 }
@@ -119,15 +157,19 @@ option {
 }
 .register-review{
     font-style: italic;
-@apply text-[0.5625rem] text-normal mt-[0.94rem]  
+@apply text-[0.5625rem] text-normal mt-[0.94rem] desktop:w-[100%]  
 }
 
 .register-agreement{
-    @apply flex flex-row text-[0.625rem]   gap-[0.5rem] mb-[0.88rem] 
+    @apply flex flex-row text-[0.625rem]   gap-[0.5rem] mb-[0.88rem]  desktop:w-[100%]  desktop:mt-[1rem]
+}
+
+.register-sub-but{
+    @apply desktop:w-[100%] desktop:flex desktop:items-center desktop:justify-start
 }
 
 .register-agreement p{
-    @apply w-[14.25rem]
+    @apply w-[14.25rem] desktop:w-[100%]
 }
 
 /* .agreed-register{
@@ -137,7 +179,7 @@ option {
 .register-submit{
     width: 10.75rem;
 height: 3.3125rem; 
-@apply flex items-center justify-center bg-primary rounded-[0.25rem]
+@apply flex items-center justify-center bg-primary rounded-[0.25rem] wide:w-[92%] desktop:w-[90%]
 }
 
 
@@ -156,17 +198,17 @@ height: 3.3125rem;
 height: 29.1875rem;border-radius: 0.3125rem;
 border: 1px solid #D434FE;
 background: rgba(255, 255, 255, 0.01);
-@apply flex flex-col items-center justify-center 
+@apply flex flex-col items-center justify-center desktop:w-[43.68rem] desktop:h-[41.5rem]  
 }
 
 .modal-box button{
     width: 15.75rem;
 height: 3.3125rem;
-@apply bg-primary rounded-[0.25rem] font-semibold cursor-pointer
+@apply bg-primary rounded-[0.25rem] font-semibold cursor-pointer desktop:w-[80%]
 }
 
 .modal-box h1{
-@apply text-white font-bold w-[11.25rem] text-center mb-[1.81rem] 
+@apply text-white font-bold w-[11.25rem] text-center mb-[1.81rem]  desktop:w-[60%] desktop:text-[1.8rem]
 }
 
 .modal-box p{
@@ -178,7 +220,7 @@ height: 3.3125rem;
 }
 
 .sb{
-    @apply relative left-[-7.5rem]
+    @apply relative left-[-7.5rem] 
 }
 
 .close-modal{

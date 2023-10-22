@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
 import logo from "../src/assets/icons/getlinked.svg"
@@ -7,7 +8,7 @@ import circle from "../src/assets/icons/cancel_circle.svg"
 import "./Navbar.css"
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({ backgroundColor, borderGradient }) => {
 
   const [showMenu, setShowMenu] = useState(false)
   // defining toggle menu function
@@ -27,16 +28,31 @@ const Navbar = () => {
     };
   }, [showMenu]);
 
+  const navbarStyle = {
+    background: `${backgroundColor}`,
+    border: `${borderGradient}`,
+  };
+
+
+  const buttonStyle = {
+    background: `${backgroundColor}`,
+    borderImage: `${borderGradient}`,
+  };
 
 
 
   return (
 
-    <div className='navbar'>
+    <div className="navbar">
 
-      <div className='navbar-container' >
+      <div className="navbar-container"  >
         {/* navbar logo */}
-        <img className="nav-logo" src={logo} alt="" />
+        
+        <Link to="/" >
+
+          <img className="nav-logo" src={logo} alt="" />
+        </Link>
+
 
         <div className="liok">
 
@@ -66,7 +82,7 @@ const Navbar = () => {
 
 
             <Link to="/Registration" >
-              <button className="menu-register">
+              <button style={navbarStyle} className="menu-register">
                 Register
               </button>
             </Link>
@@ -77,8 +93,8 @@ const Navbar = () => {
 
       </div>
 
-      <div className="nav-line">
-      </div>
+      {/* <div className="nav-line">
+      </div> */}
     </div>
 
   )

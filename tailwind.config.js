@@ -9,7 +9,7 @@ export default {
         'phone': '320px',
         'tablet': '640px',
         'desktop': '1024px',
-        'wide': '1280px',
+        'wide': '1440px',
       },
       colors: {
         // Custom colors

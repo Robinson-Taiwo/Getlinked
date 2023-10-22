@@ -1,5 +1,5 @@
 .navbar-container {
-    @apply flex flex-row justify-between items-center w-[100vw] px-[3rem] relative desktop:px-[8rem]
+    @apply flex flex-row justify-between items-center w-[100vw] px-[3rem] relative desktop:px-[3rem] wide:px-[3rem]
 }
 
 .nav-logo {
@@ -40,6 +40,7 @@
 }
 
 .menu-item {
+    
     @apply text-[1.125rem] font-medium tracking-[-0.0625rem] desktop:text-[1rem] desktop:font-normal 
 }
 
@@ -49,5 +50,5 @@
 }
 
 .menu-item-two{
-@apply flex desktop:flex-row desktop:gap-[3.5rem] gap-[1.81rem] flex-col
+@apply flex desktop:flex-row wide:gap-[3.5rem] desktop:gap-[2rem] gap-[1.81rem] flex-col
 }

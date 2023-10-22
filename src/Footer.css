@@ -1,13 +1,25 @@
 .footer{
-    @apply bg-[#100B20] pl-[3.45rem] pt-[3.19rem] pr-[1.96rem] relative
+    @apply bg-[#100B20] pl-[3.45rem] pt-[3.19rem] pr-[1.96rem] desktop:pb-[3.04rem]
+}
+
+.footer-first-div{
+    @apply  relative desktop:flex desktop:flex-row desktop:justify-evenly
+}
+
+.footer-first-header{
+    @apply desktop:flex desktop:flex-col 
 }
 
 .footer-logo{
     @apply w-[5.94rem] h-[1.56rem] mb-[0.75rem]
 }
 
+.footer-first-section-col{
+    @apply desktop:flex desktop:flex-col 
+}
+
 .footer-text{
-    @apply text-white leading-[172.4%] text-[0.75rem]  mb-[2.44rem] 
+    @apply text-white leading-[172.4%] text-[0.75rem]  mb-[2.44rem] desktop:w-[27rem] 
 }
 
 .patition{

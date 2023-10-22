@@ -18,6 +18,7 @@ import facebook from "../src/assets/icons/facebook.svg"
 import linkedin from "../src/assets/icons/linkedin.svg"
 import "./Contact.css"
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
 
 const Contact = () => {
 
@@ -30,7 +31,7 @@ const Contact = () => {
     const isSubmitDisabled = name === '' || topic === '' || email === '' || message === '';
 
 
-  
+
 
 
 
@@ -57,7 +58,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        isSubmitDisabled ?  alert('All fields are required') : (alert(`this function is yet to be implemented by Taiwo. will take care of it very soon.
+        isSubmitDisabled ? alert('All fields are required') : (alert(`this function is yet to be implemented by Taiwo. will take care of it very soon.
         thank you for trying it though😁😁😁
         . love you...
        THESE ARE YOUR INPUTED DETAILS😏:
@@ -65,7 +66,7 @@ const Contact = () => {
       Topic: ${topic},
       Email: ${email},
       Message: ${message},`))
-        
+
 
         setName("")
         setTopic("")
@@ -74,14 +75,14 @@ const Contact = () => {
 
 
 
-        
 
-    //     console.log(`this function is yet to be implemented by Taiwo. will take care of it very soo. thank you for trying. love you...
-    //    this is your details:
-    //   Team name:  ${name},
-    //   Topic: ${topic},
-    //   Email: ${email},
-    //   Message: ${message},`)
+
+        //     console.log(`this function is yet to be implemented by Taiwo. will take care of it very soo. thank you for trying. love you...
+        //    this is your details:
+        //   Team name:  ${name},
+        //   Topic: ${topic},
+        //   Email: ${email},
+        //   Message: ${message},`)
 
 
     }
@@ -94,67 +95,142 @@ const Contact = () => {
                 <img src={back} alt="" className="contactBack" />
             </Link>
 
+            <div className="contacts-navbar">
+                <Navbar borderGradient="2px solid #9A39FF" backgroundColor="transparent" />
+
+            </div>
+
+
             <img src={px} alt="" className="contactfstar" />
 
             <img src={bgleft} alt="" className="contact-bg-left" />
 
-            <h1 className="contact-head">
-                Questions or need
-                assistance?
-                <div>
-                    Let us know about it
+
+            <div className="contacts-containerr">
+
+
+
+                <div className="contacts-first-div">
+
+                    <h1>
+                        Get in touch
+                    </h1>
+
+                    <h2>
+                        Contact
+                        Information
+                    </h2>
+
+                    <h3>
+                        27,Alara Street
+                        Yaba 100012
+                        Lagos State
+                    </h3>
+
+                    <h4>
+
+                        Call Us : 07067981819
+                    </h4>
+
+                    <h5>
+
+                        we are open from Monday-Friday
+                        08:00am - 05:00pm
+                    </h5>
+
+
+   <div className="sharon">
+                            Share on
+                        </div>
+
+                        <div className="contact-iconst">
+
+                            <img src={instagram} alt="" className="contact-icon" />
+
+                            <img src={x} alt="" className="contact-icon" />
+
+                            <img src={facebook} alt="" className="contact-icon" />
+
+                            <img src={linkedin} alt="" className="contact-icon" />
+
+                        </div>
 
                 </div>
 
-                <img src={transStar} alt="" className="contactsstar" />
+
+                <div className="contacts-second-div">
 
 
-            </h1>
 
-            <p className="contact-desc">
-                Email us below to any question related
-                to our event
-            </p>
+                    <h1 className="contact-head">
+                        Questions or need
+                        assistance?
+                        <div>
+                            Let us know about it
 
-            <div className="contacts-inpute">
+                        </div>
 
-                <input type="text" placeholder="Team's Name" onChange={handleNameChange} required value={name} className='small-input' />
+                        <img src={transStar} alt="" className="contactsstar" />
 
-                <input type="text" placeholder="Topic" onChange={handleTopicChange} required value={topic} className='small-input' />
 
-                <input type="email" placeholder="Email" onChange={handleEmailChange} required value={email} className='small-input' />
+                    </h1>
 
-                <textarea className='message' name="" id="" cols="30" rows="5" onChange={handleMessageChange} required value={message} placeholder="Message"></textarea>
+                    <p className="contact-desc">
+                        Email us below to any question related
+                        to our event
+                    </p>
 
-                <img src={star} alt="" className="contactwstar" />
+                    <div className="contacts-inpute">
 
-                <div className="button-submit relative">
+                        <input type="text" placeholder="Team's Name" onChange={handleNameChange} required value={name} className='small-input' />
 
-                    <img src={px} alt="" className="contactlaststar" />
+                        <input type="text" placeholder="Topic" onChange={handleTopicChange} required value={topic} className='small-input' />
 
-                    <button onClick={handleSubmit} className="submit">
-                        submit
-                    </button>
+                        <input type="email" placeholder="Email" onChange={handleEmailChange} required value={email} className='small-input' />
+
+                        <textarea className='message' name="" id="" cols="30" rows="5" onChange={handleMessageChange} required value={message} placeholder="Message"></textarea>
+
+                        <img src={star} alt="" className="contactwstar" />
+
+                        <div className="button-submit relative">
+
+                            <img src={px} alt="" className="contactlaststar" />
+
+                            <button onClick={handleSubmit} className="submit">
+                                submit
+                            </button>
+                        </div>
+
+
+
+                        <div className="shareon">
+                            Share on
+                        </div>
+
+                        <div className="contact-icons">
+
+                            <img src={instagram} alt="" className="contact-icon" />
+
+                            <img src={x} alt="" className="contact-icon" />
+
+                            <img src={facebook} alt="" className="contact-icon" />
+
+                            <img src={linkedin} alt="" className="contact-icon" />
+
+                        </div>
+                    </div>
+
+
+
+
                 </div>
 
-
-                <div className="shareon">
-                    Share on
-                </div>
-
-                <div className="contact-icons">
-
-                    <img src={instagram} alt="" className="contact-icon" />
-
-                    <img src={x} alt="" className="contact-icon" />
-
-                    <img src={facebook} alt="" className="contact-icon" />
-
-                    <img src={linkedin} alt="" className="contact-icon" />
-
-                </div>
 
             </div>
+
+
+
+
 
 
         </div>

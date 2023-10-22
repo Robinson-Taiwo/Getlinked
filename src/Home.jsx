@@ -2,7 +2,7 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import curve from "../src/assets/icons/curve.svg"
@@ -48,6 +48,16 @@ import "./Home.css"
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 
+// import {  fallingTextAnimation,
+//     appearFromBelowAnimation,
+//     rotateWithFadeAnimation,} from "./Animation"
+
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// Initialize ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
 
 const Home = () => {
 
@@ -62,6 +72,51 @@ const Home = () => {
     const backgroundImageUrl = '/public/smart.png';
 
     // defining the time functionality counting down from three days
+
+
+    // texts refs for the animations
+    const textRef = useRef(null);
+    const elementRef = useRef(null);
+    const rotateRef = useRef(null);
+
+
+    useEffect(() => {
+        // Animation 1: Falling Text with ScrollTrigger
+        gsap.from(textRef.current, {
+            y: -100,
+            rotation: -15,
+            ease: 'bounce.out',
+            duration: 2,
+            scrollTrigger: {
+                trigger: textRef.current,
+                start: 'top 80%',
+            },
+        });
+
+        // Animation 2: Appear from Below with ScrollTrigger
+        gsap.from(elementRef.current, {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: elementRef.current,
+                start: 'top 80%',
+            },
+        });
+
+        // Animation 3: Rotation with Fade and ScrollTrigger
+        gsap.from(rotateRef.current, {
+            rotation: 360,
+            opacity: 0,
+            duration: 3,
+            scrollTrigger: {
+                trigger: rotateRef.current,
+                start: 'top 80%',
+            },
+        });
+    }, []); // Empty dependency array ensures animations run once when the component mounts
+
+
 
 
     const threeDaysInSeconds = 345600;
@@ -103,7 +158,7 @@ const Home = () => {
 
 
                     <div className="igniting">
-                        <h1>Igniting a Revolution in HR Innovation</h1>
+                        <h1 >Igniting a Revolution in HR Innovation</h1>
                         <img className="curve" src={curve} alt="" loading="lazy" />
                     </div>
                 </div>
@@ -446,7 +501,7 @@ const Home = () => {
                         anticipate using for the upcoming event.
                     </h4>
 
-                    <div className="timelineb">
+                    <div className="timelineb relative ">
 
                         <div className="sub-timeline">
 
@@ -462,18 +517,18 @@ const Home = () => {
 
                             </div>
 
-                            <div className="sub-timeline-text">
+                            <div className="sub-timeline-text  ">
 
 
-                                <div className="stti">
+                                <div className="stti leftone">
 
 
 
-                                    <h2>
+                                    <h2  >
                                         Hackathon Announcement
                                     </h2>
 
-                                    <p>
+                                    <p className='text-end' >
                                         The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
                                     </p>
                                 </div>
@@ -492,7 +547,7 @@ const Home = () => {
                                 </div>
 
 
-                                <h3>
+                                <h3 >
                                     November 18, 2023
                                 </h3>
 
@@ -550,7 +605,7 @@ const Home = () => {
                                 </div>
 
 
-                                <h3>
+                                <h3 className='leftone leftonedate'>
                                     November 18, 2023
                                 </h3>
                             </div>
@@ -579,14 +634,14 @@ const Home = () => {
 
                             <div className="sub-timeline-text">
 
-                                <div className="stti">
+                                <div className="stti leftonedate">
 
 
-                                    <h2>
+                                    <h2 >
                                         Teams Registration ends
                                     </h2>
 
-                                    <p>
+                                    <p className='leftone leftonedate'>
                                         Interested Participants are no longer Allowed
                                         to register
                                     </p>
@@ -606,7 +661,7 @@ const Home = () => {
                                 </div>
 
 
-                                <h3>
+                                <h3 >
                                     November 18, 2023
                                 </h3>
 
@@ -661,7 +716,7 @@ const Home = () => {
                                 </div>
 
 
-                                <h3>
+                                <h3 className='leftone leftonedate'>
                                     November 18, 2023
                                 </h3>
 
@@ -688,7 +743,7 @@ const Home = () => {
 
 
 
-                                <div className="stti">
+                                <div className="stti leftonedate">
 
 
 
@@ -696,7 +751,7 @@ const Home = () => {
                                         Hackathon Announcement
                                     </h2>
 
-                                    <p>
+                                    <p className='leftone leftonedate'>
                                         The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
                                     </p>
                                 </div>
@@ -742,7 +797,7 @@ const Home = () => {
                             <div className="sub-timeline-text desktop:flex-row-reverse">
 
 
-                                <div className="stti">
+                                <div className="stti ">
 
 
                                     <h2>
@@ -768,7 +823,7 @@ const Home = () => {
 
 
 
-                                <h3>
+                                <h3 className='leftone leftonedate'>
                                     November 18, 2023
                                 </h3>
 
@@ -777,6 +832,31 @@ const Home = () => {
                         </div>
 
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 </section>
@@ -788,85 +868,99 @@ const Home = () => {
 
                     <img src={px} alt="" className="rewepup star" />
 
-                    <h1 className="eight-header">
-                        Prizes and <span className="header-purple"> Rewards</span>
 
-                    </h1>
 
-                    <p className="highlight">
-                        Highlight of the prizes or rewards for winners
-                        and for participants.
+                    <div className="trophy-header">
 
-                    </p>
+
+                        <h1 className="eight-header">
+                            Prizes and <span className="header-purple"> Rewards</span>
+
+                        </h1>
+
+                        <p className="highlight">
+                            Highlight of the prizes or rewards for winners
+                            and for participants.
+
+                        </p>
+                    </div>
+
 
                     <img src={bgleft} alt="" className="bgleftn" />
 
-                    <img src={trophy} alt="" className="trophy-icon" />
 
-                    <img src={star} alt="" className="prizew star" />
+                    <div className="trophy-row">
 
-                    <img src={star} alt="" className="prizew2 star" />
+                        <img src={trophy} alt="" className="trophy-icon" />
+
+                        <img src={star} alt="" className="prizew star" />
+
+                        <img src={star} alt="" className="prizew2 star" />
 
 
-                    <div className="rewards-coner relative">
+                        <div className="rewards-coner relative">
 
-                        <img src={bgright} alt="" className="bgright" />
+                            <img src={bgright} alt="" className="bgright" />
 
-                        <div className="trophs2">
+                            <div className="trophs2">
 
-                            <img src={silver} alt="" className="medals2" />
+                                <img src={silver} alt="" className="medals2" />
 
-                            <div className="md2">
+                                <div className="md2">
 
-                                <div className="md2-text">
-                                    <p>2nd </p>
-                                    <p>Runner</p>
-                                    <h6 className='md2l' >N 300,000
-                                    </h6>
+                                    <div className="md2-text">
+                                        <p>2nd </p>
+                                        <p>Runner</p>
+                                        <h6 className='md2l' >N 300,000
+                                        </h6>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div className="trophs">
+                                <img src={gold} alt="" className="medals" />
+
+                                <div className="md1">
+                                    <div className="md2-text">
+                                        <p >1st </p>
+                                        <p>Runner</p>
+                                        <h6 className='md1l' >N 400,000
+                                        </h6>
+                                    </div>
+
                                 </div>
 
 
                             </div>
 
-                        </div>
+                            <div className="trophs2">
+                                <img src={bronze} alt="" className="medals2" />
 
-                        <div className="trophs">
-                            <img src={gold} alt="" className="medals" />
+                                <div className="md2">
+                                    <div className="md2-text">
+                                        <p>3rd </p>
+                                        <p>Runner</p>
+                                        <h6
+                                            className='md2l' >N 150,000
+                                        </h6>
+                                    </div>
 
-                            <div className="md1">
-                                <div className="md2-text">
-                                    <p >1st </p>
-                                    <p>Runner</p>
-                                    <h6 className='md1l' >N 400,000
-                                    </h6>
                                 </div>
+
 
                             </div>
 
 
-                        </div>
-
-                        <div className="trophs2">
-                            <img src={bronze} alt="" className="medals2" />
-
-                            <div className="md2">
-                                <div className="md2-text">
-                                    <p>3rd </p>
-                                    <p>Runner</p>
-                                    <h6
-                                        className='md2l' >N 150,000
-                                    </h6>
-                                </div>
-
-                            </div>
-
+                            <img src={transStar} alt="" className="prizetrans star" />
 
                         </div>
-
-
-                        <img src={transStar} alt="" className="prizetrans star" />
 
                     </div>
+
+
 
                 </div>
 
@@ -890,7 +984,7 @@ const Home = () => {
 
                         <img className='psx absolute' src={px} alt="" />
 
-                        <img src={partners} alt="" />
+                        <img src={partners} className='partners-image' alt="" />
 
                         <img src={star} className='starpartl' alt="" />
 
@@ -901,81 +995,96 @@ const Home = () => {
 
                 <div className="oline"></div>
 
+                <div className=' opacity-0' > .</div>
+
                 <div className="tenth-section">
 
-                    <img src={transStar} className='small-stars' alt="" />
 
-                    <h1 className="tenth-head">
-                        Privacy Policy and <span className='milo' >Terms</span>
-
-                    </h1>
-
-                    <h6>Last updated on September 12, 2023</h6>
-
-                    <p className="ppat relative">
-                        Below are our privacy & policy, which outline a
-                        lot of goodies. it’s our aim to always take of our
-                        participant
-
-                        <img className='pxl' src={px} alt="" />
-                    </p>
+                    <div className="tenth-section-first">
 
 
+                        <img src={transStar} className='small-stars' alt="" />
+                        ;
+                        <h1 className="tenth-head">
+                            Privacy Policy and <span className='milo' >Terms</span>
 
+                        </h1>
 
-                    <div className="ppat-inner">
+                        <h6>Last updated on September 12, 2023</h6>
 
-                        <p className="ppat-inner-one">
+                        <p className="ppat relative">
+                            Below are our privacy & policy, which outline a
+                            lot of goodies. it’s our aim to always take of our
+                            participant
 
-                            At getlinked tech Hackathon 1.0, we
-                            value your privacy and are committed
-                            to protecting your personal information.
-                            This Privacy Policy outlines how we collect,
-                            use, disclose, and safeguard your data
-                            when you participate in our tech hackathon
-                            event. By participating in our event, you
-                            consent to the practices described in this
-                            policy.
+                            <img className='pxl' src={px} alt="" />
                         </p>
 
-                        <h3>
-                            Licensing Policy
-                        </h3>
-                        <h4>
-                            Here are terms of our Standard License:
-                        </h4>
-
-                        <div className='standard-lisence relative'>
-                            <img src={check} alt="" />
-
-                            <p>The Standard License grants you a
-                                non-exclusive right to navigate and
-                                register for our event</p>
 
 
-                        </div>
+
+                        <div className="ppat-inner">
+
+                            <p className="ppat-inner-one">
+
+                                At getlinked tech Hackathon 1.0, we
+                                value your privacy and are committed
+                                to protecting your personal information.
+                                This Privacy Policy outlines how we collect,
+                                use, disclose, and safeguard your data
+                                when you participate in our tech hackathon
+                                event. By participating in our event, you
+                                consent to the practices described in this
+                                policy.
+                            </p>
 
 
-                        <img src={bgleft} className='bgleft' alt="" />
+                            <div className="lisencing-policy">
 
-                        <div className='standard-lisence mt-[1.5rem] relative'>
-                            <img src={check} alt="" />
-
-                            <p>You are licensed to use the item
-                                available at any free source sites, for
-                                your project developement</p>
-
-                            <img src={px} alt="mimi" className='mimi' />
-                        </div>
-
-
-                        <div className='readMore-container w-[100%]  flex items-center justify-center ' >
-                            <div className="chart-more ">
-                                Read More
+                                <h3>
+                                    Licensing Policy
+                                </h3>
+                                <h4>
+                                    Here are terms of our Standard License:
+                                </h4>
                             </div>
-                        </div>
 
+
+
+                            <div className='standard-lisence relative'>
+                                <img src={check} alt="" />
+
+                                <p>The Standard License grants you a
+                                    non-exclusive right to navigate and
+                                    register for our event</p>
+
+
+                            </div>
+
+
+                            <img src={bgleft} className='bgleft' alt="" />
+
+                            <div className='standard-lisence mt-[1.5rem] relative'>
+                                <img src={check} alt="" />
+
+                                <p>You are licensed to use the item
+                                    available at any free source sites, for
+                                    your project developement</p>
+
+                                <img src={px} alt="mimi" className='mimi' />
+                            </div>
+
+
+                            <div className='readMore-container w-[100%]  flex items-center justify-center ' >
+                                <div className="chart-more ">
+                                    Read More
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+
+
 
 
                     <div className='shield-container' >
@@ -984,9 +1093,9 @@ const Home = () => {
 
                         <img src={sw} alt="" className="shieldw" />
 
-                        <img src={shield} alt="" className="shield" />
+                        <img loading='lazy' src={shield} alt="" className="shield" />
 
-                        <img src={boy} alt="" className="keyboy" />
+                        <img loading='lazy' src={boy} alt="" className="keyboy" />
 
                         <img src={star} alt="" className="boyw" />
 
