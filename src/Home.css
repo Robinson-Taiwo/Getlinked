@@ -694,7 +694,7 @@ background: rgba(144, 58, 255, 0.12);
     border-radius: 0.3125rem;
 border: 1px solid #D434FE;
 background: rgba(217, 217, 217, 0.03);
-@apply w-[100%] mt-[1.88rem] pr-[0.75rem] pl-[0.94rem] pt-[2.81rem] flex flex-col justify-center desktop:w-[35.5625rem] desktop:text-start desktop:items-center
+@apply w-[100%] mt-[1.88rem] pr-[0.75rem] pl-[0.94rem] pt-[2.81rem] flex flex-col justify-center wide:w-[35.5625rem] desktop:text-start desktop:items-center desktop:w-[31.5625rem] 
 }
 
 .ppat-inner-one{
@@ -730,7 +730,7 @@ background: rgba(217, 217, 217, 0.03);
 }
 
 .tenth-section-first{
-    @apply flex items-center justify-center flex-col desktop:items-start
+    @apply flex items-center justify-center flex-col desktop:items-start desktop:mr-[3rem]
 }
 
 .readMore-container{
@@ -740,7 +740,7 @@ background: rgba(217, 217, 217, 0.03);
 .shield{
     fill: linear-gradient(180deg, rgba(144, 58, 255, 0.14) 0%, rgba(255, 38, 185, 0.14) 100%);
 
-  @apply  mt-[3rem]  w-[15.56rem] h-[19.437rem] desktop:w-[33.125rem] desktop:h-[40.5rem]
+  @apply  mt-[3rem]  w-[15.56rem] h-[19.437rem] wide:w-[33.125rem] wide:h-[40.5rem] desktop:w-[30.125rem] desktop:h-[40.5rem]
 }
 
 .shieldpup{
@@ -767,7 +767,7 @@ background: rgba(217, 217, 217, 0.03);
 
 
 .keyboy{
-    @apply absolute top-[9rem] left-[-1.3rem] desktop:w-[34.937rem] desktop:h-[46.8125rem] 
+    @apply absolute top-[9rem] left-[-1.3rem] wide:w-[34.937rem] wide:h-[46.8125rem] desktop:w-[30.937rem] desktop:h-[40.8125rem] 
 }
 
 .shield-container{
