@@ -52,7 +52,7 @@ import { Link } from 'react-router-dom';
 //     appearFromBelowAnimation,
 //     rotateWithFadeAnimation,} from "./Animation"
 
-import { gsap } from 'gsap';
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Initialize ScrollTrigger
@@ -61,6 +61,26 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
 
+    ScrollTrigger.defaults({
+        toggleActions: "play pause play pause",
+    });
+
+    const imageRef = useRef(null);
+
+    useEffect(() => {
+        const el = imageRef.current;
+        if (el) {
+            gsap.fromTo(".chart-head", { rotation: 0 }, {
+                rotation: 360, duration: 15, scrollTrigger: {
+                    trigger: el,
+
+                }
+            });
+        }
+        console.log(el)
+    }, []);
+
+    console.log(imageRef)
     // setting useStates for the see more functionality in the frequently asked question section
 
     const [first, setfirst] = useState(false)
@@ -72,50 +92,6 @@ const Home = () => {
     const backgroundImageUrl = '/public/smart.png';
 
     // defining the time functionality counting down from three days
-
-
-    // texts refs for the animations
-    const textRef = useRef(null);
-    const elementRef = useRef(null);
-    const rotateRef = useRef(null);
-
-
-    useEffect(() => {
-        // Animation 1: Falling Text with ScrollTrigger
-        gsap.from(textRef.current, {
-            y: -100,
-            rotation: -15,
-            ease: 'bounce.out',
-            duration: 2,
-            scrollTrigger: {
-                trigger: textRef.current,
-                start: 'top 80%',
-            },
-        });
-
-        // Animation 2: Appear from Below with ScrollTrigger
-        gsap.from(elementRef.current, {
-            y: 100,
-            opacity: 0,
-            duration: 1,
-            scrollTrigger: {
-                trigger: elementRef.current,
-                start: 'top 80%',
-            },
-        });
-
-        // Animation 3: Rotation with Fade and ScrollTrigger
-        gsap.from(rotateRef.current, {
-            rotation: 360,
-            opacity: 0,
-            duration: 3,
-            scrollTrigger: {
-                trigger: rotateRef.current,
-                start: 'top 80%',
-            },
-        });
-    }, []); // Empty dependency array ensures animations run once when the component mounts
-
 
 
 
@@ -152,9 +128,9 @@ const Home = () => {
 
                 <div className="igniting-div">
 
-                    <img src={mido} alt="" className="bgleft-top" />
+                    {/* <img src={mido} alt="" className="bgleft-top" />
 
-                    <img src={midop} alt="" className="bgright-top" />
+                    <img src={midop} alt="" className="bgright-top" /> */}
 
 
                     <div className="igniting">
@@ -321,7 +297,7 @@ const Home = () => {
 
                     <div className="chart-texts">
 
-
+                        {/* {console.log(imageRef)} */}
                         <div className="chart-texts-head">
                             <div className="chart-head desktop:w-[16.68rem] ">
                                 Judging Criteria<span className='text-normal '>Key attributes </span>
@@ -369,7 +345,7 @@ const Home = () => {
 
                         <img className='limoz' src={pup} alt="" loading="lazy" />
 
-                        <h1 className="chart-head w-[9.88rem] h-[3.375rem]  ">
+                        <h1 ref={imageRef} className="chart-head w-[9.88rem] h-[3.375rem]  ">
                             Frequently Ask <span className='text-normal'>Question</span>
                         </h1>
 
