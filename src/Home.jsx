@@ -122,15 +122,15 @@ const Home = () => {
         <div className='Home'>
             <div className="navvy">
                 <Navbar />
-
+<div className="o"></div>
             </div>
             <section className="Home-first-section">
 
                 <div className="igniting-div">
 
-                    {/* <img src={mido} alt="" className="bgleft-top" />
+                    <img src={mido} alt="" className="bgleft-top" />
 
-                    <img src={midop} alt="" className="bgright-top" /> */}
+                    <img src={midop} alt="" className="bgright-top" />
 
 
                     <div className="igniting">
@@ -268,6 +268,7 @@ const Home = () => {
                     <div className="first-right-purple">
                         <img className='starfl2' src={star2} alt="" loading="lazy" />
                         <div className="rulesg">
+                        <img src={mido} alt="" className="bgleft-topt" />
                             Rules and <span className="purple-text">Guidelines</span>
                         </div>
                         <div className="rulesg-text">
@@ -956,8 +957,7 @@ const Home = () => {
                     </p>
 
                     <div className="partners">
-                        <img src={bgright} alt="" className="bgrightps" />
-
+                       
                         <img className='psx absolute' src={px} alt="" />
 
                         <img src={partners} className='partners-image' alt="" />
@@ -965,6 +965,8 @@ const Home = () => {
                         <img src={star} className='starpartl' alt="" />
 
                     </div>
+                     <img src={bgright} alt="" className="bgrightps" />
+
 
 
                 </section>

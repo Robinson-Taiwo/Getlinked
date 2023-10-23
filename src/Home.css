@@ -45,17 +45,29 @@ height: 22.875rem;
 
 
 background-blend-mode: hard-light;
-@apply absolute left-[0rem] top-[01rem] desktop:w-[67.875rem] desktop:h-[52.875rem] desktop:top-[-5rem] desktop:left-[5rem]
+@apply absolute left-[-1rem] top-[01rem] desktop:w-[67.875rem] desktop:h-[52.875rem] desktop:top-[-5rem] wide:left-[5rem] desktop:left-[-23rem]
 }
 
 .bgright-top{
-    z-index: 10;
+    z-index: 1000;
    width: 17.8125rem;
    height: 22.875rem;
    opacity: 0.7;
    
    background-blend-mode: hard-light;
-   @apply absolute left-[0rem] top-[01rem] desktop:w-[67.875rem] desktop:h-[52.875rem] desktop:top-[-5rem] desktop:left-[50rem] 
+   @apply absolute desktop:right-[4rem] left-[0rem] top-[0rem] desktop:w-[67.875rem] desktop:hidden desktop:h-[52.875rem] desktop:top-[-5rem] desktop:left-[50rem] hidden wide:flex
+   }
+
+
+   
+   .bgleft-topt{
+    z-index: -00;
+   width: 17.8125rem;
+   height: 22.875rem;
+   
+   
+   background-blend-mode: hard-light;
+   @apply absolute left-[-1rem] top-[01rem] desktop:w-[50.875rem] desktop:h-[30.875rem]  wide:left-[5rem] desktop:left-[-2rem] desktop:top-[-11.5rem] hidden desktop:flex 
    }
 
 .igniting { 
@@ -147,9 +159,7 @@ background-blend-mode: hard-light;
 
 .second-section {
     height: 22.64969rem;
-    /* z-index: 20; */
-    /* background-blend-mode: luminosity; */
-    /* background-image: url(../src/assets/images/smart.png); */
+  
   mix-blend-mode: luminosity;
     @apply w-[100%] wide:h-[44.3rem] desktop:h-[37.3rem] desktop:w-[34rem] wide:w-[55.44rem] bg-darkp bg-center bg-cover bg-no-repeat sphone:w-[100%] desktop:grow desktop:relative desktop:z-[20]
 }
@@ -160,10 +170,8 @@ background-blend-mode: hard-light;
 
 .mobile-tech {
  
-    /* width: 41.6875rem;
-height: 40.0625rem; */
-    /* background-image: url(../src/assets/images/mobile-tech.png); */
-    @apply bg-center bg-no-repeat bg-cover ml-[0rem] sphone:w-[95vw] h-[100%] w-[100%] absolute top-[0rem] desktop:top-[1rem] desktop:w-[41.68rem] desktop:h-[36.0625rem] desktop:left-[1rem] wide:w-[41.68rem] wide:h-[40.0625rem] desktop:z-[20] wide:left-[4rem]
+ 
+    @apply bg-center bg-no-repeat bg-cover ml-[0rem] sphone:w-[95vw] h-[100%] w-[100%] absolute top-[0rem] desktop:top-[1rem] desktop:w-[41.68rem] desktop:h-[36.0625rem] desktop:left-[1rem] wide:w-[41.68rem] wide:h-[40.0625rem] desktop:z-[20] wide:left-[6rem]
 }
 
 .third-section{
@@ -220,7 +228,7 @@ height: 40.0625rem; */
     
 height: 23.1875rem;
 
-@apply relative top-[-0.62rem] desktop:top-[0rem]  w-[100%] items-center flex justify-center flex-col bg-center desktop:h-[100%] bg-no-repeat bg-cover
+@apply relative top-[-0.62rem] desktop:top-[0rem]  w-[100%] items-center flex justify-center flex-col bg-center desktop:h-[100%] bg-no-repeat bg-cover desktop:items-start
 }
 
 .lady{
@@ -243,7 +251,7 @@ height: 23.1875rem;
 }
 
 .rulesg{
-    @apply text-[1.25rem] font-bold text-white leading-[133%] w-[6.5rem] text-center mb-[0.56rem] desktop:text-[2rem] desktop:w-[10.625rem]
+    @apply text-[1.25rem] font-bold text-white leading-[133%] w-[6.5rem] text-center desktop:text-start mb-[0.56rem] desktop:text-[2rem] desktop:w-[10.625rem] 
 }
 
 .rulesg-text{
@@ -886,7 +894,7 @@ height: 22.875rem;
 width: 17.8125rem;
 height: 22.875rem;
 background-blend-mode: hard-light;
-@apply absolute sphone:left-[2.1rem] left-[5.6rem] top-[14rem]
+@apply absolute sphone:left-[2.1rem] left-[5.6rem] top-[14rem]  desktop:left-[49rem] desktop:top-[29rem] wide:hidden
 }
 
 
