@@ -7,7 +7,7 @@ import sb from "../src/assets/icons/sb.svg"
 import bc from "../src/assets/icons/bc.svg"
 import lady from "../src/assets/icons/ladywalk.svg"
 import pupstar from "../src/assets/icons/footer_small_purple.svg"
-
+import Axios from 'axios';
 import "./Registration.css"
 import Navbar from './Navbar'
 
@@ -20,7 +20,10 @@ const Registration = () => {
     const [category, setCategory] = useState(''); // Initialize with an empty string
     const [groupSize, setGroupSize] = useState(''); // Initialize with an empty string
     const [agreed, setAgreed] = useState(false); // Initialize the checkbox state as false
+    const [accepted, setAccepted] = useState(true)
 
+    const [options, setOptions] = useState([])
+    const [selectedOption, setSelectedOption] = useState("")
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -59,9 +62,7 @@ const Registration = () => {
         setGroupSize(e.target.value);
     };
 
-
-
-
+    const isSubmitDisabled = email === '' || teamsName === '' || phone === '' || projectTopic === '' || category === '' || groupSize === '';
 
     // Create event handlers for checkbox and button click
     const handleAgreementChange = () => {
@@ -70,11 +71,34 @@ const Registration = () => {
 
     const handleSubmit = () => {
         // Check if the user has agreed to the policy
-        if (agreed) {
-            // You can alert the form details here or perform other actions
-            console.log(`Form details:\nTeams Name: ${teamsName}\nPhone: ${phone}\nEmail: ${email}\nProject Topic: ${projectTopic}\nCategory: ${category}\nGroup Size: ${groupSize}`)
+        if (agreed && !isSubmitDisabled) {
+            const url = " https://backend.getlinked.ai"
+            const endpoint = "/hackathon/registration"
+            const aipUrl = url + endpoint
 
+            const requestData = {
+                email: email,
+                phone_number: phone,
+                team_name: teamsName,
+                group_size: groupSize,
+                project_topic: projectTopic,
+                category: category,
+                privacy_policy_accepted: agreed,
+            };
 
+            Axios.post(aipUrl, requestData, {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+                .then((response) => {
+                    // Handle the response data here
+                    console.log('Response:', response.data);
+                })
+                .catch((error) => {
+                    // Handle errors here
+                    console.error('Error:', error);
+                });
 
             // Clear the input fields
             setTeamsName('');
@@ -88,8 +112,8 @@ const Registration = () => {
             openModal();
 
         } else {
-            // Alert the user if the checkbox is not checked
-            alert('Please agree to the terms and conditions before submitting.');
+            setAccepted(false)
+
         }
     };
 
@@ -108,6 +132,34 @@ const Registration = () => {
             document.body.classList.remove('overlay-open');
         };
     }, [isModalOpen]);
+
+
+
+
+    useEffect(() => {
+        // Define the API endpoint and base URL
+        const baseUrl = 'https://backend.getlinked.ai';
+        const endpoint = '/hackathon/categories-list';
+        const apiUrl = baseUrl + endpoint;
+
+        // Make a GET request to the API endpoint
+        Axios.get(apiUrl, {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then((response) => {
+                // Assuming the response contains an array of categories
+                const categories = response.data;
+
+                // Update the state with the received data
+                setOptions(categories);
+            })
+            .catch((error) => {
+                console.error('Error fetching data:', error);
+            });
+    }, []);
+
 
     let transparent = "red-50"
 
@@ -263,47 +315,55 @@ const Registration = () => {
 
 
                     </div>
-                        <div className="selectionj-register">
+                    <div className="selectionj-register">
 
 
                         <div className="register-inputLabel">
-                                <label htmlFor="Category">Category</label>
-                                <select
-                                    value={category}
-                                    className='register-select'
-                                    onChange={handleCategoryChange}
-                                >
-                                    <option value="">Select an option</option>
-                                    <option value="web development">Web Development</option>
-                                    <option value="app development">App Development</option>
-                                    <option value="blockchain">Blockchain</option>
-                                    <option value="virtual reality">Virtual Reality</option>
-                                </select>
-                            </div>
+                            <label htmlFor="Category">Category</label>
+                            <select
+                                value={category}
+                                className='register-select'
+                                onChange={handleCategoryChange}
+                            >
+                                <option value="">Select an option</option>
 
+                                {options.map((data, index) => {
+                                    return (<option key={data.id} value={data.id}>{data.name}</option>)
+                                })}
 
-
-
-                           
-                            <div className="register-inputLabel">
-                                <label htmlFor="GroupSize">Group's Size</label>
-                                <select
-                                    value={groupSize}
-                                    className='register-group'
-                                    onChange={handleGroupSizeChange}
-                                >
-                                    <option value="">Select</option>
-                                    <option value="1 - 5">1 - 5</option>
-                                    <option value="5 - 10">5 - 10</option>
-                                    <option value="10 - 15">10 - 15</option>
-                                </select>
-                            </div>
-
-
-
-
-
+                            </select>
                         </div>
+
+
+
+
+
+                        <div className="register-inputLabel">
+                            <label htmlFor="GroupSize">Group's Size</label>
+                            <select
+                                value={groupSize}
+                                className='register-group'
+                                onChange={handleGroupSizeChange}
+                            >
+                                <option value="">Select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+
+
+
+
+                    </div>
 
 
 
@@ -332,6 +392,10 @@ const Registration = () => {
                             onChange={handleAgreementChange}
                         />
                         <p>I agree with the event terms and conditions and privacy policy</p>
+                    </div>
+
+                    <div className="didn-agree">
+                        {!accepted && "please agree to the policy, terms and conditions first or check that you filled all the inputs"}
                     </div>
 
                     <div className='register-sub-but' >

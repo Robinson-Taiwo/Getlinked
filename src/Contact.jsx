@@ -18,6 +18,7 @@ import facebook from "../src/assets/icons/facebook.svg"
 import linkedin from "../src/assets/icons/linkedin.svg"
 import "./Contact.css"
 import { Link } from 'react-router-dom'
+import Axios from 'axios'
 import Navbar from './Navbar'
 
 const Contact = () => {
@@ -58,15 +59,35 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        isSubmitDisabled ? alert('All fields are required') : (alert(`this function is yet to be implemented by Taiwo. will take care of it very soon.
-        thank you for trying it though😁😁😁
-        . love you...
-       THESE ARE YOUR INPUTED DETAILS😏:
-      Team name:  ${name},
-      Topic: ${topic},
-      Email: ${email},
-      Message: ${message},`))
+        isSubmitDisabled && alert('All fields are required');
 
+        // Define the base URL and endpoint
+        const baseUrl = 'https://backend.getlinked.ai';
+        const endpoint = '/hackathon/contact-form';
+        const apiUrl = baseUrl + endpoint;
+
+        // Define the data to be sent in the request
+        const requestData = {
+            email: 'sample@example.com',
+            phone_number: '0903322445533',
+            first_name: 'Space Explore',
+            message: 'I need further info',
+        };
+
+        // Make a POST request using Axios
+        Axios.post(apiUrl, requestData, {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then((response) => {
+                // Handle the response data here
+                console.log('Response:', response.data);
+            })
+            .catch((error) => {
+                // Handle errors here
+                console.error('Error:', error);
+            });
 
         setName("")
         setTopic("")
@@ -75,14 +96,6 @@ const Contact = () => {
 
 
 
-
-
-        //     console.log(`this function is yet to be implemented by Taiwo. will take care of it very soo. thank you for trying. love you...
-        //    this is your details:
-        //   Team name:  ${name},
-        //   Topic: ${topic},
-        //   Email: ${email},
-        //   Message: ${message},`)
 
 
     }
@@ -139,21 +152,21 @@ const Contact = () => {
                     </h5>
 
 
-   <div className="sharon">
-                            Share on
-                        </div>
+                    <div className="sharon">
+                        Share on
+                    </div>
 
-                        <div className="contact-iconst">
+                    <div className="contact-iconst">
 
-                            <img src={instagram} alt="" className="contact-icon" />
+                        <img src={instagram} alt="" className="contact-icon" />
 
-                            <img src={x} alt="" className="contact-icon" />
+                        <img src={x} alt="" className="contact-icon" />
 
-                            <img src={facebook} alt="" className="contact-icon" />
+                        <img src={facebook} alt="" className="contact-icon" />
 
-                            <img src={linkedin} alt="" className="contact-icon" />
+                        <img src={linkedin} alt="" className="contact-icon" />
 
-                        </div>
+                    </div>
 
                 </div>
 

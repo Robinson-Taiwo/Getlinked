@@ -38,6 +38,7 @@
 }
 
 
+
 .bgleft-top{
  z-index: -00;
 width: 17.8125rem;
@@ -57,7 +58,6 @@ background-blend-mode: hard-light;
    background-blend-mode: hard-light;
    @apply absolute desktop:right-[4rem] left-[0rem] top-[0rem] desktop:w-[67.875rem] desktop:hidden desktop:h-[52.875rem] desktop:top-[-5rem] desktop:left-[50rem] hidden wide:flex
    }
-
 
    
    .bgleft-topt{

@@ -14,15 +14,11 @@ import star from "../src/assets/icons/star1.svg"
 import star2 from "../src/assets/icons/star2.svg"
 import bgleft from "../src/assets/images/purple-lens-mobile.png"
 import bgright from "../src/assets/images/purpleRight.png"
-
-
 import pupstar from "../src/assets/icons/footer_small_purple.svg"
 import transStar from "../src/assets/icons/trans-star.svg"
 import smallStar from "../src/assets/icons/footer-small-star.svg"
 import sw from "../src/assets/icons/sw.svg"
 import px from "../src/assets/icons/px.svg"
-
-
 import arrow from "../src/assets/icons/arrow.svg"
 import check from "../src/assets/icons/check.svg"
 import shield from "../src/assets/icons/sheild.svg"
@@ -36,52 +32,24 @@ import partners from "../src/assets/icons/partners.png"
 import bronze from "../src/assets/icons/bronze_medal.svg"
 import gold from "../src/assets/icons/gold_medal.svg"
 import silver from "../src/assets/icons/silver_medal.svg"
-
 import smart from "../src/assets/images/occulus.png"
-
 import mido from "../src/assets/images/midp.png"
 import midop from "../src/assets/images/midr.png"
-
 import mobileTech from "../src/assets/images/mobit.png"
-
-import "./Home.css"
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
-
-// import {  fallingTextAnimation,
-//     appearFromBelowAnimation,
-//     rotateWithFadeAnimation,} from "./Animation"
-
+import "./Home.css"
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 // Initialize ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
+import { motion, useAnimation } from 'framer-motion';
+import { fadeFromRightAnimation, fadeInAnimation, fadeInBounceAnimation, useScrollAnimation } from './Animation';
+
 
 
 const Home = () => {
 
-    ScrollTrigger.defaults({
-        toggleActions: "play pause play pause",
-    });
-
-    const imageRef = useRef(null);
-
-    useEffect(() => {
-        const el = imageRef.current;
-        if (el) {
-            gsap.fromTo(".chart-head", { rotation: 0 }, {
-                rotation: 360, duration: 15, scrollTrigger: {
-                    trigger: el,
-
-                }
-            });
-        }
-        console.log(el)
-    }, []);
-
-    console.log(imageRef)
-    // setting useStates for the see more functionality in the frequently asked question section
 
     const [first, setfirst] = useState(false)
     const [second, setSecond] = useState(false)
@@ -89,11 +57,11 @@ const Home = () => {
     const [fourth, setFourth] = useState(false)
     const [fifth, setFifth] = useState(false); const [sixth, setSixth] = useState(false)
 
+
+
     const backgroundImageUrl = '/public/smart.png';
 
     // defining the time functionality counting down from three days
-
-
 
     const threeDaysInSeconds = 345600;
     const [timeLeft, setTimeLeft] = useState(threeDaysInSeconds);
@@ -118,11 +86,18 @@ const Home = () => {
     const secondsRemaining = timeLeft % 60;
 
 
+
+
+
+
+    // the main function
+
     return (
         <div className='Home'>
+            {/* navbar at the top of the  home page */}
             <div className="navvy">
                 <Navbar />
-<div className="o"></div>
+                <div className="oline"></div>
             </div>
             <section className="Home-first-section">
 
@@ -134,7 +109,7 @@ const Home = () => {
 
 
                     <div className="igniting">
-                        <h1 >Igniting a Revolution in HR Innovation</h1>
+                        <h1    >Igniting a Revolution in HR Innovation</h1>
                         <img className="curve" src={curve} alt="" loading="lazy" />
                     </div>
                 </div>
@@ -157,7 +132,8 @@ const Home = () => {
                                 <span><img className='mobile-chain' src={fire} alt="" loading="lazy" /></span>
                             </div>
                         </div>
-                        <div className="intro-texts">
+                        <div
+                            className="intro-texts">
                             Participate in getlinked tech Hackathon
                             2023 stand a chance to win a Big prize
                         </div>
@@ -268,7 +244,7 @@ const Home = () => {
                     <div className="first-right-purple">
                         <img className='starfl2' src={star2} alt="" loading="lazy" />
                         <div className="rulesg">
-                        <img src={mido} alt="" className="bgleft-topt" />
+                            <img src={mido} alt="" className="bgleft-topt" />
                             Rules and <span className="purple-text">Guidelines</span>
                         </div>
                         <div className="rulesg-text">
@@ -298,7 +274,6 @@ const Home = () => {
 
                     <div className="chart-texts">
 
-                        {/* {console.log(imageRef)} */}
                         <div className="chart-texts-head">
                             <div className="chart-head desktop:w-[16.68rem] ">
                                 Judging Criteria<span className='text-normal '>Key attributes </span>
@@ -346,7 +321,7 @@ const Home = () => {
 
                         <img className='limoz' src={pup} alt="" loading="lazy" />
 
-                        <h1 ref={imageRef} className="chart-head w-[9.88rem] h-[3.375rem]  ">
+                        <h1 className="chart-head w-[9.88rem] h-[3.375rem]  ">
                             Frequently Ask <span className='text-normal'>Question</span>
                         </h1>
 
@@ -812,30 +787,6 @@ const Home = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </section>
 
                 <div className="eight-line">
@@ -957,7 +908,7 @@ const Home = () => {
                     </p>
 
                     <div className="partners">
-                       
+
                         <img className='psx absolute' src={px} alt="" />
 
                         <img src={partners} className='partners-image' alt="" />
@@ -965,7 +916,7 @@ const Home = () => {
                         <img src={star} className='starpartl' alt="" />
 
                     </div>
-                     <img src={bgright} alt="" className="bgrightps" />
+                    <img src={bgright} alt="" className="bgrightps" />
 
 
 

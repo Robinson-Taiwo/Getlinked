@@ -1,47 +1,60 @@
-import gsap from 'gsap';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+/* eslint-disable no-unused-vars */
+// animation.js
+// Animation.js
+import { motion, useAnimationControls } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
-// import { ScrollTrigger } from 'scrolltrigger';
-
-// Import the ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
-
-// Animation 1: Falling Text with ScrollTrigger
-export const fallingTextAnimation = (element) => {
-    gsap.from(element, {
-        y: -100,
-        rotation: -15,
-        ease: 'bounce.out',
-        duration: 2,
-        scrollTrigger: {
-            trigger: element,
-            start: 'top 80%', // Start animation when the element is 80% in the viewport
-        },
-    });
+// Fading In
+export const fadeInAnimation = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 5 } },
 };
 
-// Animation 2: Appear from Below with ScrollTrigger
-export const appearFromBelowAnimation = (element) => {
-    gsap.from(element, {
-        y: 100,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-            trigger: element,
-            start: 'top 80%',
-        },
-    });
+// Fading from the Right
+export const fadeFromRightAnimation = {
+    hidden: { x: 100, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
 };
 
-// Animation 3: Rotation with Fade and ScrollTrigger
-export const rotateWithFadeAnimation = (element) => {
-    gsap.from(element, {
-        rotation: 360,
-        opacity: 0,
-        duration: 3,
-        scrollTrigger: {
-            trigger: element,
-            start: 'top 80%',
-        },
-    });
+// Fading from the Left
+export const fadeFromLeftAnimation = {
+    hidden: { x: -100, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+};
+
+// Fading In and Bouncing Once
+export const fadeInBounceAnimation = {
+    initial: { opacity: 0, scale: 0.5 },
+    whileInView: { opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 150, duration: 2 } },
+};
+
+// Zooming In
+export const zoomInAnimation = {
+    hidden: { scale: 0 },
+    visible: { scale: 1 },
+};
+
+// Flipping to the Left
+export const flipLeftAnimation = {
+    hidden: { rotateY: 90, opacity: 0 },
+    visible: { rotateY: 0, opacity: 1 },
+};
+
+// Flipping to the Right
+export const flipRightAnimation = {
+    hidden: { rotateY: -90, opacity: 0 },
+    visible: { rotateY: 0, opacity: 1 },
+};
+
+// Create a reusable scroll-triggered animation
+export const useScrollAnimation = (animation) => {
+    const controls = useAnimationControls();
+
+    const onInView = () => {
+        controls.start('visible');
+    };
+
+    const { ref } = useInView({ onInView });
+
+    return { ref, controls };
 };
