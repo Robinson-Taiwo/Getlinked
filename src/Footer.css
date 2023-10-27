@@ -89,7 +89,7 @@ height: 1.0625rem;
 }
 
 .footer-star1{
-    @apply absolute left-[1rem] top-[7.5rem]
+    @apply absolute left-[1rem] top-[7.5rem] desktop:hidden
 }
 
 .trans-star{

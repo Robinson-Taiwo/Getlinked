@@ -16,8 +16,10 @@
 
 :root::-webkit-scrollbar {
   display: none;
+  background-color: black
   /* for Chrome, Safari, and Opera */
 }
+
 
 
 

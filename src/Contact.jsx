@@ -68,10 +68,10 @@ const Contact = () => {
 
         // Define the data to be sent in the request
         const requestData = {
-            email: 'sample@example.com',
-            phone_number: '0903322445533',
-            first_name: 'Space Explore',
-            message: 'I need further info',
+            email: email,
+            phone_number: topic,
+            first_name: name,
+            message: message,
         };
 
         // Make a POST request using Axios
@@ -197,7 +197,7 @@ const Contact = () => {
 
                         <input type="text" placeholder="Team's Name" onChange={handleNameChange} required value={name} className='small-input' />
 
-                        <input type="text" placeholder="Topic" onChange={handleTopicChange} required value={topic} className='small-input' />
+                        <input type="text" placeholder="phone number" onChange={handleTopicChange} required value={topic} className='small-input' />
 
                         <input type="email" placeholder="Email" onChange={handleEmailChange} required value={email} className='small-input' />
 

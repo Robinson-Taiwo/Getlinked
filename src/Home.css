@@ -2,25 +2,28 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
-    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow: hidden;
+    /* scroll-behavior: smooth; */
     
 }
 
 
 
 .Home {
-    overflow-x: hidden;
-    @apply h-[100vh] w-[100vw]
+    /* overflow-x: hidden; */
+    @apply h-fit w-fit
 }
 
 .Home-first-section {
     /* background-image: url(../src/assets/images/purple-lens-mobile.png); */
-    @apply h-[27.625rem] w-[100vw] bg-cover bg-center bg-no-repeat  pt-[2rem] relative
+    @apply h-fit w-[100vw] bg-cover bg-center bg-no-repeat  pt-[2rem] relative overflow-hidden
 }
 
 .first-section {
 
-    @apply pr-[2.06rem] pl-[2.44rem] pt-[1.94rem] flex flex-col items-center wide:ml-[8rem] desktop:ml-[4rem] desktop:pr-[0rem] desktop:mr-[0rem] desktop:items-start  desktop:pl-[0rem] desktop:relative z-[99]
+    @apply pr-[2.06rem] pl-[2.44rem] pt-[1.94rem] flex flex-col items-center wide:ml-[8rem] desktop:ml-[4rem] desktop:pr-[0rem] desktop:mr-[0rem] desktop:items-start  desktop:pl-[0rem] desktop:relative z-[99] h-fit 
+    overflow-hidden
 }
 
 .igniting-div{
@@ -46,7 +49,7 @@ height: 22.875rem;
 
 
 background-blend-mode: hard-light;
-@apply absolute left-[-1rem] top-[01rem] desktop:w-[67.875rem] desktop:h-[52.875rem] desktop:top-[-5rem] wide:left-[5rem] desktop:left-[-23rem]
+@apply absolute left-[-1rem] top-[0rem] desktop:w-[67.875rem] desktop:h-[52.875rem] desktop:top-[-5rem] desktop:left-[-23rem] wide:left-[-9rem]
 }
 
 .bgright-top{
@@ -56,7 +59,7 @@ background-blend-mode: hard-light;
    opacity: 0.7;
    
    background-blend-mode: hard-light;
-   @apply absolute desktop:right-[4rem] left-[0rem] top-[0rem] desktop:w-[67.875rem] desktop:hidden desktop:h-[52.875rem] desktop:top-[-5rem] desktop:left-[50rem] hidden wide:flex
+   @apply absolute desktop:right-[4rem] left-[0rem] top-[0rem] desktop:w-[67.875rem] desktop:hidden desktop:h-[52.875rem] desktop:top-[-5rem] desktop:left-[50rem] hidden wide:flex 
    }
 
    
@@ -67,7 +70,7 @@ background-blend-mode: hard-light;
    
    
    background-blend-mode: hard-light;
-   @apply absolute left-[-1rem] top-[01rem] desktop:w-[50.875rem] desktop:h-[30.875rem]  wide:left-[5rem] desktop:left-[-2rem] desktop:top-[-11.5rem] hidden desktop:flex 
+   @apply absolute left-[-1rem] top-[01rem] desktop:w-[50.875rem] desktop:h-[30.875rem]  wide:left-[5rem] desktop:left-[-2rem] desktop:top-[-11.5rem] hidden desktop:flex desktop:hidden 
    }
 
 .igniting { 
@@ -126,12 +129,12 @@ background-blend-mode: hard-light;
 .register-button {
     width: 9.5rem;
     height: 2.92731rem;
-    @apply bg-primary text-white rounded-[0.25rem] flex items-center justify-center text-[0.875rem] desktop:w-[10.75rem] desktop:h-[3.312rem]
+    @apply bg-primary text-white rounded-[0.25rem] flex items-center justify-center text-[0.875rem] desktop:w-[10.75rem] desktop:h-[3.312rem] overflow-hidden
 }
 
 .li {
     height: 2.92731rem;
-    @apply mt-[1.5rem] mb-[0.89rem] pl-[3rem] desktop:pl-[0rem]
+    @apply mt-[1.5rem] mb-[0.89rem] pl-[3rem] desktop:pl-[0rem] desktop:h-[3.5rem]
 }
 
 .starl {
@@ -141,11 +144,11 @@ background-blend-mode: hard-light;
 }
 
 .countdown {
-    @apply flex flex-row justify-between text-[3rem] desktop:text-[3rem] wide:text-[3rem] text-white w-[13.375rem] h-[4rem] desktop:h-[4.31rem] wide:h-[5.31rem] mb-[1.93rem] desktop:mt-[4.81rem]  desktop:w-[17.81rem] 
+    @apply flex flex-row justify-between text-[3rem] desktop:text-[3rem] wide:text-[3rem] text-white w-[13.375rem] h-[5rem] desktop:h-[5.31rem] wide:h-[6.31rem] mb-[1.93rem] desktop:mt-[1.51rem]  desktop:w-[17.81rem]  
 }
 
 .time {
-    @apply flex gap-[0rem]   wide:text-[4rem]  desktop:text-[3rem]   
+    @apply flex gap-[0rem]   wide:text-[4rem]  desktop:text-[3rem]   desktop:h-fit 
 }
 
 .time-text {
@@ -161,7 +164,7 @@ background-blend-mode: hard-light;
     height: 22.64969rem;
   
   mix-blend-mode: luminosity;
-    @apply w-[100%] wide:h-[44.3rem] desktop:h-[37.3rem] desktop:w-[34rem] wide:w-[55.44rem] bg-darkp bg-center bg-cover bg-no-repeat sphone:w-[100%] desktop:grow desktop:relative desktop:z-[20]
+    @apply w-[100%] wide:h-[44.3rem] desktop:h-[37.3rem] desktop:w-[34rem] wide:w-[42.44rem] bg-darkp bg-center bg-cover bg-no-repeat sphone:w-[100%] desktop:grow desktop:relative desktop:z-[20]
 }
 
 .sec{
@@ -180,7 +183,7 @@ background-blend-mode: hard-light;
 
 .bulb-big-div{
    
-  @apply relative
+  @apply relative 
 
 }
 
@@ -188,15 +191,15 @@ background-blend-mode: hard-light;
     width: 16.50025rem;
     height: 16.0625rem;
     background-image: url(../src/assets/images/deal.png);
-    @apply  bg-center bg-cover desktop:w-[28.625rem]  desktop:h-[27.812rem] bg-no-repeat justify-center flex items-center wide:w-[30.625rem]  wide:h-[29.812rem]
+    @apply  bg-center bg-cover desktop:w-[28.625rem]  desktop:h-[29.812rem] bg-no-repeat justify-center flex items-center wide:w-[30.625rem]  wide:h-[29.812rem]
 }
 
 .arrow-mobile{
-    @apply mt-[0.63rem] mb-[1.38rem] w-[1.216rem] h-[1.426] desktop:w-[3.6rem] desktop:h-[3.6rem]  desktop:left-[29rem] desktop:absolute  desktop:top-[25rem]
+    @apply mt-[0.63rem] mb-[1.38rem] w-[1.216rem] h-[1.426] desktop:w-[3.6rem] desktop:h-[3.6rem]  desktop:left-[29rem] desktop:absolute  desktop:top-[25rem] wide:absolute wide:left-[0rem]
 }
 
 .kloi{
-    @apply desktop:h-[50%] desktop:flex desktop:items-center justify-center items-center desktop:flex-col desktop:relative desktop:justify-center desktop:top-[4rem]
+    @apply desktop:h-fit desktop:flex desktop:items-center justify-center items-center desktop:flex-col desktop:relative desktop:justify-center desktop:top-[4rem]
 }
 
 .big-idea-text{
@@ -204,19 +207,19 @@ background-blend-mode: hard-light;
     height: 2.01213rem;
     line-height: 122.5%;
 
-@apply text-white font-bold text-[0.875rem] text-center 
+@apply text-white font-bold text-[0.875rem] text-center  desktop:h-[3rem]
 }
 
 .third-intro{
-    @apply leading-[138%] font-bold w-[15.5625rem] h-[3.375rem] text-[1.25rem] text-white text-center wide:text-[2rem] desktop:w-[24.9rem] desktop:h-[5.37rem] desktop:text-start items-center justify-center desktop:text-[1.7rem]
+    @apply leading-[138%] font-bold w-[15.5625rem] h-[4.375rem] text-[1.25rem] text-white text-center wide:text-[2rem] desktop:w-[24.9rem] desktop:h-[500%] desktop:text-start items-center justify-center desktop:text-[1.7rem]
 }
 
 .third-into-div{
-    @apply w-[100%] flex desktop:justify-start justify-center
+    @apply w-[100%] flex desktop:justify-start justify-center  mb-[0.56rem]
 }
 
 .third-texts{
-   @apply h-[100%] text-center mt-[0.56rem] text-[0.8125rem] leading-[1.718rem] text-white mb-[6.02rem] px-[1rem] w-[100%] desktop:text-[0.875rem]  desktop:w-[29.28rem] desktop:h-[100%] desktop:text-start desktop:px-[0rem] 
+   @apply h-[110%] text-center mt-[0.56rem] text-[0.8125rem] leading-[1.718rem] text-white mb-[6.02rem] px-[1rem] w-[100%] desktop:text-[0.875rem]  desktop:w-[29.28rem] desktop:h-[100%] desktop:text-start desktop:px-[0rem] 
 }
 
 .fourth-section{
@@ -234,7 +237,7 @@ height: 23.1875rem;
 .lady{
     width: 18.375rem;
     height: 23.875rem;
-@apply relative desktop:static top-[0rem] wide:h-[41.5rem] wide:w-[41.5rem] desktop:h-[39.5rem] desktop:w-[39.5rem]
+@apply relative desktop:static top-[0rem] wide:h-[41.5rem] wide:w-[41.5rem] desktop:h-[30.5rem] desktop:w-[30.5rem]
 }
 
 .fourth-head{
@@ -247,7 +250,7 @@ height: 23.1875rem;
 
 .first-right-purple{
  
-    @apply w-[100%] desktop:w-[80%]  relative flex flex-col wide:w-[100%] items-center  bg-center bg-cover bg-no-repeat p-[0rem] bottom-[2rem] desktop:bottom-[0rem]
+    @apply w-[100%] desktop:w-[80%] h-fit  relative flex flex-col wide:w-[100%] items-center  bg-center bg-cover bg-no-repeat p-[0rem] bottom-[2rem] desktop:bottom-[0rem]
 }
 
 .rulesg{
@@ -255,7 +258,7 @@ height: 23.1875rem;
 }
 
 .rulesg-text{
-    @apply text-[0.8125rem] text-center leading-[1.79rem] h-[15.5rem] desktop:text-[0.875rem] text-white w-[18rem] desktop:w-[33.43rem] desktop:text-start
+    @apply text-[0.8125rem] text-center leading-[1.79rem] h-[17.5rem] desktop:text-[0.875rem] text-white w-[18rem] desktop:w-[30.43rem] desktop:text-start desktop:px-[2rem]
 }
 
 .starfl{
@@ -321,7 +324,19 @@ height: 23.1875rem;
 }
 
 .chart-head{
-    @apply text-[1.25rem] font-bold leading-[1.6625rem] text-white w-[10.4375rem] text-center h-[3.375rem] flex flex-col desktop:text-[2rem] desktop:w-[16.68rem] desktop:text-start desktop:leading-[2rem]
+    @apply text-[1.25rem] font-bold leading-[1.6625rem] text-white w-[10.4375rem] text-center h-[3.375rem] flex flex-col desktop:text-[2rem] desktop:w-[16.68rem] desktop:text-start desktop:leading-[2rem] 
+}
+
+.chart-headj{
+    @apply text-[1.25rem] font-bold leading-[1.6625rem] text-white w-[10.4375rem] text-center h-[3.375rem] flex flex-col desktop:text-[2rem] desktop:w-[16.68rem] desktop:text-start desktop:leading-[2rem] desktop:h-[5rem]
+}
+
+.chart-headl{
+    @apply text-[1.25rem] font-bold leading-[1.6625rem] text-white  text-center w-[9.88rem] h-[3.375rem] flex flex-col desktop:text-[2rem] desktop:w-[16.68rem] desktop:text-start desktop:leading-[2rem] desktop:h-[5rem] overflow-hidden
+}
+
+.freq{
+    @apply desktop:h-[2]
 }
 
 .chart-text{
@@ -553,7 +568,7 @@ z-index: 5;
 
 
 .prizetrans{
-    @apply absolute top-[17rem] left-[13rem]
+    @apply absolute top-[17rem] left-[13rem] 
 }
 
 .eight-header{
@@ -594,7 +609,7 @@ flex-shrink: 0;
 
 .rewards-coner{
     z-index: 5;
-    @apply flex flex-row relative
+    @apply flex flex-row relative h-[100%] 
 }
 
 .md2{
@@ -653,11 +668,11 @@ background: rgba(144, 58, 255, 0.12);
 
 .ninth-section{
     z-index: 5;
-    @apply bg-darkp w-[100vw] flex flex-col justify-center items-center  pt-[2.56rem] pr-[1.69rem] pl-[1.88rem]  relative
+    @apply bg-darkp w-[100vw] h-[100%] flex flex-col justify-center items-center  pt-[2.56rem] pr-[1.69rem] pl-[1.88rem]  relative  desktop:pb-[2rem]
 }
 
 .pas{
- @apply text-white text-[1.25rem] font-bold leading-[1.718rem] mb-[0.31rem] desktop:text-[2rem] desktop:mb-[1.38rem]
+ @apply text-white text-[1.25rem] font-bold leading-[1.718rem] mb-[0.31rem] desktop:text-[2rem] desktop:mb-[1.38rem] desktop:h-[2.1rem]
 }
 
 .past{
@@ -668,7 +683,7 @@ background: rgba(144, 58, 255, 0.12);
     border-radius: 0.3125rem;
     border: 1px solid #D434FE;
     background: rgba(255, 255, 255, 0.01);
-    @apply px-[2.95rem] py-[2.39rem] h-[9.29rem] w-[100%] mb-[6.53rem] wide:w-[78.43rem] wide:h-[35rem] desktop:flex desktop:items-center desktop:justify-center desktop:w-[90%] desktop:h-[30rem] 
+    @apply px-[2.95rem] py-[2.39rem] h-[9.29rem] w-[100%] mb-[0.53rem] wide:w-[78.43rem] wide:h-[35rem] desktop:flex desktop:items-center desktop:justify-center desktop:w-[90%] desktop:h-[30rem] 
 }
 
 .partners-image{
@@ -738,7 +753,7 @@ background: rgba(217, 217, 217, 0.03);
 }
 
 .tenth-section-first{
-    @apply flex items-center justify-center flex-col desktop:items-start desktop:mr-[3rem]
+    @apply flex items-center justify-center flex-col desktop:items-start desktop:mr-[0rem]
 }
 
 .readMore-container{
@@ -748,7 +763,7 @@ background: rgba(217, 217, 217, 0.03);
 .shield{
     fill: linear-gradient(180deg, rgba(144, 58, 255, 0.14) 0%, rgba(255, 38, 185, 0.14) 100%);
 
-  @apply  mt-[3rem]  w-[15.56rem] h-[19.437rem] wide:w-[33.125rem] wide:h-[40.5rem] desktop:w-[30.125rem] desktop:h-[40.5rem]
+  @apply  mt-[3rem]  w-[15.56rem] h-[19.437rem] wide:w-[33.125rem] wide:h-[40.5rem] desktop:w-[20.125rem] desktop:h-[40.5rem] 
 }
 
 .shieldpup{
@@ -775,11 +790,11 @@ background: rgba(217, 217, 217, 0.03);
 
 
 .keyboy{
-    @apply absolute top-[9rem] left-[-1.3rem] wide:w-[34.937rem] wide:h-[46.8125rem] desktop:w-[30.937rem] desktop:h-[40.8125rem] 
+    @apply absolute top-[9rem] left-[-0.5rem] wide:w-[34.937rem] wide:h-[46.8125rem] desktop:w-[25.937rem] desktop:left-[0rem] desktop:h-[40.8125rem] wide:left-[-1.3rem] 
 }
 
 .shield-container{
-    @apply relative h-[29.5rem] desktop:top-[-15rem]
+    @apply relative h-[29.5rem] desktop:top-[-10rem] wide:top-[-5rem] wide:h-[60rem] desktop:h-[50rem] desktop:ml-[2rem]
 }
 
 
@@ -860,7 +875,7 @@ background-blend-mode: hard-light;
 width: 17.8125rem;
 height: 22.875rem;
 background-blend-mode: hard-light;
-@apply absolute right-[-1.8rem] top-[-9rem] desktop:right-[0rem] desktop:top-[18rem]
+@apply absolute right-[-1.8rem] top-[0rem] desktop:right-[0rem] desktop:top-[18rem]
 }
 
 .bgleftll{
@@ -868,7 +883,7 @@ background-blend-mode: hard-light;
 width: 17.8125rem;
 height: 22.875rem;
 background-blend-mode: hard-light;
-@apply absolute left-[0rem] top-[-3rem]
+@apply absolute left-[0rem] top-[-3rem] desktop:hidden
 }
 
 .bgleftr{
@@ -886,7 +901,7 @@ background-blend-mode: hard-light;
 width: 17.8125rem;
 height: 22.875rem;
 
-@apply absolute left-[3.4rem] sphone:left-[1.75rem] top-[-3rem]
+@apply absolute left-[15.4rem] sphone:left-[1.75rem] top-[-3rem] 
 }
 
 .bgrightps{
@@ -894,7 +909,7 @@ height: 22.875rem;
 width: 17.8125rem;
 height: 22.875rem;
 background-blend-mode: hard-light;
-@apply absolute sphone:left-[2.1rem] left-[5.6rem] top-[14rem]  desktop:left-[49rem] desktop:top-[29rem] wide:hidden
+@apply absolute sphone:left-[2.1rem] left-[5.6rem] top-[14rem]  desktop:left-[49rem] desktop:top-[29rem] wide:hidden desktop:hidden
 }
 
 

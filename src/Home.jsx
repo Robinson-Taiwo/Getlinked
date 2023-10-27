@@ -39,12 +39,14 @@ import mobileTech from "../src/assets/images/mobit.png"
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import "./Home.css"
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import gsap from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // Initialize ScrollTrigger
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 import { motion, useAnimation } from 'framer-motion';
 import { fadeFromRightAnimation, fadeInAnimation, fadeInBounceAnimation, useScrollAnimation } from './Animation';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import the CSS
 
 
 
@@ -57,7 +59,24 @@ const Home = () => {
     const [fourth, setFourth] = useState(false)
     const [fifth, setFifth] = useState(false); const [sixth, setSixth] = useState(false)
 
+    useEffect(() => {
+        AOS.init({
+            duration: 3000, // Set the default duration to 3000ms (3 seconds)
+        });
+    }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            console.log('Scroll Y Position:', scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const backgroundImageUrl = '/public/smart.png';
 
@@ -108,7 +127,7 @@ const Home = () => {
                     <img src={midop} alt="" className="bgright-top" />
 
 
-                    <div className="igniting">
+                    <div data-aos="fade-right" data-aos-duration="1000" className="igniting">
                         <h1    >Igniting a Revolution in HR Innovation</h1>
                         <img className="curve" src={curve} alt="" loading="lazy" />
                     </div>
@@ -118,8 +137,8 @@ const Home = () => {
 
 
                     <section className='first-section'>
-
-                        <div className="get-linked">
+                        {/* data-aos-delay="1500"  */}
+                        <div data-aos="fade-up" data-aos-duration="1000" className="get-linked">
                             <div className='flexo '>
                                 <img className='star' src={star} alt="" loading="lazy" />
                                 <img className='star2' src={star2} alt="" loading="lazy" />
@@ -132,18 +151,23 @@ const Home = () => {
                                 <span><img className='mobile-chain' src={fire} alt="" loading="lazy" /></span>
                             </div>
                         </div>
-                        <div
+                        <div data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-delay="1200"
                             className="intro-texts">
                             Participate in getlinked tech Hackathon
                             2023 stand a chance to win a Big prize
                         </div>
                         <div className='li '>
-                            <Link to="/Registration" className=" register-button">
+                            <Link data-aos="fade-left" data-aos-duration="1000"
+                                data-aos-delay="1500" to="/Registration" className=" register-button">
                                 Register
                             </Link>
                             <img className='starl' src={star2} alt="" loading="lazy" />
                         </div>
-                        <div className="countdown">
+                        <div
+                            data-aos="fade-up" data-aos-duration="3000"
+                            data-aos-delay="2000"
+                            className="countdown">
                             <div className="time">
                                 {hours} <span className='time-text'>H</span>
                             </div>
@@ -156,7 +180,8 @@ const Home = () => {
                         </div>
                     </section>
                     <div className="sec">
-                        <div className="second-sectionlo">
+                        <div data-aos="zoom-in" data-aos-duration="3000"
+                            data-aos-delay="100" className="second-sectionlo">
 
                             <img src={smart} alt="" className="second-section" />
 
@@ -185,7 +210,7 @@ const Home = () => {
 
                 <div className="third-section">
                     <div className="bulb-big-div">
-                        <div className="bulb-big">
+                        <div data-aos="zoom-in" data-aos-duration="3000" className="bulb-big">
                             <p className="big-idea-text">
                                 The Big Idea!
                             </p>
@@ -199,9 +224,9 @@ const Home = () => {
 
 
 
-                        <div className='third-into-div' >
+                        <div data-aos="fade-down" data-aos-duration="1000" className='third-into-div' >
 
-                            <div className="third-intro mb-[0.56rem]">
+                            <div className="third-intro ">
                                 Introduction to getlinked
                                 <span className="putple-intro text-normal"> tech Hackathon 1.0</span>
                             </div>
@@ -211,7 +236,8 @@ const Home = () => {
 
 
 
-                        <div className="third-texts">
+                        <div data-aos="fade-up" data-aos-duration="3000"
+                            className="third-texts">
                             Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as
                             day: to shape the future. Whether you're
                             a coding genius, a design maverick, or a
@@ -239,15 +265,18 @@ const Home = () => {
 
 
                         <img className='starfl' src={star} alt="" loading="lazy" />
-                        <img src={lady} alt="" className="lady" />
+                        <img data-aos-easing="linear"
+                            data-aos="zoom-in-up" data-aos-duration="1000" src={lady} alt="" className="lady" />
                     </div>
                     <div className="first-right-purple">
                         <img className='starfl2' src={star2} alt="" loading="lazy" />
-                        <div className="rulesg">
+                        <div data-aos-easing="linear"
+                            data-aos="zoom-in-down" data-aos-duration="1000" className="rulesg">
                             <img src={mido} alt="" className="bgleft-topt" />
                             Rules and <span className="purple-text">Guidelines</span>
                         </div>
-                        <div className="rulesg-text">
+                        <div data-aos="fade-up" data-aos-duration="3000"
+                            data-aos-delay="1000" className="rulesg-text">
                             Our tech hackathon is a melting pot of
                             visionaries, and its purpose is as clear as day:
                             to shape the future. Whether you're a coding
@@ -267,38 +296,46 @@ const Home = () => {
 
                 <div className="fifth-section bg-darkp">
                     <img className='limo' src={pup} alt="" loading="lazy" />
-                    <img src={chart} alt="" className="chart-icon" loading="lazy" />
+                    <img data-aos-easing="ease-out-cubic"
+                        data-aos="zoom-right" data-aos-delay="000" data-aos-duration="1200" src={chart} alt="" className="chart-icon" loading="lazy" />
 
                     <img src={bgleft} alt="" className="bgleftnj" />
 
 
                     <div className="chart-texts">
 
-                        <div className="chart-texts-head">
-                            <div className="chart-head desktop:w-[16.68rem] ">
-                                Judging Criteria<span className='text-normal '>Key attributes </span>
+                        <div data-aos-easing="linear"
+                            data-aos="fade-left" data-aos-duration="1000" className="chart-texts-head">
+                            <div className="chart-headj  ">
+                                Judging Criteria<span className='text-normal overflow-hidden '>Key attributes </span>
                             </div>
 
                         </div>
 
-                        <p className="chart-text desktop:w-[33.3rem] ">
+                        <p data-aos-easing="linear"
+                            data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000" className="chart-text desktop:w-[33.3rem] ">
                             <span className='spanText'>Innovation and Creativity: </span>  Evaluate the uniqueness and creativity of the solution. Consider whether it addresses a real-world problem in a novel way or introduces innovative features.
                         </p>
-                        <p className="chart-text desktop:w-[31.8rem]">
+                        <p data-aos-easing="linear"
+                            data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1100" className="chart-text desktop:w-[31.8rem]">
                             <span className='spanText '>Functionality:</span> Assess how well the solution works. Does it perform its intended functions effectively and without major issues? Judges would consider the completeness and robustness of the solution.
                         </p>
-                        <p className="chart-text  desktop:w-[32.7rem]">
+                        <p data-aos-easing="linear"
+                            data-aos="fade-left" data-aos-delay="1400" data-aos-duration="1200" className="chart-text  desktop:w-[32.7rem]">
                             <span className=' spanText'>Impact and Relevance:</span>   Determine the potential impact of the solution in the real world. Does it address a significant problem, and is it relevant to the target audience? Judges would assess the potential social, economic, or environmental benefits.
                         </p>
-                        <p className="chart-text desktop:w-[34.8rem]">
+                        <p data-aos-easing="linear"
+                            data-aos="fade-right" data-aos-delay="1600" data-aos-duration="1300" className="chart-text desktop:w-[34.8rem]">
                             <span className='spanText'>Technical Complexity:</span> Evaluate the technical sophistication of the solution. Judges would consider the complexity of the code, the use of advanced technologies or algorithms, and the scalability of the solution.
                         </p>
-                        <p className="chart-text desktop:w-[35.3rem] relative">
+                        <p data-aos-easing="linear"
+                            data-aos="fade-left" data-aos-delay="1800" data-aos-duration="1400" className="chart-text desktop:w-[35.3rem] relative">
                             <span className='spanText'>Adherence to Hackathon Rules:</span>  Judges will Ensure that the team adhered to the rules and guidelines of the hackathon, including deadlines, use of specific technologies or APIs, and any other competition-specific requirements.
 
 
                         </p>
-                        <button className="chart-more">
+                        <button data-aos-easing="ease-out-cubic"
+                            data-aos="flip-up" data-aos-delay="1900" data-aos-duration="1400" className="chart-more">
                             Read More
                         </button>
                         <img className='chart-star' src={star} alt="" loading="lazy" />
@@ -321,11 +358,13 @@ const Home = () => {
 
                         <img className='limoz' src={pup} alt="" loading="lazy" />
 
-                        <h1 className="chart-head w-[9.88rem] h-[3.375rem]  ">
-                            Frequently Ask <span className='text-normal'>Question</span>
+                        <h1 data-aos-easing="ease-out-cubic"
+                            data-aos="flip-left" data-aos-delay="0000" data-aos-duration="1000" className="chart-headl  ">
+                            Frequently Ask <span className='freq text-normal  '>Question</span>
                         </h1>
 
-                        <p className="ask-desc  ">
+                        <p data-aos-easing="ease-out-cubic"
+                            data-aos="flip-up" data-aos-delay="1000" data-aos-duration="1400" className="ask-desc  ">
                             We got answers to the questions that you might
                             want to ask about getlinked Hackathon 1.0
                         </p>
@@ -333,7 +372,8 @@ const Home = () => {
 
                         <div className="ask-questions ">
                         </div>
-                        <div className="que">
+                        <div data-aos-easing="ease-out-cubic"
+                            data-aos="fade-right" data-aos-delay="000" data-aos-duration="1000" className="que">
                             <div className="quet">
                                 <p className="questions-texts">
                                     Can I work on a project I started before the hackathon?
@@ -348,7 +388,8 @@ const Home = () => {
                             </div>
                             <div className="h-pline"></div>
                         </div>
-                        <div className="que">
+                        <div data-aos-easing="ease-out-cubic"
+                            data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" className="que">
                             <div className="quet">
                                 <p className="questions-texts">
                                     What happens if I need help during the hackathon?
@@ -363,7 +404,8 @@ const Home = () => {
                             </div>
                             <div className="h-pline"></div>
                         </div>
-                        <div className="que">
+                        <div data-aos-easing="ease-out-cubic"
+                            data-aos="fade-right" data-aos-delay="1100" data-aos-duration="1000" className="que">
                             <div className="quet">
                                 <p className="questions-texts">
                                     What happens if I don't have an idea for a project?
@@ -378,7 +420,8 @@ const Home = () => {
                             </div>
                             <div className="h-pline"></div>
                         </div>
-                        <div className="que">
+                        <div data-aos-easing="ease-out-cubic"
+                            data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000" className="que">
                             <div className="quet">
                                 <p className="questions-texts">
                                     Can I join a team or do I have to come with one?
@@ -393,7 +436,8 @@ const Home = () => {
                             </div>
                             <div className="h-pline"></div>
                         </div>
-                        <div className="que">
+                        <div data-aos-easing="ease-out-cubic"
+                            data-aos="fade-right" data-aos-delay="1300" data-aos-duration="1000" className="que">
                             <div className="quet">
                                 <p className="questions-texts">
                                     What happens after the hackathon ends
@@ -408,7 +452,8 @@ const Home = () => {
                             </div>
                             <div className="h-pline"></div>
                         </div>
-                        <div className="que">
+                        <div data-aos-easing="ease-out-cubic"
+                            data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000" className="que">
                             <div className="quet">
                                 <p className="questions-texts">
                                     Can I work on a project I started before the hackathon?
@@ -434,7 +479,8 @@ const Home = () => {
                             <img className='big-mark' src={mark} alt="" />
                             <img className='small-mark' src={mark} alt="" />
                         </div>
-                        <img src={tman} alt="" className="think2" loading="lazy" />
+                        <img data-aos-easing="ease-out-cubic"
+                            data-aos="flip-right" data-aos-delay="000" data-aos-duration="1200" src={tman} alt="" className="think2" loading="lazy" />
 
                     </div>
 
@@ -444,11 +490,13 @@ const Home = () => {
 
                 <section className="seventh-line">
 
-                    <h1 className="timeline">
+                    <h1 data-aos-easing="ease-out-cubic"
+                            data-aos="fade-down" data-aos-delay="0000" data-aos-duration="1000" className="timeline">
                         Timeline
                     </h1>
 
-                    <h4 className="timeline-desc">
+                    <h4  data-aos-easing="ease-in-back"
+                            data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" className="timeline-desc">
                         Here is the breakdown of the time we
                         anticipate using for the upcoming event.
                     </h4>
@@ -814,7 +862,7 @@ const Home = () => {
                     </div>
 
 
-                    <img src={bgleft} alt="" className="bgleftn" />
+                    <img src={bgleft} alt="" className="bgleftn  " />
 
 
                     <div className="trophy-row">
@@ -828,7 +876,7 @@ const Home = () => {
 
                         <div className="rewards-coner relative">
 
-                            <img src={bgright} alt="" className="bgright" />
+                            <img src={bgright} alt="" className="bgright   desktop:hidden" />
 
                             <div className="trophs2">
 
@@ -882,7 +930,7 @@ const Home = () => {
                             </div>
 
 
-                            <img src={transStar} alt="" className="prizetrans star" />
+                            <img src={transStar} alt="" className="prizetrans star desktop:hidden " />
 
                         </div>
 
