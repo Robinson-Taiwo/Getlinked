@@ -491,12 +491,12 @@ const Home = () => {
                 <section className="seventh-line">
 
                     <h1 data-aos-easing="ease-out-cubic"
-                            data-aos="fade-down" data-aos-delay="0000" data-aos-duration="1000" className="timeline">
+                        data-aos="fade-down" data-aos-delay="0000" data-aos-duration="1000" className="timeline">
                         Timeline
                     </h1>
 
-                    <h4  data-aos-easing="ease-in-back"
-                            data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" className="timeline-desc">
+                    <h4 data-aos-easing="ease-in-back"
+                        data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" className="timeline-desc">
                         Here is the breakdown of the time we
                         anticipate using for the upcoming event.
                     </h4>
@@ -520,7 +520,8 @@ const Home = () => {
                             <div className="sub-timeline-text  ">
 
 
-                                <div className="stti leftone">
+                                <div data-aos-easing="ease-in-back"
+                                    data-aos="fade-left" data-aos-delay="0000" data-aos-duration="1000" className="stti leftone text-start">
 
 
 
@@ -528,7 +529,7 @@ const Home = () => {
                                         Hackathon Announcement
                                     </h2>
 
-                                    <p className='text-end' >
+                                    <p className='text-start desktop:text-end' >
                                         The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register
                                     </p>
                                 </div>
@@ -547,7 +548,8 @@ const Home = () => {
                                 </div>
 
 
-                                <h3 >
+                                <h3 data-aos-easing="ease-in-back"
+                                    data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" >
                                     November 18, 2023
                                 </h3>
 
@@ -577,9 +579,10 @@ const Home = () => {
 
                             <div className="sub-timeline-text desktop:flex-row-reverse">
 
-                                <div className="stti">
+                                <div data-aos-easing="ease-in-back"
+                                    data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1100" className="stti">
 
-                                    <h2>
+                                    <h2  >
                                         Teams Registration begins
                                     </h2>
 
@@ -605,7 +608,8 @@ const Home = () => {
                                 </div>
 
 
-                                <h3 className='leftone leftonedate'>
+                                <h3 data-aos-easing="ease-in-back"
+                                    data-aos="fade-left" data-aos-delay="1100" data-aos-duration="1000" className='leftone leftonedate'>
                                     November 18, 2023
                                 </h3>
                             </div>
@@ -634,7 +638,8 @@ const Home = () => {
 
                             <div className="sub-timeline-text">
 
-                                <div className="stti leftonedate">
+                                <div data-aos-easing="ease-in-back"
+                                    data-aos="fade-left" data-aos-delay="1300" data-aos-duration="1000" className="stti leftonedate">
 
 
                                     <h2 >
@@ -661,7 +666,8 @@ const Home = () => {
                                 </div>
 
 
-                                <h3 >
+                                <h3 data-aos-easing="ease-in-back"
+                                    data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000" >
                                     November 18, 2023
                                 </h3>
 
@@ -687,7 +693,8 @@ const Home = () => {
                             <div className="sub-timeline-text desktop:flex-row-reverse " >
 
 
-                                <div className="stti">
+                                <div data-aos-easing="ease-in-back"
+                                    data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000" className="stti">
 
 
                                     <h2>
@@ -716,7 +723,8 @@ const Home = () => {
                                 </div>
 
 
-                                <h3 className='leftone leftonedate'>
+                                <h3 data-aos-easing="ease-in-back"
+                                    data-aos="fade-left" data-aos-delay="1600" data-aos-duration="1000" className='leftone leftonedate'>
                                     November 18, 2023
                                 </h3>
 
@@ -743,7 +751,8 @@ const Home = () => {
 
 
 
-                                <div className="stti leftonedate">
+                                <div data-aos-easing="ease-in-back"
+                                    data-aos="fade-left" data-aos-delay="1600" data-aos-duration="1000" className="stti leftonedate">
 
 
 
@@ -769,7 +778,8 @@ const Home = () => {
                                 </div>
 
 
-                                <h3>
+                                <h3 data-aos-easing="ease-in-back"
+                                    data-aos="fade-right" data-aos-delay="1700" data-aos-duration="1000" >
                                     November 18, 2023
                                 </h3>
 
@@ -797,7 +807,8 @@ const Home = () => {
                             <div className="sub-timeline-text desktop:flex-row-reverse">
 
 
-                                <div className="stti ">
+                                <div data-aos-easing="ease-in-back"
+                                    data-aos="fade-left" data-aos-delay="1800" data-aos-duration="1000" className="stti ">
 
 
                                     <h2>
@@ -823,7 +834,8 @@ const Home = () => {
 
 
 
-                                <h3 className='leftone leftonedate'>
+                                <h3 data-aos-easing="ease-in-back"
+                                    data-aos="fade-right" data-aos-delay="1900" data-aos-duration="1000" className='leftone leftonedate'>
                                     November 18, 2023
                                 </h3>
 
@@ -849,12 +861,14 @@ const Home = () => {
                     <div className="trophy-header">
 
 
-                        <h1 className="eight-header">
+                        <h1 data-aos-easing="ease-in-back"
+                            data-aos="zoom-in-up" data-aos-delay="0000" data-aos-duration="1000" className="eight-header">
                             Prizes and <span className="header-purple"> Rewards</span>
 
                         </h1>
 
-                        <p className="highlight">
+                        <p data-aos-easing="ease-in-back"
+                            data-aos="zoom-in-down" data-aos-delay="1100" data-aos-duration="1000" className="highlight">
                             Highlight of the prizes or rewards for winners
                             and for participants.
 
@@ -867,7 +881,8 @@ const Home = () => {
 
                     <div className="trophy-row">
 
-                        <img src={trophy} alt="" className="trophy-icon" />
+                        <img data-aos-easing="ease-in-back"
+                            data-aos="zoom-out" data-aos-delay="0000" data-aos-duration="2000" src={trophy} alt="" className="trophy-icon" />
 
                         <img src={star} alt="" className="prizew star" />
 
@@ -878,7 +893,8 @@ const Home = () => {
 
                             <img src={bgright} alt="" className="bgright   desktop:hidden" />
 
-                            <div className="trophs2">
+                            <div data-aos-easing="ease-in-back"
+                                data-aos="flip-left" data-aos-delay="0000" data-aos-duration="1000" className="trophs2">
 
                                 <img src={silver} alt="" className="medals2" />
 
@@ -896,7 +912,8 @@ const Home = () => {
 
                             </div>
 
-                            <div className="trophs">
+                            <div data-aos-easing="ease-in-back"
+                                data-aos="flip-right" data-aos-delay="1000" data-aos-duration="1000" className="trophs">
                                 <img src={gold} alt="" className="medals" />
 
                                 <div className="md1">
@@ -912,7 +929,8 @@ const Home = () => {
 
                             </div>
 
-                            <div className="trophs2">
+                            <div data-aos-easing="ease-in-back"
+                                data-aos="flip-left" data-aos-delay="0000" data-aos-duration="1000" className="trophs2">
                                 <img src={bronze} alt="" className="medals2" />
 
                                 <div className="md2">
@@ -943,13 +961,15 @@ const Home = () => {
 
                 <section className="ninth-section">
 
-                    <h1 className="pas">
+                    <h1 data-aos-easing="ease-in-back"
+                        data-aos="fade-down" data-aos-delay="000" data-aos-duration="1000" className="pas">
                         Partners and Sponsors
                     </h1>
 
                     <img src={bgleft} alt="" className="bgleftn" />
 
-                    <p className="past">
+                    <p data-aos-easing="ease-in-back"
+                        data-aos="fade-down" data-aos-delay="000" data-aos-duration="1000" className="past">
                         Getlinked Hackathon 1.0 is honored to have the
                         following major companies as its partners and
                         sponsors
@@ -959,7 +979,8 @@ const Home = () => {
 
                         <img className='psx absolute' src={px} alt="" />
 
-                        <img src={partners} className='partners-image' alt="" />
+                        <img data-aos-easing="ease-in-back"
+                            data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1000" src={partners} className='partners-image' alt="" />
 
                         <img src={star} className='starpartl' alt="" />
 
@@ -981,15 +1002,18 @@ const Home = () => {
 
 
                         <img src={transStar} className='small-stars' alt="" />
-                        ;
-                        <h1 className="tenth-head">
+
+                        <h1 data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom" className="tenth-head">
                             Privacy Policy and <span className='milo' >Terms</span>
 
                         </h1>
 
-                        <h6>Last updated on September 12, 2023</h6>
+                        <h6 data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom" >Last updated on September 12, 2023</h6>
 
-                        <p className="ppat relative">
+                        <p data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom" className="ppat relative">
                             Below are our privacy & policy, which outline a
                             lot of goodies. it’s our aim to always take of our
                             participant
@@ -1000,7 +1024,8 @@ const Home = () => {
 
 
 
-                        <div className="ppat-inner">
+                        <div data-aos="flip-left"
+                            data-aos-anchor-placement="bottom-bottom" className="ppat-inner">
 
                             <p className="ppat-inner-one">
 
@@ -1064,7 +1089,8 @@ const Home = () => {
 
 
 
-                    <div className='shield-container' >
+                    <div data-aos="flip-right"
+                        data-aos-anchor-placement="bottom-bottom" className='shield-container' >
 
                         <img src={px} alt="" className="shieldpup" />
 

@@ -484,7 +484,7 @@ height: 20.4375rem;
 
 
 .line-c{
-@apply flex flex-col items-center gap-[0.44rem] desktop:hidden
+@apply flex flex-col items-center gap-[0.44rem] desktop:hidden w-[3rem]
 }
 
 .line-cl{
@@ -558,11 +558,11 @@ z-index: 5;
 }
 
 .prizew{
-    @apply absolute top-[30rem] left-[3rem]
+    @apply absolute top-[30rem] left-[3rem] desktop:hidden
 }
 
 .prizew2{
-    @apply absolute top-[30rem] left-[20rem]
+    @apply absolute top-[30rem] left-[20rem] desktop:hidden
 }
 
 
